@@ -60,8 +60,11 @@ jobs:
           New-Item -ItemType Directory -Force $env:UZAI_DATA | Out-Null
           $g = (Get-ChildItem godot -Filter "*_console.exe" -Recurse)[0].FullName
           & $g --headless --path . --import
-          & $g --headless --path . res://tests/check.tscn
-          if ($LASTEXITCODE -ne 0) { throw "Skriptfehler gefunden" }
+          # Die Kompilierprüfung zählt: Godot endet nach ihr unter Windows manchmal mit einem Absturz beim Aufräumen
+          # (0xC0000005) – der Ausgang taugt darum nicht, wohl aber ihr Ergebnis (wie tools/build_windows.sh).
+          $out = & $g --headless --path . res://tests/check.tscn 2>&1 | ForEach-Object { "$_" }
+          $out | Where-Object { $_ -match 'geprüft|^FEHLER|SCRIPT ERROR' }
+          if (-not ($out -match 'geprüft, Fehler: 0')) { throw "Skriptfehler gefunden" }
           & $g --headless --path . res://tests/test_logic.tscn
           if ($LASTEXITCODE -ne 0) { throw "Logiktests fehlgeschlagen" }
           & $g --headless --path . res://tests/logic_updater.tscn
