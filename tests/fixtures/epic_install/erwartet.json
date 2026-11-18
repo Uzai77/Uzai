@@ -1,0 +1,53 @@
+{
+ "files": {
+  "Spiel/Start.exe": "1995087aa024a50c774b56cdfc0903e48c8797d3",
+  "Spiel/Daten/teil.bin": "d977b707c4e253088120ad64a102ad5c4f920af6",
+  "Spiel/Ünïcödé Datei.txt": "7623033c5a533f5e55fe176b925e344781668b1a",
+  "leer.txt": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+ },
+ "chunks": [
+  {
+   "guid": "2265B1F591B7584AD8F16ADFCD613E30",
+   "path18": "ChunksV4/32/1027C4D1C386BBC4_2265B1F591B7584AD8F16ADFCD613E30.chunk",
+   "path22": "ChunksV5/plain/32/xLuGw9HEJxA_9bFlIkpYt5HfavHYMD5hzQ.chunk",
+   "sha": "62bed58669ef6af7d210151a55bc257c7c9fb413",
+   "win": 4096
+  },
+  {
+   "guid": "414C343C1E2FEB897ED4D57BC2CE6F44",
+   "path18": "ChunksV4/38/78E510617311D8A3_414C343C1E2FEB897ED4D57BC2CE6F44.chunk",
+   "path22": "ChunksV5/plain/38/o9gRc2EQ5Xg_PDRMQYnrLx571dR-RG_Owg.chunk",
+   "sha": "3b24273ebf9500aac145ab07dd0518bdb7c56703",
+   "win": 4096
+  },
+  {
+   "guid": "A6CECC1B612E7696C9E9C61635BF992D",
+   "path18": "ChunksV4/29/7CE42C8218072E8C_A6CECC1B612E7696C9E9C61635BF992D.chunk",
+   "path22": "ChunksV5/plain/29/jC4HGIIs5Hw_G8zOppZ2LmEWxunJLZm_NQ.chunk",
+   "sha": "92237b43ff448bd47f3bc888af60a24bc902e00d",
+   "win": 4096
+  },
+  {
+   "guid": "0741C7A8E4B06CE6D5F4B3B263CA828D",
+   "path18": "ChunksV4/30/9B810E766EC9D286_0741C7A8E4B06CE6D5F4B3B263CA828D.chunk",
+   "path22": "ChunksV5/plain/30/htLJbnYOgZs_qMdBB-ZssOSys_TVjYLKYw.chunk",
+   "sha": "7cf695e13ea6cee78eefc6919f8551f5f2762ff9",
+   "win": 4096
+  }
+ ],
+ "app": "Probe",
+ "build": "1.2.3",
+ "exe": "Spiel/Start.exe",
+ "args": "-nosplash \"-pfad=C:\\Spiele\" -x",
+ "json": {
+  "files": {
+   "Alt/spiel.exe": "1995087aa024a50c774b56cdfc0903e48c8797d3",
+   "Alt/daten.txt": "d977b707c4e253088120ad64a102ad5c4f920af6"
+  },
+  "chunk": {
+   "guid": "F4BEA973DCF4BB99F2A4D27BD95BAFC8",
+   "path": "ChunksV3/03/177219D30E7A269F_F4BEA973DCF4BB99F2A4D27BD95BAFC8.chunk",
+   "sha": "512808c5d3efce7706093b6a4ebfd2646a5ed156"
+  }
+ }
+}

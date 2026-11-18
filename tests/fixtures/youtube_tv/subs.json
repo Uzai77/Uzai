@@ -1,0 +1,364 @@
+{
+ "responseContext": {
+  "visitorData": "x"
+ },
+ "contents": {
+  "tvBrowseRenderer": {
+   "content": {
+    "tvSecondaryNavRenderer": {
+     "sections": [
+      {
+       "tvSecondaryNavSectionRenderer": {
+        "tabs": [
+         {
+          "tabRenderer": {
+           "title": "Alle",
+           "selected": true,
+           "endpoint": {
+            "browseEndpoint": {
+             "browseId": "FEsubscriptions"
+            }
+           },
+           "content": {
+            "tvSurfaceContentRenderer": {
+             "content": {
+              "gridRenderer": {
+               "items": [
+                {
+                 "tileRenderer": {
+                  "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                  "contentId": "sssssssss01",
+                  "header": {
+                   "tileHeaderRenderer": {
+                    "thumbnail": {
+                     "thumbnails": [
+                      {
+                       "url": "https://i.ytimg.com/vi/sssssssss01/hqdefault.jpg",
+                       "width": 480,
+                       "height": 360
+                      }
+                     ]
+                    },
+                    "thumbnailOverlays": [
+                     {
+                      "thumbnailOverlayTimeStatusRenderer": {
+                       "text": {
+                        "simpleText": "8:15"
+                       },
+                       "style": "DEFAULT"
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  "metadata": {
+                   "tileMetadataRenderer": {
+                    "title": {
+                     "simpleText": "Neu Eins"
+                    },
+                    "lines": [
+                     {
+                      "lineRenderer": {
+                       "items": [
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "runs": [
+                            {
+                             "text": "Alpha Kanal",
+                             "navigationEndpoint": {
+                              "browseEndpoint": {
+                               "browseId": "UCaaaaaaaaaaaaaaaaaaaaaa"
+                              }
+                             }
+                            }
+                           ]
+                          }
+                         }
+                        }
+                       ]
+                      }
+                     },
+                     {
+                      "lineRenderer": {
+                       "items": [
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "simpleText": "12.345 Aufrufe"
+                          }
+                         }
+                        },
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "simpleText": "vor 2 Stunden"
+                          }
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  "onSelectCommand": {
+                   "watchEndpoint": {
+                    "videoId": "sssssssss01"
+                   }
+                  }
+                 }
+                },
+                {
+                 "tileRenderer": {
+                  "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                  "contentId": "sssssssss02",
+                  "header": {
+                   "tileHeaderRenderer": {
+                    "thumbnail": {
+                     "thumbnails": [
+                      {
+                       "url": "https://i.ytimg.com/vi/sssssssss02/hqdefault.jpg",
+                       "width": 480,
+                       "height": 360
+                      }
+                     ]
+                    },
+                    "thumbnailOverlays": [
+                     {
+                      "thumbnailOverlayTimeStatusRenderer": {
+                       "text": {
+                        "simpleText": "8:15"
+                       },
+                       "style": "DEFAULT"
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  "metadata": {
+                   "tileMetadataRenderer": {
+                    "title": {
+                     "simpleText": "Neu Zwei"
+                    },
+                    "lines": [
+                     {
+                      "lineRenderer": {
+                       "items": [
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "runs": [
+                            {
+                             "text": "Beta Kanal",
+                             "navigationEndpoint": {
+                              "browseEndpoint": {
+                               "browseId": "UCbbbbbbbbbbbbbbbbbbbbbb"
+                              }
+                             }
+                            }
+                           ]
+                          }
+                         }
+                        }
+                       ]
+                      }
+                     },
+                     {
+                      "lineRenderer": {
+                       "items": [
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "simpleText": "12.345 Aufrufe"
+                          }
+                         }
+                        },
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "simpleText": "vor 1 Tag"
+                          }
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  "onSelectCommand": {
+                   "watchEndpoint": {
+                    "videoId": "sssssssss02"
+                   }
+                  }
+                 }
+                },
+                {
+                 "tileRenderer": {
+                  "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                  "contentId": "sssssssss01",
+                  "header": {
+                   "tileHeaderRenderer": {
+                    "thumbnail": {
+                     "thumbnails": [
+                      {
+                       "url": "https://i.ytimg.com/vi/sssssssss01/hqdefault.jpg",
+                       "width": 480,
+                       "height": 360
+                      }
+                     ]
+                    },
+                    "thumbnailOverlays": [
+                     {
+                      "thumbnailOverlayTimeStatusRenderer": {
+                       "text": {
+                        "simpleText": "8:15"
+                       },
+                       "style": "DEFAULT"
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  "metadata": {
+                   "tileMetadataRenderer": {
+                    "title": {
+                     "simpleText": "Neu Eins doppelt"
+                    },
+                    "lines": [
+                     {
+                      "lineRenderer": {
+                       "items": [
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "runs": [
+                            {
+                             "text": "Alpha Kanal",
+                             "navigationEndpoint": {
+                              "browseEndpoint": {
+                               "browseId": "UCaaaaaaaaaaaaaaaaaaaaaa"
+                              }
+                             }
+                            }
+                           ]
+                          }
+                         }
+                        }
+                       ]
+                      }
+                     },
+                     {
+                      "lineRenderer": {
+                       "items": [
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "simpleText": "12.345 Aufrufe"
+                          }
+                         }
+                        },
+                        {
+                         "lineItemRenderer": {
+                          "text": {
+                           "simpleText": "vor 2 Stunden"
+                          }
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  "onSelectCommand": {
+                   "watchEndpoint": {
+                    "videoId": "sssssssss01"
+                   }
+                  }
+                 }
+                }
+               ],
+               "continuations": [
+                {
+                 "nextContinuationData": {
+                  "continuation": "SUBS2"
+                 }
+                }
+               ]
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "tabRenderer": {
+           "title": {
+            "simpleText": "Alpha Kanal"
+           },
+           "endpoint": {
+            "browseEndpoint": {
+             "browseId": "UCaaaaaaaaaaaaaaaaaaaaaa"
+            }
+           },
+           "thumbnail": {
+            "thumbnails": [
+             {
+              "url": "https://yt3.ggpht.com/alpha=s88",
+              "width": 88
+             },
+             {
+              "url": "https://yt3.ggpht.com/alpha=s176",
+              "width": 176
+             }
+            ]
+           }
+          }
+         },
+         {
+          "tabRenderer": {
+           "title": {
+            "runs": [
+             {
+              "text": "Beta Kanal"
+             }
+            ]
+           },
+           "endpoint": {
+            "clickTrackingParams": "x",
+            "browseEndpoint": {
+             "browseId": "UCbbbbbbbbbbbbbbbbbbbbbb",
+             "params": "EgZ2aWRlb3M%3D"
+            }
+           },
+           "thumbnail": {
+            "thumbnails": [
+             {
+              "url": "//yt3.ggpht.com/beta=s88",
+              "width": 88
+             }
+            ]
+           }
+          }
+         },
+         {
+          "tabRenderer": {
+           "title": "Kaputt",
+           "endpoint": {
+            "browseEndpoint": {
+             "browseId": "UC<script>bad"
+            }
+           }
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

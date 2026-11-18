@@ -1,0 +1,1318 @@
+[
+ {
+  "art": "setter",
+  "datei": "src/core/artist_catalog.gd",
+  "feld": "mode",
+  "name": "musik.alle_titel",
+  "start": "",
+  "tabelle": {
+   "": [
+    "alben",
+    "suche",
+    "demo"
+   ],
+   "!": [
+    "alben",
+    "suche",
+    "demo"
+   ],
+   "alben": [],
+   "demo": [],
+   "suche": []
+  },
+  "tabelle_ort": "src/core/artist_catalog.gd:38",
+  "zweck": "Weg zu den Titeln: einmal je Künstler gewählt (Alben, sonst Suche; Vorführung) und dann für die Sitzung fest."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/browser_kern_lauf.gd",
+  "feld": "schritt",
+  "name": "browser.kern_einrichten",
+  "start": "",
+  "tabelle": {
+   "": [
+    "liste"
+   ],
+   "*": [
+    "fertig",
+    "fehler",
+    "abgebrochen"
+   ],
+   "abgebrochen": [],
+   "auslegen": [
+    "install"
+   ],
+   "download": [
+    "pruefen"
+   ],
+   "fehler": [],
+   "fertig": [],
+   "install": [],
+   "liste": [
+    "download"
+   ],
+   "pruefen": [
+    "auslegen"
+   ]
+  },
+  "tabelle_ort": "src/core/browser_kern_lauf.gd:37",
+  "zweck": "Schritte eines Laufs in fester Folge; das Ergebnis (fertig, Fehler, Abbruch) meldet _ablauf am Ende, das Feld behält den letzten Schritt (die Oberfläche zeigt ihn mit dem Grund)."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/capture.gd",
+  "feld": "state",
+  "name": "aufnahme.puffer",
+  "start": "aus",
+  "tabelle": {
+   "aus": [
+    "startet"
+   ],
+   "puffer": [
+    "aus"
+   ],
+   "startet": [
+    "puffer",
+    "aus"
+   ]
+  },
+  "tabelle_ort": "src/core/capture.gd:33",
+  "zweck": "Rollpuffer im Spiel: startet, läuft (puffer) oder aus – auch nach einem Fehler (Grund in why)."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/discord_chat.gd",
+  "feld": "state",
+  "name": "discord.nachrichten",
+  "start": "aus",
+  "tabelle": {
+   "*": [
+    "aus"
+   ],
+   "aus": [
+    "verbinde",
+    "keine_dll",
+    "bereit"
+   ],
+   "bereit": [
+    "fehler"
+   ],
+   "fehler": [
+    "verbinde",
+    "freigabe",
+    "keine_dll",
+    "bereit"
+   ],
+   "freigabe": [
+    "verbinde",
+    "bereit",
+    "fehler"
+   ],
+   "keine_dll": [
+    "verbinde"
+   ],
+   "verbinde": [
+    "freigabe",
+    "bereit",
+    "fehler"
+   ]
+  },
+  "tabelle_ort": "src/core/discord_chat.gd:41",
+  "zweck": "Nachrichten über das Social SDK: aus · keine_dll (Bibliothek fehlt) · freigabe (Discord muss Nachrichten einmal erlauben) · verbinde · bereit · fehler. Neu verbinden (restart) führt über „aus“; „bereit“ meldet das SDK selbst."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/iidb_dienst.gd",
+  "feld": "_zustand",
+  "name": "bilder.iidb",
+  "start": "ruht",
+  "tabelle": {
+   "fragt": [
+    "ruht",
+    "wartet",
+    "gesperrt"
+   ],
+   "gesperrt": [
+    "ruht"
+   ],
+   "ruht": [
+    "fragt"
+   ],
+   "wartet": [
+    "fragt"
+   ]
+  },
+  "tabelle_ort": "src/core/iidb_dienst.gd:27",
+  "zweck": "Abruf bei iiDB: ruht, fragt (höchstens ANFRAGE_S), wartet nach 429 oder 5xx (höchstens Iidb.RETRY_MAX_S) oder ist gesperrt, bis ein neuer Schlüssel kommt (401)."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/music.gd",
+  "feld": "aktiv",
+  "name": "musik.aktiv",
+  "start": "spotify",
+  "tabelle": {
+   "lokal": [
+    "spotify"
+   ],
+   "spotify": [
+    "lokal"
+   ]
+  },
+  "tabelle_ort": "src/core/music.gd:47",
+  "zweck": "Beide Quellen (Spotify mit Musikordner): welche gerade gilt – die zuletzt gestartete."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/music.gd",
+  "feld": "pc_state",
+  "name": "musik.pc",
+  "start": "",
+  "tabelle": {
+   "": [],
+   "*": [
+    "ok",
+    "zu",
+    "leer",
+    "aus"
+   ],
+   "aus": [],
+   "leer": [],
+   "ok": [],
+   "zu": []
+  },
+  "tabelle_ort": "src/core/music.gd:1769",
+  "zweck": "Spotify-Fenster am PC lesen: \"\" (noch nicht versucht) · ok · zu (Spotify läuft nicht) · leer (nichts erkannt) · aus (Helfer ging nicht). Jeder Leseversuch kann jedes Ergebnis bringen."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/music_listen.gd",
+  "feld": "playlists_state",
+  "name": "musik.playlists",
+  "start": "",
+  "tabelle": {
+   "": [
+    "laedt"
+   ],
+   "*": [
+    ""
+   ],
+   "fehler": [
+    "laedt"
+   ],
+   "laedt": [
+    "ok",
+    "fehler"
+   ],
+   "ok": [
+    "laedt"
+   ]
+  },
+  "tabelle_ort": "src/core/music_listen.gd:14",
+  "zweck": "Deine Playlists: noch nichts, laden, da oder Fehler; Abmelden setzt zurück."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/music_spotify.gd",
+  "feld": "problem",
+  "name": "musik.problem",
+  "start": "",
+  "tabelle": {
+   "": [],
+   "*": [
+    "",
+    "nutzer",
+    "premium",
+    "abgelaufen",
+    "gesperrt",
+    "app"
+   ],
+   "abgelaufen": [],
+   "app": [],
+   "gesperrt": [],
+   "nutzer": [],
+   "premium": []
+  },
+  "tabelle_ort": "src/core/music_spotify.gd:57",
+  "zweck": "Spotify lässt Uzai gerade gar nicht rein: \"nutzer\" (Konto nicht in der App eingetragen), \"premium\" (Besitzer der App ohne Premium), \"abgelaufen\" (Anmeldung ungültig), \"gesperrt\" (Spotify lehnt das Konto ohne lesbaren Grund ab), \"app\" (Spotify nimmt die Anmeldung gerade nicht an: Grundmodus). \"\" = alles gut. Jede Antwort von Spotify kann jeden Grund bringen."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/music_spotify.gd",
+  "feld": "_tok_mode",
+  "name": "musik.zugang",
+  "start": "",
+  "tabelle": {
+   "": [
+    "app",
+    "eigen"
+   ],
+   "*": [
+    ""
+   ],
+   "app": [
+    "eigen"
+   ],
+   "eigen": [
+    "app"
+   ]
+  },
+  "tabelle_ort": "src/core/music_spotify.gd:73",
+  "zweck": "Zu welcher Anmeldung _token gehört: \"\" (keine) · app (mit Spotify angemeldet) · eigen (eigene Spotify-App). Folgt login_mode(); ein Wechsel der Anmeldung (Einstellungen, Abmelden) setzt zurück."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/pip.gd",
+  "feld": "mode",
+  "name": "bildinbild.modus",
+  "start": "aus",
+  "tabelle": {
+   "an": [
+    "aus",
+    "bewegen"
+   ],
+   "aus": [
+    "an"
+   ],
+   "bewegen": [
+    "an",
+    "aus"
+   ]
+  },
+  "tabelle_ort": "src/core/pip.gd:62",
+  "zweck": "Bild in Bild (Wechsel nur über step()): aus, an oder gerade verschieben."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/pip.gd",
+  "feld": "lage",
+  "name": "bildinbild.lage",
+  "start": "oben",
+  "tabelle": {
+   "*": [
+    "oben"
+   ],
+   "fremd": [
+    "unter",
+    "weg"
+   ],
+   "oben": [
+    "unter",
+    "weg",
+    "fremd"
+   ],
+   "unter": [
+    "weg"
+   ],
+   "weg": [
+    "unter"
+   ]
+  },
+  "tabelle_ort": "src/core/pip.gd:65",
+  "zweck": "Lage des Bilds: über Uzai und dem Spiel, unter dem offenen Guide, versteckt im Ruhemodus oder solange ein fremdes Programm vorn liegt; aus heißt wieder oben."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/steam_cm.gd",
+  "feld": "state",
+  "name": "steam.verbindung",
+  "start": "zu",
+  "tabelle": {
+   "*": [
+    "zu"
+   ],
+   "angemeldet": [
+    "offen"
+   ],
+   "anmelden": [
+    "angemeldet",
+    "offen"
+   ],
+   "offen": [
+    "anmelden",
+    "verbinde"
+   ],
+   "verbinde": [
+    "offen"
+   ],
+   "zu": [
+    "verbinde"
+   ]
+  },
+  "tabelle_ort": "src/core/steam_cm.gd:105",
+  "zweck": "Sitzung beim Chat-Server: zu · verbinde (Serverliste, WebSocket) · offen (Hallo gesagt) · anmelden (Logon unterwegs) · angemeldet. Steam meldet ab: zurück zu „offen“; Trennen, Abriss oder Fehler: von überall „zu“."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/twitch.gd",
+  "feld": "state",
+  "name": "konto.twitch",
+  "start": "aus",
+  "tabelle": {
+   "*": [
+    "aus"
+   ],
+   "abgelaufen": [
+    "bereit"
+   ],
+   "aus": [
+    "bereit",
+    "abgelaufen"
+   ],
+   "bereit": [
+    "fehler",
+    "abgelaufen"
+   ],
+   "fehler": [
+    "bereit",
+    "abgelaufen"
+   ]
+  },
+  "tabelle_ort": "src/core/konten.gd:94",
+  "zweck": "Konto bei einem Dienst (Twitch, YouTube wie am Fernseher, Epic Games): aus, angemeldet (bereit), gerade gestört (fehler: Erneuern ging nicht, der nächste Abruf versucht es neu) oder abgelaufen (neu anmelden; der Name bleibt für den Hinweis). Abmelden führt von überall zu „aus“."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/voice.gd",
+  "feld": "state",
+  "name": "discord.sprache",
+  "start": "aus",
+  "tabelle": {
+   "*": [
+    "aus"
+   ],
+   "anmelden": [
+    "getrennt",
+    "bereit",
+    "fehler"
+   ],
+   "aus": [
+    "verbinde",
+    "fehler",
+    "bereit"
+   ],
+   "bereit": [
+    "anmelden",
+    "getrennt",
+    "fehler"
+   ],
+   "fehler": [
+    "verbinde"
+   ],
+   "getrennt": [
+    "anmelden",
+    "bereit",
+    "fehler"
+   ],
+   "verbinde": [
+    "anmelden",
+    "getrennt",
+    "bereit",
+    "fehler"
+   ]
+  },
+  "tabelle_ort": "src/core/voice.gd:46",
+  "zweck": "aus: nicht eingerichtet · verbinde · anmelden (Discord fragt gerade) · getrennt (Anmeldung nötig) · bereit · fehler (nach einem Abriss neuer Versuch in 20 s). Ausschalten führt von überall zu „aus“."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/voice.gd",
+  "feld": "step",
+  "name": "discord.sprache_schritt",
+  "start": "",
+  "tabelle": {
+   "": [
+    "fertig"
+   ],
+   "*": [
+    "freigabe"
+   ],
+   "anmelden": [
+    "fertig"
+   ],
+   "fertig": [],
+   "freigabe": [
+    "tausch",
+    "fertig"
+   ],
+   "tausch": [
+    "anmelden"
+   ]
+  },
+  "tabelle_ort": "src/core/voice.gd:57",
+  "zweck": "Schritt der Freigabe (für die Anzeige beim Verbinden): \"\" | freigabe (in Discord bestätigen) | tausch (Zugang bei discord.com holen) | anmelden (Discord-App nimmt den Zugang an) | fertig. Neu freigeben beginnt von jedem Schritt aus (auch nach einem Fehler)."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/voice.gd",
+  "feld": "notices",
+  "name": "discord.mitteilungen",
+  "start": "",
+  "tabelle": {
+   "": [
+    "an",
+    "fehlt",
+    "abgelehnt"
+   ],
+   "*": [
+    ""
+   ],
+   "abgelehnt": [
+    "an",
+    "fehlt"
+   ],
+   "an": [],
+   "fehlt": [
+    "an",
+    "abgelehnt"
+   ]
+  },
+  "tabelle_ort": "src/core/voice.gd:95",
+  "zweck": "\"\" (aus) | an (abonniert) | fehlt (Recht nicht freigegeben) | abgelehnt (Discord lehnt ab). Abbestellen und Trennen führen von überall zu \"\"."
+ },
+ {
+  "art": "setter",
+  "datei": "src/core/youtube_tv.gd",
+  "feld": "state",
+  "name": "konto.youtube_tv",
+  "start": "aus",
+  "tabelle": {
+   "*": [
+    "aus"
+   ],
+   "abgelaufen": [
+    "bereit"
+   ],
+   "aus": [
+    "bereit",
+    "abgelaufen"
+   ],
+   "bereit": [
+    "fehler",
+    "abgelaufen"
+   ],
+   "fehler": [
+    "bereit",
+    "abgelaufen"
+   ]
+  },
+  "tabelle_ort": "src/core/konten.gd:94",
+  "zweck": "Konto bei einem Dienst (Twitch, YouTube wie am Fernseher, Epic Games): aus, angemeldet (bereit), gerade gestört (fehler: Erneuern ging nicht, der nächste Abruf versucht es neu) oder abgelaufen (neu anmelden; der Name bleibt für den Hinweis). Abmelden führt von überall zu „aus“."
+ },
+ {
+  "art": "setter",
+  "datei": "src/library/epic_account.gd",
+  "feld": "state",
+  "name": "konto.epic",
+  "start": "aus",
+  "tabelle": {
+   "*": [
+    "aus"
+   ],
+   "abgelaufen": [
+    "bereit"
+   ],
+   "aus": [
+    "bereit",
+    "abgelaufen"
+   ],
+   "bereit": [
+    "fehler",
+    "abgelaufen"
+   ],
+   "fehler": [
+    "bereit",
+    "abgelaufen"
+   ]
+  },
+  "tabelle_ort": "src/core/konten.gd:94",
+  "zweck": "Konto bei einem Dienst (Twitch, YouTube wie am Fernseher, Epic Games): aus, angemeldet (bereit), gerade gestört (fehler: Erneuern ging nicht, der nächste Abruf versucht es neu) oder abgelaufen (neu anmelden; der Name bleibt für den Hinweis). Abmelden führt von überall zu „aus“."
+ },
+ {
+  "art": "setter",
+  "datei": "src/main_fenster.gd",
+  "feld": "_vorhang_anlass",
+  "name": "spiel.vorhang",
+  "start": "",
+  "tabelle": {
+   "": [],
+   "*": [
+    "",
+    "start",
+    "starter",
+    "warten",
+    "beenden",
+    "schliessen",
+    "ende"
+   ],
+   "beenden": [],
+   "ende": [],
+   "schliessen": [],
+   "start": [],
+   "starter": [],
+   "warten": []
+  },
+  "tabelle_ort": "src/main_fenster.gd:254",
+  "zweck": "Zuletzt verlangter Vorhang (src/core/vorhang.gd ANLAESSE, \"\" = auf). Kein fester Ablauf: Start (start, starter, warten), Beenden, Wache (schliessen) und Spielende verlangen ihn unabhängig voneinander – im Zimmer und hinter einer eigenen App fehlt „ende“, dann folgt der nächste Start direkt auf den letzten Auftrag."
+ },
+ {
+  "art": "setter",
+  "datei": "src/main_fenster.gd",
+  "feld": "_tv",
+  "name": "zimmer.fernseher",
+  "start": "",
+  "tabelle": {
+   "": [
+    "startet",
+    "zimmer"
+   ],
+   "*": [
+    ""
+   ],
+   "startet": [
+    "vollbild"
+   ],
+   "vollbild": [
+    "zimmer"
+   ],
+   "zimmer": [
+    "vollbild"
+   ]
+  },
+  "tabelle_ort": "src/room/fernsehspiel.gd:33",
+  "zweck": "Spiel im Fernseher (main_fenster.gd _tv), genau die Wechsel von weiter(): einlegen, ins Vollbild, aufstehen (auch: Guide › Dein Zimmer über dem Spiel), Spielende von überall."
+ },
+ {
+  "art": "setter",
+  "datei": "src/room/freundestest.gd",
+  "feld": "zustand",
+  "name": "online.freundestest",
+  "start": "start",
+  "tabelle": {
+   "*": [
+    "ende"
+   ],
+   "angenommen": [
+    "verbinde"
+   ],
+   "bereit": [],
+   "ende": [],
+   "klopft": [
+    "angenommen",
+    "verbinde"
+   ],
+   "start": [
+    "bereit",
+    "klopft"
+   ],
+   "verbinde": [
+    "verbunden"
+   ],
+   "verbunden": []
+  },
+  "tabelle_ort": "src/room/freundestest.gd:64",
+  "zweck": "Besuch: Gastgeber start → bereit (Relays da); Gast start → klopft → angenommen → verbinde (Datenkanal offen) → verbunden („hallo“ der Gegenseite). Jeder Wartezustand hat eine Frist (_fristen); ende von überall (Grund in grund)."
+ },
+ {
+  "art": "setter",
+  "datei": "src/room/lichtbacken.gd",
+  "feld": "_zustand",
+  "name": "zimmer.lichtbacken",
+  "start": "ruhe",
+  "tabelle": {
+   "backen": [
+    "ruhe",
+    "warten"
+   ],
+   "ruhe": [
+    "warten"
+   ],
+   "warten": [
+    "backen"
+   ]
+  },
+  "tabelle_ort": "src/room/lichtbacken.gd:82",
+  "zweck": "Gebackenes Licht: ruhe, nach einer Änderung warten (WARTEN_S Ruhe, spätestens SPAETESTENS_S), backen (BACK_BILDER Bilder); kam beim Backen etwas dazu, gleich wieder warten."
+ },
+ {
+  "art": "setter",
+  "datei": "src/room/spielbild.gd",
+  "feld": "weg",
+  "name": "zimmer.fernsehbild",
+  "start": "",
+  "tabelle": {
+   "": [
+    "wgc",
+    "printwindow"
+   ],
+   "*": [
+    ""
+   ],
+   "printwindow": [],
+   "wgc": [
+    "printwindow"
+   ]
+  },
+  "tabelle_ort": "src/room/spielbild.gd:69",
+  "zweck": "Weg der Aufnahme (launch.log, Proben): \"\" noch offen, \"wgc\" (Windows Graphics Capture, auch als Spiegel) oder \"printwindow\" (Rückfall, langsam). Gilt je Spiel: ohne laufendes Spiel wieder offen (_je_spiel_neu)."
+ },
+ {
+  "art": "setter",
+  "datei": "src/room/zimmer_basis.gd",
+  "feld": "modus",
+  "name": "zimmer.modus",
+  "start": "laufen",
+  "tabelle": {
+   "*": [
+    "fahrt"
+   ],
+   "anpassen": [
+    "laufen",
+    "bauen",
+    "baukasten"
+   ],
+   "ansehen": [
+    "laufen"
+   ],
+   "bauen": [
+    "laufen",
+    "katalog",
+    "anpassen",
+    "wand",
+    "baukasten"
+   ],
+   "baukasten": [
+    "laufen",
+    "bauen"
+   ],
+   "betrachten": [
+    "laufen"
+   ],
+   "fahrt": [
+    "laufen",
+    "fernsehen",
+    "spiel"
+   ],
+   "fernsehen": [
+    "laufen"
+   ],
+   "foto": [
+    "laufen"
+   ],
+   "katalog": [
+    "bauen"
+   ],
+   "laufen": [
+    "ansehen",
+    "sitzen",
+    "bauen",
+    "foto",
+    "anpassen",
+    "rad",
+    "betrachten",
+    "wand"
+   ],
+   "rad": [
+    "laufen",
+    "bauen"
+   ],
+   "sitzen": [
+    "laufen"
+   ],
+   "spiel": [
+    "laufen"
+   ],
+   "wand": [
+    "laufen",
+    "bauen"
+   ]
+  },
+  "tabelle_ort": "src/room/zimmer_basis.gd:66",
+  "zweck": "Was du im Zimmer gerade tust – eine Tabelle für alle Schichten (zimmer_basis.gd bis zimmer.gd): laufen (Leben), ansehen (vor dem Regal), sitzen, bauen, katalog (Bau-Menü), anpassen (Seitenleiste), rad (Stimmung), baukasten, foto, betrachten (ein Möbel von nahem), wand (Raum größer/kleiner), fahrt (die Kamera fährt: Tür, Fernseher, ins und aus dem Spiel), fernsehen (vor dem Fernseher, das Spiel startet), spiel (wartet hinter dem Spiel, ruhen). In die Fahrt geht es von überall (Guide › Zum Spiel, Spielstart im Zimmer); zurück führt sie ins Laufen."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/components/lyrics_panel.gd",
+  "feld": "_state",
+  "name": "musik.songtext",
+  "start": "laedt",
+  "tabelle": {
+   "*": [
+    "laedt"
+   ],
+   "aus": [],
+   "fehler": [],
+   "keine": [],
+   "laedt": [
+    "ok",
+    "keine",
+    "fehler",
+    "aus"
+   ],
+   "ok": []
+  },
+  "tabelle_ort": "src/ui/components/lyrics_panel.gd:12",
+  "zweck": "Songtext zum laufenden Titel: lädt, dann da, keiner, Fehler oder aus; ein neuer Titel lädt neu."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/add_game.gd",
+  "feld": "_state",
+  "name": "bibliothek.spiel_hinzufuegen",
+  "start": "start",
+  "tabelle": {
+   "leer": [
+    "suche"
+   ],
+   "liste": [
+    "suche"
+   ],
+   "start": [
+    "suche"
+   ],
+   "suche": [
+    "liste",
+    "leer",
+    "start"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/add_game.gd:12",
+  "zweck": "Spiel hinzufügen: Anfang, Ordner wird durchsucht (Abbrechen geht), Funde oder nichts gefunden."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/app_add.gd",
+  "feld": "_state",
+  "name": "apps.hinzufuegen",
+  "start": "laden",
+  "tabelle": {
+   "fertig": [],
+   "laden": [
+    "fertig"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/app_add.gd:14",
+  "zweck": "Liste der Store-Apps: lädt (höchstens 40 s beim Helfer), dann fertig."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/browser.gd",
+  "feld": "modus",
+  "name": "browser.modus",
+  "start": "",
+  "tabelle": {
+   "": [
+    "start"
+   ],
+   "seite": [
+    "start"
+   ],
+   "start": [
+    "seite"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/browser.gd:58",
+  "zweck": "Ansicht des Browsers: seine Startseite oder eine Seite."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/browser.gd",
+  "feld": "_link_wunsch",
+  "name": "browser.link",
+  "start": "",
+  "tabelle": {
+   "": [
+    "handy",
+    "vorschau"
+   ],
+   "*": [
+    ""
+   ],
+   "handy": [],
+   "vorschau": [
+    "handy"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/browser.gd:60",
+  "zweck": "Frage nach der Adresse eines Links (Ans Handy, Link-Vorschau): offen bis zur Antwort oder bis sie verfällt."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/chat_view.gd",
+  "feld": "_login_state",
+  "name": "chat.steam_anmeldung",
+  "start": "",
+  "tabelle": {
+   "": [
+    "start"
+   ],
+   "*": [
+    ""
+   ],
+   "poll": [
+    "start"
+   ],
+   "start": [
+    "poll"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/chat_view.gd:53",
+  "zweck": "Anmeldung per QR-Code der Steam-App: \"\" (keine) · start (Code wird geholt) · poll (wartet auf die Bestätigung). „Neuer QR-Code“ beginnt neu; Schließen, Erfolg, Fehler und Ablauf führen zurück zu \"\"."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/epic_login.gd",
+  "feld": "_state",
+  "name": "anmeldung.epic",
+  "start": "start",
+  "tabelle": {
+   "busy": [
+    "done",
+    "error"
+   ],
+   "done": [
+    "busy",
+    "error"
+   ],
+   "error": [
+    "start",
+    "busy"
+   ],
+   "start": [
+    "busy",
+    "error"
+   ]
+  },
+  "tabelle_ort": "src/core/konten.gd:98",
+  "zweck": "Anmelde-Ebene mit Eingabe am Handy oder auf der Tastatur (Epic-Code, RetroAchievements, SteamGridDB): eingeben, prüfen, fertig oder Fehler mit „Nochmal“. Die Handy-Seite bleibt offen und darf auch danach noch einmal schicken."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/guide_basis.gd",
+  "feld": "tab",
+  "name": "guide.reiter",
+  "start": "",
+  "tabelle": {
+   "": [],
+   "*": [
+    "spiel",
+    "freunde",
+    "discord",
+    "musik",
+    "system",
+    "pip",
+    "ton"
+   ],
+   "discord": [],
+   "freunde": [],
+   "musik": [],
+   "pip": [],
+   "spiel": [],
+   "system": [],
+   "ton": []
+  },
+  "tabelle_ort": "src/ui/layers/guide_basis.gd:17",
+  "zweck": "Reiter des Guides: LB/RB und Sprünge gehen von jedem zu jedem."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/iidb_login.gd",
+  "feld": "_state",
+  "name": "anmeldung.iidb",
+  "start": "start",
+  "tabelle": {
+   "busy": [
+    "done",
+    "error"
+   ],
+   "done": [
+    "busy",
+    "error"
+   ],
+   "error": [
+    "start",
+    "busy"
+   ],
+   "start": [
+    "busy",
+    "error"
+   ]
+  },
+  "tabelle_ort": "src/core/konten.gd:98",
+  "zweck": "Anmelde-Ebene mit Eingabe am Handy oder auf der Tastatur (Epic-Code, RetroAchievements, SteamGridDB): eingeben, prüfen, fertig oder Fehler mit „Nochmal“. Die Handy-Seite bleibt offen und darf auch danach noch einmal schicken."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/pad_help.gd",
+  "feld": "_id",
+  "name": "controller.hilfe",
+  "start": "",
+  "tabelle": {
+   "": [
+    "sieht"
+   ],
+   "doppelt": [
+    "symbole",
+    "vibration"
+   ],
+   "ergebnis": [
+    "tasten"
+   ],
+   "fehlt": [
+    "sieht"
+   ],
+   "sieht": [
+    "tasten",
+    "fehlt"
+   ],
+   "sticks": [
+    "trigger",
+    "tasten"
+   ],
+   "symbole": [
+    "ergebnis",
+    "doppelt"
+   ],
+   "tasten": [
+    "sticks",
+    "sieht"
+   ],
+   "trigger": [
+    "vibration",
+    "sticks"
+   ],
+   "vibration": [
+    "doppelt",
+    "trigger"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/pad_help.gd:25",
+  "zweck": "Seiten des Problemlösers: Schritt für Schritt vor (Weiter, Überspringen) und zurück (B), „Wird nicht erkannt“ von der ersten Seite aus, „Noch einmal“ vom Ergebnis zu den Tasten."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/pad_help.gd",
+  "feld": "_phase",
+  "name": "controller.sticks",
+  "start": "",
+  "tabelle": {
+   "": [
+    "ruhe"
+   ],
+   "kreis": [
+    "",
+    "ruhe"
+   ],
+   "ruhe": [
+    "kreis"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/pad_help.gd:29",
+  "zweck": "Messung der Sticks: Ruhelage, dann kreisen, dann fertig; neu betreten misst von vorn."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/ra_login.gd",
+  "feld": "_state",
+  "name": "anmeldung.ra",
+  "start": "start",
+  "tabelle": {
+   "busy": [
+    "done",
+    "error"
+   ],
+   "done": [
+    "busy",
+    "error"
+   ],
+   "error": [
+    "start",
+    "busy"
+   ],
+   "start": [
+    "busy",
+    "error"
+   ]
+  },
+  "tabelle_ort": "src/core/konten.gd:98",
+  "zweck": "Anmelde-Ebene mit Eingabe am Handy oder auf der Tastatur (Epic-Code, RetroAchievements, SteamGridDB): eingeben, prüfen, fertig oder Fehler mit „Nochmal“. Die Handy-Seite bleibt offen und darf auch danach noch einmal schicken."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/sgdb_login.gd",
+  "feld": "_state",
+  "name": "anmeldung.sgdb",
+  "start": "start",
+  "tabelle": {
+   "busy": [
+    "done",
+    "error"
+   ],
+   "done": [
+    "busy",
+    "error"
+   ],
+   "error": [
+    "start",
+    "busy"
+   ],
+   "start": [
+    "busy",
+    "error"
+   ]
+  },
+  "tabelle_ort": "src/core/konten.gd:98",
+  "zweck": "Anmelde-Ebene mit Eingabe am Handy oder auf der Tastatur (Epic-Code, RetroAchievements, SteamGridDB): eingeben, prüfen, fertig oder Fehler mit „Nochmal“. Die Handy-Seite bleibt offen und darf auch danach noch einmal schicken."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/walkthrough_sheet.gd",
+  "feld": "_page",
+  "name": "loesungshilfe.seite",
+  "start": "themen",
+  "tabelle": {
+   "themen": [
+    "treffer"
+   ],
+   "treffer": [
+    "themen"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/walkthrough_sheet.gd:12",
+  "zweck": "Lösungshilfe: Themen wählen, Treffer einer Suche (B zurück zu den Themen)."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/layers/yt_login.gd",
+  "feld": "_state",
+  "name": "anmeldung.code",
+  "start": "start",
+  "tabelle": {
+   "addons": [
+    "wait"
+   ],
+   "checking": [
+    "done",
+    "http",
+    "error"
+   ],
+   "code": [
+    "error",
+    "done",
+    "wait",
+    "sync"
+   ],
+   "done": [
+    "wait"
+   ],
+   "error": [
+    "wait",
+    "setup",
+    "servers",
+    "passwort"
+   ],
+   "found": [
+    "wait"
+   ],
+   "http": [
+    "wait",
+    "checking"
+   ],
+   "notice": [
+    "wait"
+   ],
+   "passwort": [
+    "wait"
+   ],
+   "servers": [
+    "checking"
+   ],
+   "setup": [
+    "wait"
+   ],
+   "start": [
+    "setup",
+    "wait",
+    "notice"
+   ],
+   "sync": [
+    "done"
+   ],
+   "wait": [
+    "error",
+    "code",
+    "found",
+    "http",
+    "done",
+    "sync",
+    "servers",
+    "checking",
+    "addons",
+    "passwort"
+   ]
+  },
+  "tabelle_ort": "src/ui/layers/yt_login.gd:16",
+  "zweck": "Anmeldung mit Code oder QR – ein Feld für diese Ebene und alle, die davon erben (Twitch, YouTube am Fernseher, Plex, Jellyfin/Emby, Stremio, Nuvio), darum eine Tabelle: start → wait (Code anfordern) → code (QR zeigen, nachfragen; bei Twitch und YouTube am Fernseher übernimmt code das Ergebnis von geraete_code.gd: phase done oder error) → done, sonst error mit „Nochmal“. Dazu: setup (YouTube: eigener Zugang), notice und addons (Stremio), found, http und passwort (Jellyfin: Server im Heimnetz, unverschlüsselt, Name und Passwort hinter der Tastatur), servers, checking und http (Plex), sync (Nuvio: Abgleich nach der Anmeldung). Abschicken führt über wait."
+ },
+ {
+  "art": "setter",
+  "datei": "src/ui/sections/movies_view.gd",
+  "feld": "_home_state",
+  "name": "filme.start",
+  "start": "",
+  "tabelle": {
+   "": [
+    "laden"
+   ],
+   "da": [
+    "laden",
+    ""
+   ],
+   "laden": [
+    "da"
+   ]
+  },
+  "tabelle_ort": "src/ui/sections/movies_view.gd:29",
+  "zweck": "Reihen der Startseite: noch nie geholt, laden, da; eine neue Quelle setzt zurück."
+ },
+ {
+  "art": "melden",
+  "datei": "src/library/library_quellen.gd",
+  "feld": "",
+  "name": "bibliothek.einlesen",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/media.gd",
+  "feld": "",
+  "name": "bibliothek.scrapen",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/discord_chat.gd",
+  "feld": "",
+  "name": "chat.discord",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/steam_chat.gd",
+  "feld": "",
+  "name": "chat.steam",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/ui/layers/setup_wizard.gd",
+  "feld": "",
+  "name": "einrichtung.schritt",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/ui/layers/setup_wizard_spiele.gd",
+  "feld": "",
+  "name": "einrichtung.suche",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/music.gd",
+  "feld": "",
+  "name": "musik.anmeldeart",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/music_local.gd",
+  "feld": "",
+  "name": "musik.lokal",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/music.gd",
+  "feld": "",
+  "name": "musik.quelle",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/spotify_web.gd",
+  "feld": "",
+  "name": "musik.sitzung",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/main_fenster.gd",
+  "feld": "",
+  "name": "spiel.fenster",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/launcher.gd",
+  "feld": "",
+  "name": "spiel.lauf",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/steam_chat.gd",
+  "feld": "",
+  "name": "steam.nachrichten",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ },
+ {
+  "art": "melden",
+  "datei": "src/core/nav.gd",
+  "feld": "",
+  "name": "steuerung.eingabe",
+  "start": null,
+  "tabelle": {},
+  "tabelle_ort": "",
+  "zweck": ""
+ }
+]

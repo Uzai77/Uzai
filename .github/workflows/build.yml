@@ -1,0 +1,94 @@
+name: Windows-Build
+
+# Baut und prüft Uzai bei jedem Push und Pull Request. Ein Release legt die CI bewusst NICHT an: Das Selbst-Update
+# nimmt nur Pakete mit Signatur (src/core/updater.gd), und der private Schlüssel liegt nie hier. Der Weg zum Release
+# steht in docs/UEBERGABE.md („Release“): tools/build_windows.sh, tools/release_signieren.gd, dann ZIP und .sig hochladen.
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      GODOT_VERSION: "4.5.1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fassung aus src/core/config.gd
+        id: fassung
+        shell: pwsh
+        run: |
+          $m = Select-String -Path src/core/config.gd -Pattern '^const VERSION := "([0-9]+\.[0-9]+\.[0-9]+)"'
+          if (-not $m) { throw "VERSION in src/core/config.gd nicht gefunden" }
+          $v = $m.Matches[0].Groups[1].Value
+          $p = Select-String -Path project.godot -Pattern '^config/version="([^"]+)"'
+          if ($p -and $p.Matches[0].Groups[1].Value -ne $v) { throw "project.godot ($($p.Matches[0].Groups[1].Value)) und config.gd ($v) nennen verschiedene Fassungen" }
+          "v=$v" >> $env:GITHUB_OUTPUT
+          # Tests und Import laden Uzais Autoloads: eigener Datenordner statt %APPDATA%\Uzai.
+          "UZAI_DATA=$env:RUNNER_TEMP\uzai-daten" >> $env:GITHUB_ENV
+
+      - name: Godot und Export-Vorlagen laden
+        shell: pwsh
+        run: |
+          $v = $env:GODOT_VERSION
+          $ProgressPreference = 'SilentlyContinue'
+          Invoke-WebRequest "https://github.com/godotengine/godot/releases/download/$v-stable/Godot_v$v-stable_win64.exe.zip" -OutFile godot.zip
+          Expand-Archive godot.zip -DestinationPath godot
+          Invoke-WebRequest "https://github.com/godotengine/godot/releases/download/$v-stable/Godot_v$v-stable_export_templates.tpz" -OutFile templates.zip
+          Expand-Archive templates.zip -DestinationPath tpl
+          $dest = "$env:APPDATA\Godot\export_templates\$v.stable"
+          New-Item -ItemType Directory -Force -Path $dest | Out-Null
+          Copy-Item tpl/templates/windows_release_x86_64.exe, tpl/templates/windows_debug_x86_64.exe, tpl/templates/version.txt $dest
+
+      - name: Lint
+        shell: pwsh
+        run: |
+          python -I -X utf8 tools/lint_gd.py
+          if ($LASTEXITCODE -ne 0) { throw "Lint meldet Fehler" }
+
+      - name: Projekt importieren und Tests laufen lassen
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force $env:UZAI_DATA | Out-Null
+          $g = (Get-ChildItem godot -Filter "*_console.exe" -Recurse)[0].FullName
+          & $g --headless --path . --import
+          & $g --headless --path . res://tests/check.tscn
+          if ($LASTEXITCODE -ne 0) { throw "Skriptfehler gefunden" }
+          & $g --headless --path . res://tests/test_logic.tscn
+          if ($LASTEXITCODE -ne 0) { throw "Logiktests fehlgeschlagen" }
+          & $g --headless --path . res://tests/logic_updater.tscn
+          if ($LASTEXITCODE -ne 0) { throw "Update-Tests fehlgeschlagen" }
+
+      - name: Uzai.exe exportieren
+        shell: pwsh
+        run: |
+          $g = (Get-ChildItem godot -Filter "*_console.exe" -Recurse)[0].FullName
+          New-Item -ItemType Directory -Force build | Out-Null
+          & $g --headless --path . --export-release "Windows" build/Uzai.exe
+          if (-not (Test-Path build/Uzai.pck)) { throw "Export fehlgeschlagen" }
+
+      - name: Symbol und Versionsangaben setzen
+        shell: pwsh
+        run: |
+          $v = "${{ steps.fassung.outputs.v }}.0"
+          $ProgressPreference = 'SilentlyContinue'
+          Invoke-WebRequest "https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x64.exe" -OutFile rcedit.exe
+          ./rcedit.exe build/Uzai.exe --set-icon assets/uzai.ico --set-version-string ProductName "Uzai" --set-version-string FileDescription "Uzai" --set-file-version $v --set-product-version $v
+
+      - name: Zip packen
+        shell: pwsh
+        run: |
+          Compress-Archive -Path build/Uzai.exe, build/Uzai.pck -DestinationPath "Uzai-${{ steps.fassung.outputs.v }}-windows.zip"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Uzai-${{ steps.fassung.outputs.v }}-windows
+          path: Uzai-${{ steps.fassung.outputs.v }}-windows.zip

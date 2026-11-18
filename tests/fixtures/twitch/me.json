@@ -1,0 +1,10 @@
+{
+ "data": {
+  "user": {
+   "id": "4242",
+   "login": "testkonto",
+   "displayName": "Testkonto",
+   "profileImageURL": "{BASE}/img/avatar_testkonto-150x150.png"
+  }
+ }
+}

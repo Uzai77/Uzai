@@ -1,0 +1,775 @@
+{
+ "account": "Demo-Konto",
+ "subs": [
+  {
+   "id": "UCretroWerkstatt000000a",
+   "title": "Retro-Werkstatt",
+   "thumb": "",
+   "source": "uzai",
+   "followers": 48300
+  },
+  {
+   "id": "UCpixelbude0000000000b0",
+   "title": "Pixelbude",
+   "thumb": "",
+   "source": "google",
+   "followers": 212000
+  },
+  {
+   "id": "UCspeedrunDE00000000c00",
+   "title": "Speedrun Deutschland",
+   "thumb": "",
+   "source": "google",
+   "followers": 1240000
+  },
+  {
+   "id": "UCkonsolenkeller00000d0",
+   "title": "Konsolenkeller",
+   "thumb": "",
+   "source": "uzai",
+   "followers": 96400
+  },
+  {
+   "id": "UCsoundtrackArchiv000e0",
+   "title": "Soundtrack-Archiv",
+   "thumb": "",
+   "source": "google",
+   "followers": 38900
+  },
+  {
+   "id": "UCemuTechnik000000000f0",
+   "title": "Emu-Technik",
+   "thumb": "",
+   "source": "google",
+   "followers": 154000
+  },
+  {
+   "id": "UCdieSpielecouch00000g0",
+   "title": "Die Spielecouch",
+   "thumb": "",
+   "source": "uzai",
+   "followers": 402000
+  },
+  {
+   "id": "UCcrtLiebhaber0000000h0",
+   "title": "CRT-Liebhaber",
+   "thumb": "",
+   "source": "google",
+   "followers": 12700
+  }
+ ],
+ "feed": [
+  {
+   "id": "PtYgjmUhBel",
+   "title": "Warum PS2-Spiele auf Röhrenfernsehern besser aussahen",
+   "channel": "Retro-Werkstatt",
+   "channel_id": "UCretroWerkstatt000000a",
+   "duration": 1124,
+   "views": 284000,
+   "thumb": "",
+   "age": 7200,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "1iEl2hpChYg",
+   "title": "Shadow of the Colossus: alle 16 Kolosse ohne Schaden",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 5420,
+   "views": 91000,
+   "thumb": "",
+   "age": 64800,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "frL1spNxnyV",
+   "title": "Okami Any% in unter 5 Stunden – neuer Weltrekord erklärt",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 1876,
+   "views": 47000,
+   "thumb": "",
+   "age": 100800,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "ihA_2O76UMF",
+   "title": "Ich habe 30 Jahre alte Konsolen auf dem Flohmarkt gekauft",
+   "channel": "Speedrun Deutschland",
+   "channel_id": "UCspeedrunDE00000000c00",
+   "duration": 1532,
+   "views": 512000,
+   "thumb": "",
+   "age": 122400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "FkM_R5Kjp1v",
+   "title": "Final Fantasy X – kompletter Soundtrack, neu abgemischt",
+   "channel": "Konsolenkeller",
+   "channel_id": "UCkonsolenkeller00000d0",
+   "duration": 7380,
+   "views": 1240000,
+   "thumb": "",
+   "age": 151200,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "t-1fjORS_6i",
+   "title": "PCSX2 2.4 richtig einstellen: die besten Einstellungen",
+   "channel": "Soundtrack-Archiv",
+   "channel_id": "UCsoundtrackArchiv000e0",
+   "duration": 1268,
+   "views": 156000,
+   "thumb": "",
+   "age": 198000,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "I8ihN5KXSc7",
+   "title": "Die zehn unterschätztesten GameCube-Spiele",
+   "channel": "Emu-Technik",
+   "channel_id": "UCemuTechnik000000000f0",
+   "duration": 1712,
+   "views": 233000,
+   "thumb": "",
+   "age": 216000,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "vo_hBKqFYY_",
+   "title": "Scanlines erklärt: Was ein CRT-Shader wirklich macht",
+   "channel": "Die Spielecouch",
+   "channel_id": "UCdieSpielecouch00000g0",
+   "duration": 984,
+   "views": 64000,
+   "thumb": "",
+   "age": 266400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "v5ZJr3J1TWD",
+   "title": "Metal Gear Solid 3 – das Ende, das niemand vergisst",
+   "channel": "Emu-Technik",
+   "channel_id": "UCemuTechnik000000000f0",
+   "duration": 1405,
+   "views": 389000,
+   "thumb": "",
+   "age": 284400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "kwtDDb-xHKa",
+   "title": "Game Boy Advance SP restauriert: vorher und nachher",
+   "channel": "Speedrun Deutschland",
+   "channel_id": "UCspeedrunDE00000000c00",
+   "duration": 1103,
+   "views": 120000,
+   "thumb": "",
+   "age": 309600,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "1VOqg6YYZYn",
+   "title": "Wind Waker auf 4K mit Dolphin: so geht's",
+   "channel": "Soundtrack-Archiv",
+   "channel_id": "UCsoundtrackArchiv000e0",
+   "duration": 1356,
+   "views": 98000,
+   "thumb": "",
+   "age": 334800,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "ZhyiA4uoRgn",
+   "title": "Speedrun-Tricks, die eigentlich unmöglich sein sollten",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 2210,
+   "views": 742000,
+   "thumb": "",
+   "age": 399600,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "tmUdjAWtGSU",
+   "title": "Lossless Scaling getestet: doppelte Bildrate für alte Spiele?",
+   "channel": "Soundtrack-Archiv",
+   "channel_id": "UCsoundtrackArchiv000e0",
+   "duration": 1190,
+   "views": 201000,
+   "thumb": "",
+   "age": 410400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "po-799NksnR",
+   "title": "Kingdom Hearts 2: Die geheimen Bosse im Überblick",
+   "channel": "Emu-Technik",
+   "channel_id": "UCemuTechnik000000000f0",
+   "duration": 2650,
+   "views": 175000,
+   "thumb": "",
+   "age": 475200,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "9ucAUsdMlHU",
+   "title": "Retro-Ecke im Wohnzimmer: mein Aufbau für 2026",
+   "channel": "Retro-Werkstatt",
+   "channel_id": "UCretroWerkstatt000000a",
+   "duration": 1489,
+   "views": 88000,
+   "thumb": "",
+   "age": 514800,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "TCQCyEZDz_T",
+   "title": "Majora's Mask – drei Tage in 15 Minuten erklärt",
+   "channel": "Speedrun Deutschland",
+   "channel_id": "UCspeedrunDE00000000c00",
+   "duration": 912,
+   "views": 302000,
+   "thumb": "",
+   "age": 543600,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "dJ8HyS5SUkC",
+   "title": "Gran Turismo 4: alle Lizenzen auf Gold",
+   "channel": "Konsolenkeller",
+   "channel_id": "UCkonsolenkeller00000d0",
+   "duration": 3320,
+   "views": 54000,
+   "thumb": "",
+   "age": 554400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "D8zRA9a9Skp",
+   "title": "Die Geschichte von Square in 40 Minuten",
+   "channel": "Die Spielecouch",
+   "channel_id": "UCdieSpielecouch00000g0",
+   "duration": 2415,
+   "views": 640000,
+   "thumb": "",
+   "age": 576000,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "z9w3QlY7Zku",
+   "title": "Persona 4 Soundtrack – Lofi-Version zum Entspannen",
+   "channel": "Konsolenkeller",
+   "channel_id": "UCkonsolenkeller00000d0",
+   "duration": 3600,
+   "views": 980000,
+   "thumb": "",
+   "age": 630000,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "qdt7s8Stqcb",
+   "title": "Ryubing vs. andere Switch-Emulatoren im Vergleich",
+   "channel": "Soundtrack-Archiv",
+   "channel_id": "UCsoundtrackArchiv000e0",
+   "duration": 1622,
+   "views": 133000,
+   "thumb": "",
+   "age": 658800,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "r3yBdGBLEPH",
+   "title": "Silent Hill 2: Warum der Nebel Absicht war",
+   "channel": "Die Spielecouch",
+   "channel_id": "UCdieSpielecouch00000g0",
+   "duration": 1860,
+   "views": 455000,
+   "thumb": "",
+   "age": 680400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "1qhT61qtc4x",
+   "title": "Ich spiele jedes Zelda in einer Woche – Tag 1",
+   "channel": "Emu-Technik",
+   "channel_id": "UCemuTechnik000000000f0",
+   "duration": 2940,
+   "views": 210000,
+   "thumb": "",
+   "age": 752400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "tws8phP9nhF",
+   "title": "Röhrenfernseher kaufen 2026: Worauf achten?",
+   "channel": "CRT-Liebhaber",
+   "channel_id": "UCcrtLiebhaber0000000h0",
+   "duration": 1320,
+   "views": 71000,
+   "thumb": "",
+   "age": 763200,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Jfm5di4PzJ5",
+   "title": "Tony Hawk's Pro Skater 2: alle Lücken in Hangar",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 845,
+   "views": 36000,
+   "thumb": "",
+   "age": 795600,
+   "short": false,
+   "live": false
+  }
+ ],
+ "shorts": [
+  {
+   "id": "sHrt0RtrW01",
+   "title": "Röhren-TV in 30 Sekunden entstauben",
+   "channel": "Retro-Werkstatt",
+   "channel_id": "UCretroWerkstatt000000a",
+   "duration": 34,
+   "views": 96000,
+   "thumb": "",
+   "age": 3600,
+   "short": true,
+   "live": false
+  },
+  {
+   "id": "sHrtPxlBd02",
+   "title": "Der kürzeste Glitch in Ocarina of Time",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 41,
+   "views": 412000,
+   "thumb": "",
+   "age": 9000,
+   "short": true,
+   "live": false
+  },
+  {
+   "id": "sHrtSpdDE03",
+   "title": "Weltrekord-Sprung in Super Mario 64 – Zeitlupe",
+   "channel": "Speedrun Deutschland",
+   "channel_id": "UCspeedrunDE00000000c00",
+   "duration": 28,
+   "views": 870000,
+   "thumb": "",
+   "age": 20000,
+   "short": true,
+   "live": false
+  },
+  {
+   "id": "sHrtKnsKl04",
+   "title": "PS2 Slim vs. Fat: der Klang beim Einschalten",
+   "channel": "Konsolenkeller",
+   "channel_id": "UCkonsolenkeller00000d0",
+   "duration": 22,
+   "views": 58000,
+   "thumb": "",
+   "age": 30000,
+   "short": true,
+   "live": false
+  },
+  {
+   "id": "sHrtSndAr05",
+   "title": "Dieses Menü-Lied kennt jeder",
+   "channel": "Soundtrack-Archiv",
+   "channel_id": "UCsoundtrackArchiv000e0",
+   "duration": 47,
+   "views": 233000,
+   "thumb": "",
+   "age": 52000,
+   "short": true,
+   "live": false
+  },
+  {
+   "id": "sHrtEmuTc06",
+   "title": "Ein Schalter, doppelte Bildrate in PCSX2",
+   "channel": "Emu-Technik",
+   "channel_id": "UCemuTechnik000000000f0",
+   "duration": 55,
+   "views": 141000,
+   "thumb": "",
+   "age": 70000,
+   "short": true,
+   "live": false
+  },
+  {
+   "id": "sHrtCouch07",
+   "title": "Wer drückt zuerst Start? Couch-Duell",
+   "channel": "Die Spielecouch",
+   "channel_id": "UCdieSpielecouch00000g0",
+   "duration": 39,
+   "views": 64000,
+   "thumb": "",
+   "age": 96000,
+   "short": true,
+   "live": false
+  },
+  {
+   "id": "sHrtCRTLb08",
+   "title": "Scanlines aus nächster Nähe",
+   "channel": "CRT-Liebhaber",
+   "channel_id": "UCcrtLiebhaber0000000h0",
+   "duration": 19,
+   "views": 305000,
+   "thumb": "",
+   "age": 130000,
+   "short": true,
+   "live": false
+  }
+ ],
+ "trending": [
+  {
+   "id": "9FHz5r1pY4O",
+   "title": "Neues Nintendo Direct – alle Ankündigungen",
+   "channel": "Spielenews DE",
+   "channel_id": "UCspielenewsDE0000000x0",
+   "duration": 3120,
+   "views": 2400000,
+   "thumb": "",
+   "age": 10800,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "jE2jBMptUsG",
+   "title": "Das größte Retro-Turnier des Jahres – Finale",
+   "channel": "Speedrun Deutschland",
+   "channel_id": "UCspeedrunDE00000000c00",
+   "duration": 9800,
+   "views": 1200000,
+   "thumb": "",
+   "age": 14400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "r7CmY-uCu3Z",
+   "title": "Wir testen die neue Handheld-Konsole",
+   "channel": "Die Spielecouch",
+   "channel_id": "UCdieSpielecouch00000g0",
+   "duration": 1520,
+   "views": 860000,
+   "thumb": "",
+   "age": 18000,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "R1zTOlUcR64",
+   "title": "Dieses Spiel hat 20 Jahre auf eine Fortsetzung gewartet",
+   "channel": "Konsolenkeller",
+   "channel_id": "UCkonsolenkeller00000d0",
+   "duration": 1290,
+   "views": 650000,
+   "thumb": "",
+   "age": 21600,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "cXQLioDnkHI",
+   "title": "Live: Retro-Abend mit Zuschauern",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 0,
+   "views": 15000,
+   "thumb": "",
+   "age": 25200,
+   "short": false,
+   "live": true
+  },
+  {
+   "id": "fxIq2HZt_Pl",
+   "title": "Top 20 Soundtracks der PS2-Zeit",
+   "channel": "Soundtrack-Archiv",
+   "channel_id": "UCsoundtrackArchiv000e0",
+   "duration": 2400,
+   "views": 530000,
+   "thumb": "",
+   "age": 28800,
+   "short": false,
+   "live": false
+  }
+ ],
+ "history": [
+  {
+   "id": "1iEl2hpChYg",
+   "title": "Shadow of the Colossus: alle 16 Kolosse ohne Schaden",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 5420,
+   "views": 91000,
+   "thumb": "",
+   "age": 64800,
+   "short": false,
+   "live": false,
+   "pos": 2276,
+   "done": false,
+   "at_age": 3600
+  },
+  {
+   "id": "FkM_R5Kjp1v",
+   "title": "Final Fantasy X – kompletter Soundtrack, neu abgemischt",
+   "channel": "Konsolenkeller",
+   "channel_id": "UCkonsolenkeller00000d0",
+   "duration": 7380,
+   "views": 1240000,
+   "thumb": "",
+   "age": 151200,
+   "short": false,
+   "live": false,
+   "pos": 1328,
+   "done": false,
+   "at_age": 7200
+  },
+  {
+   "id": "I8ihN5KXSc7",
+   "title": "Die zehn unterschätztesten GameCube-Spiele",
+   "channel": "Emu-Technik",
+   "channel_id": "UCemuTechnik000000000f0",
+   "duration": 1712,
+   "views": 233000,
+   "thumb": "",
+   "age": 216000,
+   "short": false,
+   "live": false,
+   "pos": 1129,
+   "done": false,
+   "at_age": 10800
+  },
+  {
+   "id": "tmUdjAWtGSU",
+   "title": "Lossless Scaling getestet: doppelte Bildrate für alte Spiele?",
+   "channel": "Soundtrack-Archiv",
+   "channel_id": "UCsoundtrackArchiv000e0",
+   "duration": 1190,
+   "views": 201000,
+   "thumb": "",
+   "age": 410400,
+   "short": false,
+   "live": false,
+   "pos": 357,
+   "done": false,
+   "at_age": 14400
+  },
+  {
+   "id": "PtYgjmUhBel",
+   "title": "Warum PS2-Spiele auf Röhrenfernsehern besser aussahen",
+   "channel": "Retro-Werkstatt",
+   "channel_id": "UCretroWerkstatt000000a",
+   "duration": 1124,
+   "views": 284000,
+   "thumb": "",
+   "age": 7200,
+   "short": false,
+   "live": false,
+   "pos": 0,
+   "done": true,
+   "at_age": 86400
+  }
+ ],
+ "later": [
+  {
+   "id": "frL1spNxnyV",
+   "title": "Okami Any% in unter 5 Stunden – neuer Weltrekord erklärt",
+   "channel": "Pixelbude",
+   "channel_id": "UCpixelbude0000000000b0",
+   "duration": 1876,
+   "views": 47000,
+   "thumb": "",
+   "age": 100800,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "v5ZJr3J1TWD",
+   "title": "Metal Gear Solid 3 – das Ende, das niemand vergisst",
+   "channel": "Emu-Technik",
+   "channel_id": "UCemuTechnik000000000f0",
+   "duration": 1405,
+   "views": 389000,
+   "thumb": "",
+   "age": 284400,
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "D8zRA9a9Skp",
+   "title": "Die Geschichte von Square in 40 Minuten",
+   "channel": "Die Spielecouch",
+   "channel_id": "UCdieSpielecouch00000g0",
+   "duration": 2415,
+   "views": 640000,
+   "thumb": "",
+   "age": 576000,
+   "short": false,
+   "live": false
+  }
+ ],
+ "searches": [
+  "okami speedrun",
+  "crt shader",
+  "ps2 soundtrack"
+ ],
+ "playlists": [
+  {
+   "id": "PL1",
+   "title": "Retro-Abende",
+   "count": 24,
+   "thumb": ""
+  },
+  {
+   "id": "PL2",
+   "title": "Soundtracks zum Arbeiten",
+   "count": 61,
+   "thumb": ""
+  },
+  {
+   "id": "PL3",
+   "title": "Später für Speedruns",
+   "count": 9,
+   "thumb": ""
+  }
+ ],
+ "help_videos": [
+  {
+   "id": "kq3W8nLx2aA",
+   "game": "Elden Ring",
+   "title": "Elden Ring – Komplettlösung Teil 1: Vom Gräberfeld bis Limgrave",
+   "channel": "Lore & Lösung",
+   "duration": 2810,
+   "views": 30000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "mL9pQ2vR7tB",
+   "game": "Elden Ring",
+   "title": "Malenia, Klinge Miquellas – so schaffst du sie (Boss Guide)",
+   "channel": "Bossrush DE",
+   "duration": 1145,
+   "views": 40000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Zx4cV8bN1mC",
+   "game": "Elden Ring",
+   "title": "Alle Bosse in Elden Ring – Reihenfolge und Tipps",
+   "channel": "Bossrush DE",
+   "duration": 4120,
+   "views": 50000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "pO7iU6yT5rD",
+   "game": "Elden Ring",
+   "title": "Elden Ring: 25 Tipps, die ich am Anfang gern gewusst hätte",
+   "channel": "Pixelbude",
+   "duration": 1622,
+   "views": 60000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Qa2Ws3Ed4fE",
+   "game": "Elden Ring",
+   "title": "Alle legendären Waffen – Fundorte auf der Karte",
+   "channel": "Karte & Kompass",
+   "duration": 1380,
+   "views": 70000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Rf5Tg6Yh7jF",
+   "game": "Elden Ring",
+   "title": "Erfolge in Elden Ring: alle Enden in einem Durchgang",
+   "channel": "Trophäenjäger",
+   "duration": 2045,
+   "views": 80000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Uj8Ik9Ol0pG",
+   "game": "Shadow of the Colossus",
+   "title": "Shadow of the Colossus – alle 16 Kolosse, Komplettlösung",
+   "channel": "Pixelbude",
+   "duration": 6230,
+   "views": 90000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Hy6Gt5Fr4eH",
+   "game": "Shadow of the Colossus",
+   "title": "Koloss 13 (Phalanx) ohne Frust – Guide",
+   "channel": "Retro-Werkstatt",
+   "duration": 642,
+   "views": 100000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Vb3Nm2Lk1jI",
+   "game": "Shadow of the Colossus",
+   "title": "Alle Eidechsen und Früchte – Fundorte",
+   "channel": "Karte & Kompass",
+   "duration": 1890,
+   "views": 110000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  },
+  {
+   "id": "Cd9Fg8Hj7kJ",
+   "game": "Shadow of the Colossus",
+   "title": "Zeitangriff-Trophäen: Tipps für jeden Koloss",
+   "channel": "Trophäenjäger",
+   "duration": 2310,
+   "views": 120000,
+   "thumb": "",
+   "short": false,
+   "live": false
+  }
+ ]
+}

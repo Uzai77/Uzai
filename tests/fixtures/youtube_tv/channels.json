@@ -1,0 +1,103 @@
+{
+ "contents": {
+  "tvBrowseRenderer": {
+   "content": {
+    "tvSurfaceContentRenderer": {
+     "content": {
+      "gridRenderer": {
+       "items": [
+        {
+         "tileRenderer": {
+          "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+          "contentId": "UCcccccccccccccccccccccc",
+          "header": {
+           "tileHeaderRenderer": {
+            "thumbnail": {
+             "thumbnails": [
+              {
+               "url": "https://yt3.ggpht.com/gamma=s240",
+               "width": 240
+              }
+             ]
+            }
+           }
+          },
+          "metadata": {
+           "tileMetadataRenderer": {
+            "title": {
+             "simpleText": "Gamma Kanal"
+            }
+           }
+          },
+          "onSelectCommand": {
+           "browseEndpoint": {
+            "browseId": "UCcccccccccccccccccccccc"
+           }
+          }
+         }
+        },
+        {
+         "lockupViewModel": {
+          "contentType": "LOCKUP_CONTENT_TYPE_CHANNEL",
+          "contentId": "UCaaaaaaaaaaaaaaaaaaaaaa",
+          "metadata": {
+           "lockupMetadataViewModel": {
+            "title": {
+             "content": "Alpha Kanal"
+            }
+           }
+          },
+          "contentImage": {
+           "avatarViewModel": {
+            "image": {
+             "sources": [
+              {
+               "url": "https://yt3.ggpht.com/alpha2",
+               "width": 100
+              }
+             ]
+            }
+           }
+          },
+          "rendererContext": {
+           "commandContext": {
+            "onTap": {
+             "innertubeCommand": {
+              "browseEndpoint": {
+               "browseId": "UCaaaaaaaaaaaaaaaaaaaaaa"
+              }
+             }
+            }
+           }
+          }
+         }
+        },
+        {
+         "gridChannelRenderer": {
+          "channelId": "UCbbbbbbbbbbbbbbbbbbbbbb",
+          "title": {
+           "simpleText": "Beta Kanal"
+          },
+          "thumbnail": {
+           "thumbnails": [
+            {
+             "url": "https://yt3.ggpht.com/beta2",
+             "width": 88
+            }
+           ]
+          },
+          "navigationEndpoint": {
+           "browseEndpoint": {
+            "browseId": "UCbbbbbbbbbbbbbbbbbbbbbb"
+           }
+          }
+         }
+        }
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,26 @@
+Filterliste des Uzai-Browsers – filter.gz (Werbe- und Tracker-Blocker, Cookie-Banner-Kosmetik)
+
+Wofür:     Netz-Sperren (Domänen und Adressmuster) und Kosmetik (versteckte Elemente) des Uzai-Browsers.
+           Der Kern (helper/uzai-browser-gemeinsam.cs, UzbFilter) entscheidet damit je Anfrage prozessintern;
+           uzai-browser-filter.js versteckt damit Elemente in der isolierten Welt der Seite. Regeln können nur
+           sperren und verstecken – nie Code ausführen.
+Herkunft:  EasyList, EasyPrivacy und EasyList Cookie – Quelltexte aus github.com/easylist/easylist (Zweig master,
+           Teil-Dateien easylist/*.txt, easyprivacy/*.txt, easylist_cookie/*.txt), geladen am 2026-10-30 über
+           raw.githubusercontent.com. Umgebaut in unser kompaktes Format von tools/filter_bauen.py (Regeln mit
+           Skript-Anteilen, unbekannten Optionen und regulären Ausdrücken fallen weg; die allgemeine Kosmetik der
+           Cookie-Liste ebenfalls – Banner erledigt der Cookie-Knopf, assets/browser/filter/cookies.json).
+Umfang:    87 471 Regeln (46 508 Domänen, 2 435 Domänen nur als dritte Partei, 11 858 Muster, 1 440 Ausnahmen,
+           13 316 allgemeine und 11 376 seitenspezifische Kosmetik-Regeln, 583 Ausnahmen), gepackt 810 KB.
+Prüfsumme: SHA-256 der gepackten Datei 32275b8fce9d1b36ba8493b3cb160694d438c90ce4275ace4c3d87f2e02329f6
+           (gleich in src/core/browser_filter.gd LISTE_SHA256 und helper/uzai-helper.ps1 $script:KernFilterSha;
+           geprüft von tests/logic_browser_filter.gd und tests/browser_kern_cs.ps1). Kaputt = wird nicht geladen.
+Aktualisierung: mitgeliefert mit jeder Fassung von Uzai (neu bauen: python3 -I tools/filter_bauen.py <rohlisten> …,
+           Prüfsumme an beiden Stellen eintragen). Kein automatisches Nachladen im Betrieb (docs/BROWSER_PLAN.md 4).
+Lizenz:    EasyList, EasyPrivacy und EasyList Cookie werden von ihren Autoren (Fanboy, MonztA, Khrin, Yuki2718 und
+           Beitragende) unter der GNU General Public License, Version 3, ODER der Creative Commons
+           Attribution-ShareAlike 3.0 Unported veröffentlicht (https://easylist.to/pages/licence.html). Uzai nutzt
+           die Listen unter CC BY-SA 3.0: Namensnennung hier und unter „Über Uzai“; die umgebaute Liste (filter.gz)
+           ist eine Bearbeitung und steht selbst unter CC BY-SA 3.0; Uzais Code ist davon unberührt (die Liste ist eine
+           getrennte Daten-Datei). Weitergabe der Liste nur unter denselben Bedingungen (CC BY-SA 3.0).
+           Wortlaut: https://creativecommons.org/licenses/by-sa/3.0/legalcode
+cookies.json: eigene Zusammenstellung (Kennungen gängiger Einwilligungs-Dienste, öffentlich dokumentiert), Lizenz wie Uzai.

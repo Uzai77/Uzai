@@ -1,0 +1,100 @@
+{
+ "data": {
+  "searchUsers": {
+   "edges": [
+    {
+     "cursor": "c0",
+     "node": {
+      "id": "u_pixelbude",
+      "login": "Pixelbude",
+      "displayName": "Pixelbude",
+      "profileImageURL": "{BASE}/img/avatar_pixelbude-150x150.png",
+      "followers": {
+       "totalCount": 48200
+      },
+      "stream": {
+       "id": "s1",
+       "viewersCount": 18400
+      }
+     }
+    },
+    {
+     "cursor": "c1",
+     "node": {
+      "id": "u_retro",
+      "login": "retroraum",
+      "displayName": "RetroRaum",
+      "profileImageURL": "{BASE}/img/avatar_retroraum-150x150.png",
+      "followers": {
+       "totalCount": 900
+      },
+      "stream": null
+     }
+    },
+    {
+     "cursor": "x",
+     "node": null
+    }
+   ],
+   "pageInfo": {
+    "hasNextPage": false
+   }
+  },
+  "searchCategories": {
+   "edges": [
+    {
+     "cursor": "c0",
+     "node": {
+      "id": "27284",
+      "displayName": "Retro",
+      "slug": "retro",
+      "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png",
+      "viewersCount": 12500,
+      "broadcastersCount": 310
+     }
+    },
+    {
+     "cursor": "x",
+     "node": null
+    }
+   ],
+   "pageInfo": {
+    "hasNextPage": false
+   }
+  },
+  "searchStreams": {
+   "edges": [
+    {
+     "cursor": "c0",
+     "node": {
+      "id": "s1",
+      "title": "Retro-Sonntag: alle Zelda-Teile am Stück",
+      "viewersCount": 18400,
+      "createdAt": "2026-10-17T10:00:00Z",
+      "previewImageURL": "{BASE}/img/live_user_pixelbude-{width}x{height}.png",
+      "broadcaster": {
+       "id": "u_pixelbude",
+       "login": "pixelbude",
+       "displayName": "Pixelbude",
+       "profileImageURL": "{BASE}/img/avatar_pixelbude-70x70.png",
+       "broadcastSettings": null
+      },
+      "game": {
+       "id": "27284",
+       "displayName": "Retro",
+       "slug": "retro",
+       "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png"
+      }
+     }
+    },
+    {
+     "cursor": "x",
+     "node": null
+    }
+   ],
+   "pageInfo": {
+    "hasNextPage": false
+   }
+  }
+ }
+}

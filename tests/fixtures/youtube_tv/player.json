@@ -1,0 +1,13 @@
+{
+ "playabilityStatus": {
+  "status": "OK"
+ },
+ "playbackTracking": {
+  "videostatsPlaybackUrl": {
+   "baseUrl": "{BASE}/api/stats/playback?ns=yt&el=leanback&docid=aaaaaaaaaa1&ei=x"
+  },
+  "videostatsWatchtimeUrl": {
+   "baseUrl": "{BASE}/api/stats/watchtime?ns=yt&docid=aaaaaaaaaa1"
+  }
+ }
+}

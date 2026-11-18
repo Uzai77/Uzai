@@ -1,0 +1,117 @@
+Figuren im Zimmer (psx/*.fbx, psx/*.png)
+
+Quelle: „Characters PSX“ von Elbolilloduro
+  https://elbolilloduro.itch.io/characters-psx
+  vom Nutzer bereitgestellt am 29.10.2026 (Models.rar, Textures.part1.rar, Textures.part2.rar)
+
+Bedingungen (vom Autor bestätigt, 17.11.2026): „Este recurso puede utilizarse tanto en proyectos
+comerciales como no comerciales; no se requiere atribución. Sin embargo, no está permitido volver
+a subir este recurso —ya sea de forma individual o como parte de una colección— a otros lugares,
+independientemente de si ha sido modificado o alterado de cualquier otra manera.“
+Also: Nutzung in kommerziellen und nicht kommerziellen Projekten erlaubt, keine Namensnennung
+nötig; die Dateien dürfen nirgends erneut hochgeladen werden, weder einzeln noch als Sammlung,
+auch nicht verändert.
+  → Im fertigen Uzai (importiert in Uzai.pck) kommen sie mit – das ist Nutzung im Projekt.
+  → Die Dateien selbst liegen NICHT im Repository (.gitignore: assets/figur/psx/), nur beim
+    Herausgeber. tools/build_windows.sh legt sie beim Bauen aus dem eigenen Arbeitsordner dazu.
+  → Wer Uzai aus dem öffentlichen Quelltext baut, hat keine Figuren: Das Zimmer bleibt dann ohne
+    sichtbare Figur (src/room/figur/figur_psx.gd vorhanden(), avatar.gd bauen).
+  → Die alte Git-Historie des privaten Repositorys enthält die Dateien: nie veröffentlichen
+    (docs/UEBERGABE.md, audit-report/RELEASE_REVIEW.md Schritt 1).
+
+Auswahl: 22 Figuren mit Skelett (Mixamo-Knochen), umbenannt, Modelle und Texturen unverändert.
+Geprüft auf Markenzeichen (R4): Figuren mit erkennbaren Marken (Schuh-Logos, Trikot einer
+Mannschaft, Patch auf einer Jacke, Abzeichen von Polizei und Feuerwehr) sind nicht dabei.
+Uzai bereitet die Modelle zur Laufzeit auf (src/room/figur/figur_psx.gd: Ruhelage, Maßstab,
+Teilung oben/unten); Bewegungen rechnet Uzai selbst (src/room/figur/avatar.gd), keine
+Animationsdateien.
+
+Zuordnung (Datei in Uzai ← Datei im Paket, SHA-256 der Datei in Uzai):
+    lea.fbx    ← Character_33_Female.fbx
+        f63a17ebcd40ca8878bcdb4914dadb1687097ee2d208bac3bd73234ec8fcfb97
+    lea.png    ← Character_33_Female.png
+        bbee79f5388af6a5a1778b47425bd8bfbd67f784d2d8582587b10e33ae1fdfca
+    mia.fbx    ← Character_47_Female.fbx
+        c42d50bf1aabcaf47790db6652c63bebfa7024b3f1d7c9688b136edd04c5b7c2
+    mia.png    ← Character_47_Female.png
+        95ec52d9356891eb3d5e7e093fc8aedeca4478f264408493aa076f1f7e9e20f3
+    emma.fbx   ← Character_50_Female.fbx
+        b3367271bd85b80ded52341d71caa70422a6f50be17f31943d148ec53f6b9e2a
+    emma.png   ← Character_50_Female.png
+        baaee3a3aae6b583db771dd320f396d91ff35b0fe27816b863a987345dd9642c
+    zoe.fbx    ← Character_53_Female.fbx
+        b444264c6fd1ea5d6cf9f5c43e1470f5818e851f21b0b52cb432d045282efcf5
+    zoe.png    ← Character_53_Female.png
+        5b725b5a650530a0ec8696241dca0f0c7295a8263b7aa1c57a6e22b8a96f6d63
+    nora.fbx   ← Character_Female_12.fbx
+        6e94fedbdad5c8e773b03b177d7e39099b206d1ed5575b1fbf16d1ffb3f23302
+    nora.png   ← Character_Female_12.png
+        9b29c23df6ca2f85f5c69a101d4a94d0cf691608661761237e5f97c32d2849ca
+    ida.fbx    ← Character_Female_14.fbx
+        7c0e56dbb643fb59012c7e55ab016325873a7c7d1aeca137c81d0c73a5d3fb69
+    ida.png    ← Character_Female_14.png
+        1b0241849142610f49ebea397ec0a4b23cdfcb77e1198159a92aa6fb2f8b26ca
+    lina.fbx   ← Character_46_Female.fbx
+        e811587a683ed4dd80e87cf83e52c2057ed31ac04081e057e6ca1ca9ff8cbea0
+    lina.png   ← Character_46_Female.png
+        21cfeb55d0e6b69aebb32787f3e566e8839359936649a837cc6027b46650be43
+    mara.fbx   ← Character_Female_10.fbx
+        0d487615564485c021fd48c5ac53a2f4d0437beaae3d19226ee27ea7a6363240
+    mara.png   ← Character_Female_10.png
+        96f821ae0f9993488b601ce032e8002d4060f326e1ed4f9e02512d1755b62477
+    ella.fbx   ← Character_45_Female.fbx
+        611d82bc53f19ac2bde0da5cd8f12f79ec5f048ab250cc0a92289edcb945291c
+    ella.png   ← Character_45_Female.png
+        7dfb8d59a50d43ce7b3c70fd43c7ae6081838a6a1f90f77f4d5eb8d3a3d6cf7d
+    juna.fbx   ← Character_35_Female.fbx
+        0fec51638c932546b051ccd8e839d12857d734c7b5c56ed01f844bd33a4ea672
+    juna.png   ← Character_35_Female.png
+        c0e2b23dc686f2246b254398839793df31154b3f279ab26ee1672ff311d20c59
+    ben.fbx    ← Character_01.fbx
+        b355ede07fea7eb167e329dfcba534f97b34675a50d7ba3be03563df5a881772
+    ben.png    ← Character_01.png
+        668205966e9ba46be40118a1b8572df460f573cdd6cde4a05d734a2124511d0e
+    noah.fbx   ← Character_03.fbx
+        4026b828beab80acfb61220e868db8eecd912f3cd05c96a806d230103845becd
+    noah.png   ← Character_03.png
+        0a54845f85f9d5c5fc76b56712af2c3f6117154eea0fd7d3aee377aac45401d6
+    elias.fbx  ← Character_06.fbx
+        e6370eeaa892bade4226272b29b7e70ee1093c9a288c3ca75a864a889aeb6f81
+    elias.png  ← Character_06.png
+        b314bfc1b4ac9139828362dc26017657d0fb664615658a6158e1df52ccb55f1d
+    luis.fbx   ← Character_07.fbx
+        71f843e0ff1cbb048ac6ee4d8c769cc93d22ef8cee2fd9025e609dd9a1527dad
+    luis.png   ← Character_07.png
+        2eecacf5e1db139e0067d0fcaa86a4adda668ddb7684ead142d0a2057ffc204e
+    paul.fbx   ← Character_Male_41.fbx
+        fbb58f10d9a7b335cfacf3b22b8acf31d71ae6f5a9d4c9648dcaad477ae0db60
+    paul.png   ← Character_Male_41.png
+        6c2efacb4f597595c54c2f95dce923c7dfcf17e7fd5a11db85df28d4ce4f30a1
+    theo.fbx   ← Character_Male_46.fbx
+        3f266d99a3d66d33d614bf03bda9db51f80ac3b19a9a782fadb124ab4957f9fe
+    theo.png   ← Character_Male_46.png
+        2e46dd54d3ca54df1e84e96daadae97e7c05a7e0889136dfac3c6906df8bf8fe
+    finn.fbx   ← Character_Male_48.fbx
+        a7ca022bce785d2f8b3491c9f34ba23d48430bd57d2f2a46a5773c401ae6429e
+    finn.png   ← Character_Male_48.png
+        bba1e830868578d26ff1ba578bc1560222fad6531793b5fad6a1d4f6d93e0441
+    leon.fbx   ← Character_15.fbx
+        9b89bece4da89f38dd553885f0c0bb029d341a54a32825a396c909a5f4c484ff
+    leon.png   ← Character_15.png
+        79bd270fa4543a6c0fcd978f10455999ec544343e592c9572857856ea1ea1361
+    max.fbx    ← Character_Male_40.fbx
+        8359be2576ec8dfa271c6c52ea2f355c4bdb1d66024e523de3d9471933046b41
+    max.png    ← Character_Male_40.png
+        2cedc24861105b26a1c04c2e7bacf340236d13e4498572edd2f98f84902ef21e
+    sara.fbx   ← Character_37_Female.fbx
+        b4b9abde27805cd90f32c208a73c418de016e92211e18221155821cd643d1dc8
+    sara.png   ← Character_37_Female.png
+        e6c0099f73f89155fa3eda8a9e6192f16b90f5a74633054d8acac3e6cadd36dc
+    jonas.fbx  ← Character_16.fbx
+        3c70d3cf03bb1cfb0138afe7f7d4f4f862248d6f4ae75bfbd007e88b696d95ad
+    jonas.png  ← Character_16.png
+        b55498057b12131033dd26ca6988a4778af48beb78e8bb634dff012c9f9d9528
+    nele.fbx   ← Character_Female_05.fbx
+        9de14fcea98c6af9ab50fe7c368676712b2a56d05df1f40c999978092acef1ed
+    nele.png   ← Character_Female_05.png
+        012cd54a713aa8a4358870542b67e2356b7230c3ce77829e810d14cfca582d5f

@@ -1,0 +1,14 @@
+Additional permission under GNU GPL version 3 section 7
+
+Uzai is licensed under the GNU General Public License version 3 (see LICENSE).
+
+As an additional permission under section 7 of the GPL, the copyright holder of Uzai
+gives you permission to combine Uzai with the Discord Social SDK
+(discord_partner_sdk.dll, published by Discord Inc.) and to convey the resulting
+combination.
+
+The Discord Social SDK is not covered by the GPL. It keeps its own terms (Discord
+Social SDK Terms), and you may obtain and pass it on only as those terms allow.
+
+If you modify Uzai, you may extend this permission to your version, but you are not
+obliged to do so.

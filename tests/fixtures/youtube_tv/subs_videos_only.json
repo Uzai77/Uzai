@@ -1,0 +1,186 @@
+{
+ "contents": {
+  "tvBrowseRenderer": {
+   "content": {
+    "tvSurfaceContentRenderer": {
+     "content": {
+      "gridRenderer": {
+       "items": [
+        {
+         "tileRenderer": {
+          "contentType": "TILE_CONTENT_TYPE_VIDEO",
+          "contentId": "sssssssss03",
+          "header": {
+           "tileHeaderRenderer": {
+            "thumbnail": {
+             "thumbnails": [
+              {
+               "url": "https://i.ytimg.com/vi/sssssssss03/hqdefault.jpg",
+               "width": 480,
+               "height": 360
+              }
+             ]
+            },
+            "thumbnailOverlays": [
+             {
+              "thumbnailOverlayTimeStatusRenderer": {
+               "text": {
+                "simpleText": "8:15"
+               },
+               "style": "DEFAULT"
+              }
+             }
+            ]
+           }
+          },
+          "metadata": {
+           "tileMetadataRenderer": {
+            "title": {
+             "simpleText": "Nur Feed"
+            },
+            "lines": [
+             {
+              "lineRenderer": {
+               "items": [
+                {
+                 "lineItemRenderer": {
+                  "text": {
+                   "runs": [
+                    {
+                     "text": "Delta Kanal",
+                     "navigationEndpoint": {
+                      "browseEndpoint": {
+                       "browseId": "UCdddddddddddddddddddddd"
+                      }
+                     }
+                    }
+                   ]
+                  }
+                 }
+                }
+               ]
+              }
+             },
+             {
+              "lineRenderer": {
+               "items": [
+                {
+                 "lineItemRenderer": {
+                  "text": {
+                   "simpleText": "12.345 Aufrufe"
+                  }
+                 }
+                },
+                {
+                 "lineItemRenderer": {
+                  "text": {
+                   "simpleText": "vor 2 Stunden"
+                  }
+                 }
+                }
+               ]
+              }
+             }
+            ]
+           }
+          },
+          "onSelectCommand": {
+           "watchEndpoint": {
+            "videoId": "sssssssss03"
+           }
+          }
+         }
+        },
+        {
+         "tileRenderer": {
+          "contentType": "TILE_CONTENT_TYPE_VIDEO",
+          "contentId": "sssssssss04",
+          "header": {
+           "tileHeaderRenderer": {
+            "thumbnail": {
+             "thumbnails": [
+              {
+               "url": "https://i.ytimg.com/vi/sssssssss04/hqdefault.jpg",
+               "width": 480,
+               "height": 360
+              }
+             ]
+            },
+            "thumbnailOverlays": [
+             {
+              "thumbnailOverlayTimeStatusRenderer": {
+               "text": {
+                "simpleText": "8:15"
+               },
+               "style": "DEFAULT"
+              }
+             }
+            ]
+           }
+          },
+          "metadata": {
+           "tileMetadataRenderer": {
+            "title": {
+             "simpleText": "Nur Feed 2"
+            },
+            "lines": [
+             {
+              "lineRenderer": {
+               "items": [
+                {
+                 "lineItemRenderer": {
+                  "text": {
+                   "runs": [
+                    {
+                     "text": "Delta Kanal",
+                     "navigationEndpoint": {
+                      "browseEndpoint": {
+                       "browseId": "UCdddddddddddddddddddddd"
+                      }
+                     }
+                    }
+                   ]
+                  }
+                 }
+                }
+               ]
+              }
+             },
+             {
+              "lineRenderer": {
+               "items": [
+                {
+                 "lineItemRenderer": {
+                  "text": {
+                   "simpleText": "12.345 Aufrufe"
+                  }
+                 }
+                },
+                {
+                 "lineItemRenderer": {
+                  "text": {
+                   "simpleText": "vor 2 Stunden"
+                  }
+                 }
+                }
+               ]
+              }
+             }
+            ]
+           }
+          },
+          "onSelectCommand": {
+           "watchEndpoint": {
+            "videoId": "sssssssss04"
+           }
+          }
+         }
+        }
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

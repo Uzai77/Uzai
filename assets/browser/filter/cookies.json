@@ -1,0 +1,32 @@
+{
+"_": "Cookie-Banner automatisch „Nur notwendige“ (helper/uzai-browser-filter.js). Reine Daten: Dienst mit Erkennen-Selektor und Ablehnen-Selektoren; Wortlisten für unbekannte Banner. Geklickt wird nur ein Ablehnen-Knopf, nie „akzeptieren“. Eigene Zusammenstellung (gängige Einwilligungs-Dienste, öffentlich dokumentierte Kennungen), keine Fremdliste.",
+"dienste": [
+{ "name": "OneTrust", "erkennen": "#onetrust-banner-sdk", "ablehnen": ["#onetrust-reject-all-handler", "button.ot-pc-refuse-all-handler"] },
+{ "name": "Cookiebot", "erkennen": "#CybotCookiebotDialog", "ablehnen": ["#CybotCookiebotDialogBodyButtonDecline", "#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll"] },
+{ "name": "Didomi", "erkennen": "#didomi-notice", "ablehnen": ["#didomi-notice-disagree-button", "button.didomi-components-button--decline"] },
+{ "name": "Quantcast", "erkennen": ".qc-cmp2-container", "ablehnen": [".qc-cmp2-summary-buttons button[mode=\"secondary\"]"] },
+{ "name": "Usercentrics", "erkennen": "#usercentrics-root", "ablehnen": ["button[data-testid=\"uc-deny-all-button\"]"] },
+{ "name": "Borlabs", "erkennen": "#BorlabsCookieBox", "ablehnen": ["a[data-cookie-refuse]", "#CookieBoxSaveButton"] },
+{ "name": "CookieYes", "erkennen": ".cky-consent-container", "ablehnen": [".cky-btn-reject"] },
+{ "name": "Complianz", "erkennen": "#cmplz-cookiebanner-container", "ablehnen": [".cmplz-deny"] },
+{ "name": "Osano", "erkennen": ".osano-cm-window", "ablehnen": [".osano-cm-denyAll", "button.osano-cm-button--type_deny"] },
+{ "name": "TrustArc", "erkennen": "#truste-consent-track", "ablehnen": ["#truste-consent-required"] },
+{ "name": "Klaro", "erkennen": ".klaro .cookie-notice", "ablehnen": [".klaro .cn-decline", ".klaro .cm-btn-decline"] },
+{ "name": "Consentmanager", "erkennen": "#cmpbox", "ablehnen": [".cmpboxbtnno", "a.cmpboxbtn.cmpboxbtnno"] },
+{ "name": "Iubenda", "erkennen": "#iubenda-cs-banner", "ablehnen": [".iubenda-cs-reject-btn"] },
+{ "name": "Axeptio", "erkennen": "#axeptio_overlay", "ablehnen": ["#axeptio_btn_dismiss"] },
+{ "name": "Termly", "erkennen": "#termly-code-snippet-support", "ablehnen": [".t-declineAllButton"] },
+{ "name": "Civic", "erkennen": "#ccc", "ablehnen": ["#ccc-reject-settings", "#ccc-notify-reject"] },
+{ "name": "Cookie-Script", "erkennen": "#cookiescript_injected", "ablehnen": ["#cookiescript_reject"] },
+{ "name": "Sourcepoint (Seite)", "erkennen": ".message-container .message-component", "ablehnen": ["button[title=\"Ablehnen\"]", "button[title=\"Reject All\"]", "button[title=\"Alle ablehnen\"]"] },
+{ "name": "Google Funding Choices", "erkennen": ".fc-consent-root", "ablehnen": [".fc-cta-do-not-consent"] },
+{ "name": "Ketch", "erkennen": "#lanyard_root", "ablehnen": ["button.rejectAllButton"] },
+{ "name": "Pandectes", "erkennen": "#cc-window", "ablehnen": [".cc-deny", ".cc-dismiss"] }
+],
+"ablehnen": ["nur notwendige", "nur erforderliche", "nur essenzielle", "nur essentielle", "alle ablehnen", "ablehnen", "ohne zustimmung", "weiter ohne",
+"nicht zustimmen", "reject all", "reject", "decline all", "decline", "only necessary", "necessary only", "essential only", "only essential",
+"refuse all", "refuse", "disagree", "do not consent", "deny all", "deny", "continue without", "strictly necessary", "nur technisch", "widersprechen"],
+"nie": ["akzeptieren", "accept", "zustimmen", "agree", "allow", "einverstanden", "alle zulassen", "allow all", "ok", "got it", "verstanden", "einstellungen",
+"settings", "mehr", "more", "anmelden", "login", "kaufen", "subscribe", "abonnieren", "zahlen", "pay"],
+"banner": ["cookie", "cookies", "datenschutz", "privacy", "consent", "einwilligung", "zustimmung", "tracking", "personalisierte werbung", "personalised ads", "personalized ads"]
+}

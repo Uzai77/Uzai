@@ -1,0 +1,68 @@
+{
+ "data": {
+  "streams": {
+   "edges": [
+    {
+     "cursor": "c0",
+     "node": {
+      "id": "s4",
+      "title": "World Finals Day 3",
+      "viewersCount": 154000,
+      "createdAt": "2026-10-17T06:00:00Z",
+      "previewImageURL": "{BASE}/img/live_user_bigstreamer-{width}x{height}.png",
+      "broadcaster": {
+       "id": "u_bigstreamer",
+       "login": "bigstreamer",
+       "displayName": "BigStreamer",
+       "profileImageURL": "{BASE}/img/avatar_bigstreamer-70x70.png",
+       "broadcastSettings": null
+      },
+      "game": {
+       "id": "32399",
+       "displayName": "Counter-Strike",
+       "slug": "counter-strike",
+       "boxArtURL": "{BASE}/img/box_32399-{width}x{height}.png"
+      }
+     }
+    },
+    {
+     "cursor": "c1",
+     "node": {
+      "id": "s1",
+      "title": "Retro-Sonntag: alle Zelda-Teile am Stück",
+      "viewersCount": 18400,
+      "createdAt": "2026-10-17T10:00:00Z",
+      "previewImageURL": "{BASE}/img/live_user_pixelbude-{width}x{height}.png",
+      "broadcaster": {
+       "id": "u_pixelbude",
+       "login": "pixelbude",
+       "displayName": "Pixelbude",
+       "profileImageURL": "{BASE}/img/avatar_pixelbude-70x70.png",
+       "broadcastSettings": null
+      },
+      "game": {
+       "id": "27284",
+       "displayName": "Retro",
+       "slug": "retro",
+       "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png"
+      }
+     }
+    },
+    {
+     "cursor": "c2",
+     "node": {
+      "id": "broken",
+      "viewersCount": 5
+     }
+    },
+    {
+     "cursor": "x",
+     "node": null
+    }
+   ],
+   "pageInfo": {
+    "hasNextPage": false
+   }
+  }
+ }
+}

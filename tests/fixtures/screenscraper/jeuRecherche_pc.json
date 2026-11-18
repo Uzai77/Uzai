@@ -1,0 +1,26 @@
+{
+	"header": { "APIversion": "2.0", "commandRequested": "jeuRecherche", "success": "true", "error": "" },
+	"response": {
+		"ssuser": { "id": "beispiel", "maxthreads": "2", "maxrequestspermin": "30", "requeststoday": "40", "maxrequestsperday": "20000" },
+		"jeux": [
+			{ "id": "1993", "noms": [ { "region": "wor", "text": "DOOM" } ], "systeme": { "id": "135" },
+				"dates": [ { "region": "us", "text": "1993-12-10" } ],
+				"medias": [ { "type": "box-2D", "region": "us", "format": "png", "url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=GEHEIM&jeuid=1993&media=box-2D(us)" } ] },
+			{ "id": "2016", "noms": [ { "region": "eu", "text": "DOOM" }, { "region": "us", "text": "Doom" } ], "systeme": { "id": "138" },
+				"dates": [ { "region": "eu", "text": "2016-05-13" }, { "region": "jp", "text": "2016-05-19" } ],
+				"medias": [
+					{ "type": "box-2D", "region": "eu", "format": "png", "url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=GEHEIM&jeuid=2016&media=box-2D(eu)" },
+					{ "type": "box-2D", "region": "us", "format": "jpg", "url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=2016&media=box-2D(us)" },
+					{ "type": "fanart", "format": "jpg", "url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=2016&media=fanart" },
+					{ "type": "ss", "region": "wor", "format": "png", "url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=2016&media=ss(wor)" },
+					{ "type": "wheel-hd", "region": "wor", "format": "png", "url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=2016&media=wheel-hd(wor)" },
+					{ "type": "box-2D", "region": "de", "format": "png", "url": "https://evil.example/doom.png" },
+					{ "type": "video-normalized", "format": "mp4", "url": "https://neoclone.screenscraper.fr/api2/mediaVideoJeu.php?jeuid=2016" }
+				] },
+			{ "id": "2020", "noms": [ { "region": "wor", "text": "DOOM Eternal" } ], "systeme": { "id": "138" },
+				"dates": [ { "region": "wor", "text": "2020-03-20" } ] },
+			{ "id": "4400", "noms": [ { "region": "wor", "text": "DOOM" } ], "systeme": { "id": "57" },
+				"dates": [ { "region": "us", "text": "1995-11-16" } ] }
+		]
+	}
+}

@@ -1,0 +1,88 @@
+{
+ "data": {
+  "streams": {
+   "edges": [
+    {
+     "cursor": "c0",
+     "node": {
+      "id": "s1",
+      "title": "Retro-Sonntag: alle Zelda-Teile am Stück",
+      "viewersCount": 18400,
+      "createdAt": "2026-10-17T10:00:00Z",
+      "previewImageURL": "{BASE}/img/live_user_pixelbude-{width}x{height}.png",
+      "broadcaster": {
+       "id": "u_pixelbude",
+       "login": "pixelbude",
+       "displayName": "Pixelbude",
+       "profileImageURL": "{BASE}/img/avatar_pixelbude-70x70.png",
+       "broadcastSettings": null
+      },
+      "game": {
+       "id": "27284",
+       "displayName": "Retro",
+       "slug": "retro",
+       "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png"
+      }
+     }
+    },
+    {
+     "cursor": "c1",
+     "node": {
+      "id": "s2",
+      "title": null,
+      "viewersCount": 9237,
+      "createdAt": "2026-10-17T11:30:12.345Z",
+      "previewImageURL": "{BASE}/img/live_user_nordlichttv-{width}x{height}.png",
+      "broadcaster": {
+       "id": "u_nordlichttv",
+       "login": "nordlichttv",
+       "displayName": "NordlichtTV",
+       "profileImageURL": "{BASE}/img/avatar_nordlichttv-70x70.png",
+       "broadcastSettings": {
+        "title": "Ranked bis Diamant"
+       }
+      },
+      "game": {
+       "id": "21779",
+       "displayName": "League of Legends",
+       "slug": "league-of-legends",
+       "boxArtURL": "{BASE}/img/box_21779-{width}x{height}.png"
+      }
+     }
+    },
+    {
+     "cursor": "c2",
+     "node": {
+      "id": "s3",
+      "title": null,
+      "viewersCount": 6207,
+      "createdAt": "2026-10-17T08:00:00Z",
+      "previewImageURL": "{BASE}/img/live_user_kaffeekasse-{width}x{height}.png",
+      "broadcaster": {
+       "id": "u_kaffeekasse",
+       "login": "kaffeekasse",
+       "displayName": "Kaffeekasse",
+       "profileImageURL": "{BASE}/img/avatar_kaffeekasse-70x70.png",
+       "broadcastSettings": {
+        "title": ""
+       }
+      },
+      "game": {
+       "id": "509658",
+       "displayName": "Just Chatting",
+       "slug": "just-chatting",
+       "boxArtURL": "{BASE}/img/box_509658-{width}x{height}.png"
+      }
+     }
+    },
+    {
+     "cursor": "x",
+     "node": null
+    }
+   ],
+   "pageInfo": {
+    "hasNextPage": false
+   }
+  }
+ }
+}

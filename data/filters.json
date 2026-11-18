@@ -1,0 +1,33 @@
+{
+  "_info": "Bildfilter-Profile. Uzai schreibt daraus beim Spielstart eine ShaderGlass-Profildatei und setzt das Spielfenster als Quelle ein. Wer lieber eine selbst gespeicherte .sgp-Datei nimmt, trägt sie in Uzai unter Einstellungen → Bildfilter ein; die hat dann Vorrang.",
+  "filters": [
+    { "id": "crt480", "name": "CRT · 480 Zeilen", "type": "shaderglass",
+      "note": "Für Emulatoren mit 6× interner Auflösung auf einem 4K-Fernseher. ShaderGlass rechnet das Bild auf 480 Zeilen zurück und legt die Röhre darüber. Interlace Trigger 500 sorgt dafür, dass 480-Zeilen-Spiele trotzdem Scanlines bekommen.",
+      "pixel_size": "1", "category": "crt", "shader": "crt-guest-advanced-hd",
+      "show": [["Pixel Size", "x1"], ["Shader", "crt-guest-advanced-hd"], ["Internal Resolution Y", "4.5"], ["Internal Resolution", "4.5"], ["Interlace Trigger", "500"]],
+      "params": { "4-intres": 4.5, "10-intres": 4.5, "5-internal_res": 4.5, "10-internal_res": 4.5, "4-inter": 500 } },
+    { "id": "crt240", "name": "CRT · 240p-Look", "type": "shaderglass",
+      "note": "Wie oben, aber mit doppelt so dicken Scanlines. Sieht aus wie ein Röhrenfernseher mit 240 Zeilen, Schrift wird etwas gröber.",
+      "pixel_size": "1", "category": "crt", "shader": "crt-guest-advanced-hd",
+      "show": [["Pixel Size", "x1"], ["Shader", "crt-guest-advanced-hd"], ["Internal Resolution Y", "9.0"], ["Internal Resolution", "4.5"], ["Interlace Trigger", "500"]],
+      "params": { "4-intres": 9.0, "10-intres": 9.0, "5-internal_res": 4.5, "10-internal_res": 4.5, "4-inter": 500 } },
+    { "id": "crt-rgb", "name": "CRT · RGB", "type": "shaderglass",
+      "note": "Für Emulatoren in nativer Auflösung, ganzzahlig auf 4K skaliert. Pixel Size x9 bringt das Bild zurück auf 240 Zeilen, dafür ist der normale Guest-Shader gebaut.",
+      "pixel_size": "9", "category": "crt", "shader": "crt-guest-advanced",
+      "show": [["Pixel Size", "x9 (240p → 4K)"], ["Shader", "crt-guest-advanced"]],
+      "params": {} },
+    { "id": "crt-composite", "name": "CRT · Composite", "type": "shaderglass",
+      "note": "Wie CRT · RGB, aber mit dem weichen, leicht verwaschenen Bild eines Composite-Kabels. Manche Spiele nutzen das für Transparenz-Effekte.",
+      "pixel_size": "9", "category": "crt", "shader": "crt-guest-advanced-ntsc",
+      "show": [["Pixel Size", "x9 (240p → 4K)"], ["Shader", "crt-guest-advanced-ntsc"]],
+      "params": {} },
+    { "id": "sharpen", "name": "Schärfen", "type": "shaderglass",
+      "note": "Für HD-Spiele, die beim Hochskalieren weich werden. Kein Röhren-Effekt.",
+      "pixel_size": "1", "category": "sharpen", "shader": "adaptive-sharpen",
+      "show": [["Pixel Size", "x1"], ["Shader", "adaptive-sharpen"]],
+      "params": {} },
+    { "id": "emulator", "name": "Filter im Emulator", "type": "emulator",
+      "note": "Uzai startet kein ShaderGlass. Der Emulator nutzt seinen eigenen Shader, zum Beispiel den LCD-Shader von mGBA. Für Handhelds mit 160 Zeilen ist das genauer, weil sich 2160 nicht ganzzahlig durch 160 teilen lässt.",
+      "show": [["ShaderGlass", "aus"], ["Filter", "im Emulator einstellen"]] }
+  ]
+}

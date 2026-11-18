@@ -1,0 +1,32 @@
+# Godot
+.godot/
+*.translation
+# Build
+build/
+*.tmp
+# Eigene Testausgaben
+tests/out/
+# Python-Cache der Werkzeuge (synth_klang4/5 laden synth_klang3, die Testreihe ruft sie auf)
+__pycache__/
+# Discord Social SDK: nur im Windows-Paket, nie im Repo (Lizenz)
+third_party/discord/*.dll
+# ScreenScraper: Programmzugang (devid/devpassword) nur im Windows-Paket, nie im Repo
+data/screenscraper_dev.json
+# Eigene Datenordner (portabel neben Uzai.exe, Testläufe mit UZAI_DATA)
+uzai-daten/
+uzai-daten-test/
+# Release: Pakete, Signaturen, Schlüssel – der private Signaturschlüssel gehört nie ins Projekt
+Uzai-*.zip
+*.pck
+*.sig
+*.pem
+*.key
+.env
+.env.*
+# Werkzeuge und Protokolle
+*.log
+node_modules/
+.claude/
+audit-report/
+# PSX-Figuren: nur im gebauten Uzai, nie im Repository (Bedingung des Autors, assets/figur/LIZENZ.txt)
+assets/figur/psx/

@@ -1,0 +1,54 @@
+{
+ "data": {
+  "games": {
+   "edges": [
+    {
+     "cursor": "c0",
+     "node": {
+      "id": "509658",
+      "displayName": "Just Chatting",
+      "slug": "just-chatting",
+      "boxArtURL": "{BASE}/img/box_509658-52x72.png",
+      "viewersCount": 312000,
+      "broadcastersCount": 4210
+     }
+    },
+    {
+     "cursor": "c1",
+     "node": {
+      "id": "27284",
+      "displayName": "Retro",
+      "slug": "retro",
+      "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png",
+      "viewersCount": 12500,
+      "broadcastersCount": 310
+     }
+    },
+    {
+     "cursor": "c2",
+     "node": {
+      "id": "32399",
+      "displayName": "Counter-Strike",
+      "slug": "counter-strike",
+      "boxArtURL": "{BASE}/img/box_32399-{width}x{height}.png",
+      "viewersCount": 210000,
+      "broadcastersCount": 2900
+     }
+    },
+    {
+     "cursor": "c3",
+     "node": {
+      "displayName": "Ohne ID"
+     }
+    },
+    {
+     "cursor": "x",
+     "node": null
+    }
+   ],
+   "pageInfo": {
+    "hasNextPage": false
+   }
+  }
+ }
+}

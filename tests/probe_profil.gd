@@ -1,0 +1,25 @@
+extends "res://tests/probe_base.gd"
+## Profil (Demo): Banner, Steam in Zahlen, perfekte Spiele, seltenste Erfolge, RetroAchievements.
+
+func run() -> void:
+	main.goto("achievements")
+	await shot("00a_laedt", 0.15)
+	await shot("00b_zaehlt", 0.55)
+	await wait(2.0)
+	await shot("01_profil", 1.0)
+	press("down", 1)
+	await shot("02_kacheln", 1.0)
+	press("down", 1)
+	await shot("03_zuletzt", 1.0)
+	press("down", 1)
+	await shot("04_perfekt", 1.0)
+	press("down", 1)
+	await shot("05_selten", 1.0)
+	press("down", 2)
+	await shot("06_retro", 1.0)
+	press("down", 3)
+	await shot("07_ende", 1.0)
+	main.goto("achievements", "steam")
+	await shot("08_steam", 1.5)
+	main.goto("achievements", "uebersicht")
+	await shot("09_erfolge", 1.5)

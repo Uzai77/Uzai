@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/logic_eigene_spiele.gd" id="1"]
+
+[node name="LogicEigeneSpiele" type="Node"]
+script = ExtResource("1")

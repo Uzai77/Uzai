@@ -1,0 +1,159 @@
+{
+ "continuationContents": {
+  "sectionListContinuation": {
+   "contents": [
+    {
+     "shelfRenderer": {
+      "headerRenderer": {
+       "shelfHeaderRenderer": {
+        "title": {
+         "simpleText": "Nachrichten"
+        }
+       }
+      },
+      "content": {
+       "horizontalListRenderer": {
+        "items": [
+         {
+          "tileRenderer": {
+           "style": "TILE_STYLE_YTLR_DEFAULT",
+           "contentType": "TILE_CONTENT_TYPE_VIDEO",
+           "contentId": "nnnnnnnnn01",
+           "header": {
+            "tileHeaderRenderer": {
+             "thumbnail": {
+              "thumbnails": [
+               {
+                "url": "https://i.ytimg.com/vi/nnnnnnnnn01/mqdefault.jpg",
+                "width": 320,
+                "height": 180
+               },
+               {
+                "url": "https://i.ytimg.com/vi/nnnnnnnnn01/hqdefault.jpg?sqp=tv",
+                "width": 480,
+                "height": 360
+               }
+              ]
+             },
+             "thumbnailOverlays": [
+              {
+               "thumbnailOverlayTimeStatusRenderer": {
+                "text": {
+                 "simpleText": "15:00"
+                },
+                "style": "DEFAULT"
+               }
+              }
+             ],
+             "style": "TILE_HEADER_STYLE_PADDED"
+            }
+           },
+           "metadata": {
+            "tileMetadataRenderer": {
+             "title": {
+              "simpleText": "Tagesschau"
+             },
+             "lines": [
+              {
+               "lineRenderer": {
+                "items": [
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "runs": [
+                     {
+                      "text": "Nachrichtenkanal",
+                      "navigationEndpoint": {
+                       "browseEndpoint": {
+                        "browseId": "UCnachrichten000000000a",
+                        "canonicalBaseUrl": "/@x"
+                       }
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "lineRenderer": {
+                "items": [
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "simpleText": "50 Tsd. Aufrufe"
+                   }
+                  }
+                 },
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "simpleText": "vor 30 Minuten"
+                   }
+                  }
+                 }
+                ]
+               }
+              }
+             ]
+            }
+           },
+           "onSelectCommand": {
+            "clickTrackingParams": "CT",
+            "watchEndpoint": {
+             "videoId": "nnnnnnnnn01",
+             "watchEndpointSupportedOnesieConfig": {}
+            }
+           },
+           "menu": {
+            "menuRenderer": {
+             "items": [
+              {
+               "menuNavigationItemRenderer": {
+                "text": {
+                 "runs": [
+                  {
+                   "text": "Zur Warteschlange"
+                  }
+                 ]
+                },
+                "navigationEndpoint": {
+                 "browseEndpoint": {
+                  "browseId": "UCmenuwrong00000000000"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           },
+           "onLongPressCommand": {
+            "showMenuCommand": {
+             "menu": {
+              "menuRenderer": {
+               "items": []
+              }
+             }
+            }
+           },
+           "trackingParams": "TP",
+           "accessibility": {
+            "accessibilityData": {
+             "label": "Tagesschau von Nachrichtenkanal vor 3 Tagen 12 Minuten"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "trackingParams": "TP",
+      "tvhtml5ShelfRendererType": "TVHTML5_SHELF_RENDERER_TYPE_GRID"
+     }
+    }
+   ]
+  }
+ }
+}

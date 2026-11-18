@@ -1,0 +1,69 @@
+{
+ "data": {
+  "game": {
+   "id": "27284",
+   "displayName": "Retro",
+   "slug": "retro",
+   "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png",
+   "viewersCount": 12500,
+   "broadcastersCount": 310,
+   "streams": {
+    "edges": [
+     {
+      "cursor": "c0",
+      "node": {
+       "id": "s1",
+       "title": "Retro-Sonntag: alle Zelda-Teile am Stück",
+       "viewersCount": 18400,
+       "createdAt": "2026-10-17T10:00:00Z",
+       "previewImageURL": "{BASE}/img/live_user_pixelbude-{width}x{height}.png",
+       "broadcaster": {
+        "id": "u_pixelbude",
+        "login": "pixelbude",
+        "displayName": "Pixelbude",
+        "profileImageURL": "{BASE}/img/avatar_pixelbude-70x70.png",
+        "broadcastSettings": null
+       },
+       "game": {
+        "id": "27284",
+        "displayName": "Retro",
+        "slug": "retro",
+        "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png"
+       }
+      }
+     },
+     {
+      "cursor": "c1",
+      "node": {
+       "id": "s5",
+       "title": "SNES-Abend",
+       "viewersCount": 320,
+       "createdAt": "2026-10-17T12:00:00Z",
+       "previewImageURL": "{BASE}/img/live_user_modulhaus-{width}x{height}.png",
+       "broadcaster": {
+        "id": "u_modulhaus",
+        "login": "modulhaus",
+        "displayName": "Modulhaus",
+        "profileImageURL": "{BASE}/img/avatar_modulhaus-70x70.png",
+        "broadcastSettings": null
+       },
+       "game": {
+        "id": "27284",
+        "displayName": "Retro",
+        "slug": "retro",
+        "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png"
+       }
+      }
+     },
+     {
+      "cursor": "x",
+      "node": null
+     }
+    ],
+    "pageInfo": {
+     "hasNextPage": false
+    }
+   }
+  }
+ }
+}

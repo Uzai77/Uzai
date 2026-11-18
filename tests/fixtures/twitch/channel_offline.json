@@ -1,0 +1,108 @@
+{
+ "data": {
+  "user": {
+   "id": "u_pixelbude",
+   "login": "retroraum",
+   "displayName": "RetroRaum",
+   "description": null,
+   "profileImageURL": "{BASE}/img/avatar_pixelbude-300x300.png",
+   "bannerImageURL": null,
+   "followers": {
+    "totalCount": 48200
+   },
+   "stream": null,
+   "videos": {
+    "edges": [
+     {
+      "cursor": "c0",
+      "node": {
+       "id": "22000",
+       "title": "Übertragung vom 16. Oktober",
+       "lengthSeconds": 7200,
+       "createdAt": "2026-10-16T18:00:00Z",
+       "viewCount": 3200,
+       "previewThumbnailURL": "{BASE}/img/vod_22000-%{width}x%{height}.png",
+       "game": {
+        "displayName": "Retro"
+       }
+      }
+     },
+     {
+      "cursor": "c1",
+      "node": {
+       "id": "22001",
+       "title": "Übertragung vom 15. Oktober",
+       "lengthSeconds": 7800,
+       "createdAt": "2026-10-15T18:00:00Z",
+       "viewCount": 3000,
+       "previewThumbnailURL": "{BASE}/img/vod_22001-%{width}x%{height}.png",
+       "game": {
+        "displayName": "Retro"
+       }
+      }
+     },
+     {
+      "cursor": "c2",
+      "node": {
+       "id": "22002",
+       "title": "Übertragung vom 14. Oktober",
+       "lengthSeconds": 8400,
+       "createdAt": "2026-10-14T18:00:00Z",
+       "viewCount": 2800,
+       "previewThumbnailURL": "{BASE}/img/vod_22002-%{width}x%{height}.png",
+       "game": {
+        "displayName": "Retro"
+       }
+      }
+     },
+     {
+      "cursor": "x",
+      "node": null
+     }
+    ],
+    "pageInfo": {
+     "hasNextPage": false
+    }
+   },
+   "clips": {
+    "edges": [
+     {
+      "cursor": "c0",
+      "node": {
+       "slug": "SchnellerSprung0",
+       "title": "Unglaublicher Sprung #1",
+       "durationSeconds": 24,
+       "createdAt": "2026-10-10T20:00:00Z",
+       "viewCount": 9000,
+       "thumbnailURL": "{BASE}/img/clip_0-480x272.png",
+       "game": {
+        "displayName": "Retro"
+       }
+      }
+     },
+     {
+      "cursor": "c1",
+      "node": {
+       "slug": "SchnellerSprung1",
+       "title": "Unglaublicher Sprung #2",
+       "durationSeconds": 25,
+       "createdAt": "2026-10-11T20:00:00Z",
+       "viewCount": 8000,
+       "thumbnailURL": "{BASE}/img/clip_1-480x272.png",
+       "game": {
+        "displayName": "Retro"
+       }
+      }
+     },
+     {
+      "cursor": "x",
+      "node": null
+     }
+    ],
+    "pageInfo": {
+     "hasNextPage": false
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,40 @@
+Klänge der Website
+
+Uzais eigener Klangsatz „Handpan“ (Standard in Uzai, src/core/sfx.gd und src/core/klang.gd), aus
+den Dateien in assets/sounds/handpan/. Die Lautstärken untereinander stecken schon in den Dateien
+(gestaffelter Satz), darum spielt die Seite jeden Klang in voller Stärke.
+
+Fürs Web nur verkleinert:
+  1. Mono (Mittel beider Kanäle), Halbband-Tiefpass mit 11 Abgriffen, dann 22,05 kHz.
+  2. Der Ausklang endet, wo er 50 dB unter der Spitze liegt (Effektivwert über 10 ms), mit 30 ms
+     weichem Ende (wie docs/DESIGN.md › Klang).
+  3. MP3, MPEG-2 Layer III, 64 kbit/s, mono (LAME über lameenc).
+Die Seite spielt jeden Klang ab seinem ersten Ton (die Stille vom Kodierer am Anfang fällt weg).
+
+Datei            Quelle (assets/sounds/handpan/)   SHA-256 Quelle / SHA-256 MP3
+move.mp3         move.wav          f3148f7b95703c58fc79ef522817128cbb34c3582aaf5d55a842773bd6ab05d5
+                                   89eb932d4e40edd007125b7d9eec48d71bd5a0f79d9fe329d9279cd64a7432d5
+select.mp3       select.wav        d6b491f9f66e24108746c9016f736195688cbe2cca2533fbef5f80110b27e037
+                                   e8d1c36bdf50f53bcbd552342eb808a8242403808a8b1f3b4f8bfcaccaeeae49
+back.mp3         back.wav          068334782bf2c86f973c3e598ac3bfce14765ca68059d40055aec93ef4a7acdc
+                                   f617d12955c2c07eb7516260215ac5c06acb8ecd743e64f7c2ec4d075c85d89a
+tab.mp3          tab.wav           39d6a1bb903888adba9e75ab1fade5c1b0f3ec345b339dba38a57c5b8811ffe5
+                                   abb3135704413a82c84a9d1a7016f0305af94d9b7ed18bbcfbb26a91f71434e1
+guide.mp3        guide.wav         0f26ae9eb2fccc7b88b1bdb54496943ac969dd64fa0723cc4a95474624bd8ef7
+                                   5cbbe7e7efa165e111b17148cad530a83a9ffcd20a7e3edf85f573dbc5bb52f1
+guide_close.mp3  guide_close.wav   2440f281124dbcf8a89c35af48b9522eea70d7e74bc8c71811da1ad9a33a4ac2
+                                   a028ed373ed6fedecaf679f49af41307dc14dc0f20912ad1803ff90550f350ec
+bump.mp3         bump.wav          931ee942c7ea93e6c2605ca30743323a811572a31dee84213a5e5890b5dd8def
+                                   a3a1f8f7185e40a8ce4bef310d3be6373a13719b2bb586a987de4f0aa00357fd
+notify.mp3       notify.wav        3c6eae805b2a9e6ff0defe6ff5df1e410fef7e6bb518ae52fcb04b953b093a12
+                                   a121623a9149f7d92d86e2757bd2bb0c9075e317235514a3ed2f7d5280ddb178
+unlock.mp3       unlock.wav        5e3b2fdb1ac8a76d9c2bed8366e4d7835bdea56ebc2719032d36d24772bfb8e9
+                                   eda74644849997547d9aa32ff8e7a2e84c361c2df45cb2dc2bd67b15ab8e0dff
+unlock_rare.mp3  unlock_rare.wav   9974ef2e88367278d03606ca623fc65199d5a46df80c1bd5ce7315d864a44465
+                                   9ebc4ec8d34cdd9b3b6beceac6de049fc7199a2e44a7c1dc9e9a0548c17808e4
+power_off.mp3    power_off.wav     c6b26643136bb3a2a1af8c353d6c677ec3df329d38127917444fa28547c6aae3
+                                   47baa009412f92282350229ac2c4de2f3eb57d42611fcf0cb295c6877b4b0f87
+boot.mp3         boot.wav          4c063c58492dcb160aec87e96e9feb7df80f01ae426a876d627cc9a78a55785c
+                                   880feeda51333e2eca2df3948cf3d78b10285ad26f040a3912f6f44f620c83e4
+done.mp3         setup_done.wav    a7b95aaa38738e5b098cee8073a4879ba7814e4bcefc795fb3281ab375094c4b
+                                   110879bf7090bda8a6230c693453c5aa3df70d8aa3bd5642de12c54b00708c4f

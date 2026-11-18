@@ -1,0 +1,278 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.1.1",
+    "version": "2.0",
+    "copyright": "CC0, glass vase by Eric Chadwick, flowers by Rico Cilliers"
+  },
+  "accessors": [
+    {
+      "name": "accessorIndices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 11454,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "accessorIndices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 9600,
+      "bufferView": 0,
+      "byteOffset": 22908
+    },
+    {
+      "name": "accessorPositions",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2561,
+      "max": [
+        0.04218536615371704,
+        0.16517722606658936,
+        0.07641257345676422
+      ],
+      "min": [
+        -0.055089086294174194,
+        0.0001005843369057402,
+        -0.06608054041862488
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "accessorNormals",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2561,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "name": "accessorUVs",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 2561,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "name": "accessorPositions",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1714,
+      "max": [
+        0.03841704502701759,
+        0.03737087920308113,
+        0
+      ],
+      "min": [
+        -0.03632475063204765,
+        -0.03737091273069382,
+        -0.1410609483718872
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "accessorNormals",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1714,
+      "bufferView": 2,
+      "byteOffset": 12
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 42108,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 42108,
+      "byteLength": 81952,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 124060,
+      "byteLength": 41136,
+      "byteStride": 24,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/webp",
+      "uri": "vase_blumen_0.webp"
+    },
+    {
+      "mimeType": "image/webp",
+      "uri": "vase_blumen_1.webp"
+    },
+    {
+      "mimeType": "image/webp",
+      "uri": "vase_blumen_2.webp"
+    },
+    {
+      "mimeType": "image/webp",
+      "uri": "vase_blumen_3.webp"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "vase_blumen.bin",
+      "byteLength": 165196
+    }
+  ],
+  "materials": [
+    {
+      "name": "Flowers",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    },
+    {
+      "name": "GlassAlpha",
+      "alphaMode": "BLEND",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.15,
+          0.15,
+          0.15,
+          0.3
+        ],
+        "roughnessFactor": 0,
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Flowers",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "GlassAlpha",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Flowers1",
+      "translation": [
+        0.00157174421,
+        0.0380421355,
+        -0.00221169274
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "GlassAlpha",
+      "rotation": [
+        0.7071068,
+        0,
+        0,
+        0.7071067
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "Flowers2",
+      "translation": [
+        0.12157174421,
+        0.0380421355,
+        -0.00221169274
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_texture_webp",
+    "KHR_materials_transmission",
+    "KHR_materials_volume"
+  ],
+  "extensionsRequired": [
+    "EXT_texture_webp"
+  ]
+}

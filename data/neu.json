@@ -1,0 +1,446 @@
+{
+	"0.16.92": [
+		{ "icon": "lock", "de": ["Anmeldungen je Profil", "Jedes Uzai-Profil hat jetzt seinen eigenen Browser: Spotify und Seiten im Uzai-Browser sind getrennt, und Abmelden meldet wirklich ab. Einmal neu anmelden."], "en": ["Sign-ins per profile", "Each Uzai profile now has its own browser: Spotify and pages in Uzai's browser are kept apart, and signing out really signs you out. Sign in once more."] },
+		{ "icon": "film", "de": ["Plex und Stremio in der Einrichtung", "Beide stehen bei den Konten unter „Filme & Serien“, mit einem Code am Handy."], "en": ["Plex and Stremio in setup", "Both are in the accounts under “Movies & Shows”, connected with a code on your phone."] },
+		{ "icon": "user", "de": ["Nuvio-Profil gleich in Filme", "Neben Start, Bibliothek und Suche steht dein Nuvio-Profil – A wechselt es, ohne Umweg über die Einstellungen."], "en": ["Nuvio profile right in Movies", "Next to Home, Library and Search sits your Nuvio profile – A switches it, no detour through Settings."] },
+		{ "icon": "image", "de": ["Cover beim ersten Start", "In der Einrichtung zeigt „Spiele scrapen“, wie viele Spiele schon ein Cover haben – auch die, die beim Einlesen kamen."], "en": ["Covers on first start", "In setup, “Scrape games” shows how many games already have a cover – including the ones that came in during the scan."] }
+	],
+	"0.16.91": [
+		{ "icon": "refresh", "de": ["Updates von selbst", "Uzai sucht einmal am Tag nach einer neuen Fassung, prüft ihre Signatur und spielt sie beim Schließen ein. Einstellungen → System → Updates."], "en": ["Updates on their own", "Once a day Uzai looks for a new version, checks its signature and installs it when you close Uzai. Settings → System → Updates."] },
+		{ "icon": "games", "de": ["Spiele mit eigenem Starter", "Startet ein Spiel über ein kleines Startprogramm, das sich gleich wieder beendet, bleibt es für Uzai offen: bedienbar und im Guide zu sehen."], "en": ["Games with their own launcher", "If a game starts through a small launcher that exits right away, Uzai keeps it as running: playable and visible in the Guide."] },
+		{ "icon": "power", "de": ["Alt+F4 schließt ganz", "Alt+F4 und Schließen in der Taskleiste beenden Uzai jetzt vollständig. Im Hintergrund bereit bleibt es nur über Ausschalten → „Uzai schließen“."], "en": ["Alt+F4 closes completely", "Alt+F4 and closing from the taskbar now quit Uzai entirely. It only stays ready in the background via Power → “Close Uzai”."] },
+		{ "icon": "lock", "de": ["Sicherer bei Discord und im Zimmer", "Bilder in Discord-Meldungen kommen nur noch über Discords eigenen Bild-Dienst, und Fremde können den Besuch im Zimmer nicht mehr stören."], "en": ["Safer with Discord and in your Room", "Images in Discord notifications now only come through Discord's own image service, and strangers can no longer disrupt Room visits."] }
+	],
+	"0.16.90": [
+		{ "icon": "lock", "de": ["Sicherer", "Mikrofon und Ton einer Aufnahme bekommt nur Uzai, die Discord-Anmeldung nur die echte Discord-App, und Protokolle enthalten keine Schlüssel mehr."], "en": ["More secure", "Only Uzai gets a recording's microphone and sound, only the real Discord app gets your Discord sign-in, and logs no longer contain keys."] }
+	],
+	"0.16.89": [
+		{ "icon": "discord", "de": ["Guide auf Englisch", "„Streams ansehen“ und „Server“ im Discord-Reiter stehen jetzt in der eingestellten Sprache."], "en": ["Guide in English", "“Watch streams” and “Server” in the Discord tab now follow the language you picked."] }
+	],
+	"0.16.88": [
+		{ "icon": "controller", "de": ["Guide-Taste: Uzai sagt es vorher", "Bevor Uzai Steams Guide-Taste abschaltet, erklärt ein Fenster, was passiert – mit „Steam behalten“."], "en": ["Guide button: Uzai tells you first", "Before Uzai turns off Steam's Guide button, a window explains what happens – with “Keep Steam”."] }
+	],
+	"0.16.87": [
+		{ "icon": "tv", "de": ["Flüssiger an 4K", "Bewegungen laufen auf ganzen Bildpunkten des Fernsehers statt in Doppelschritten – auch bei 120 Hz ohne Stocken am Ende."], "en": ["Smoother on 4K", "Motion moves on whole pixels of the TV instead of double steps – no stutter at the end, even at 120 Hz."] },
+		{ "icon": "bolt", "de": ["Startseite schneller da", "Das Regal baut sofort, was man sieht, den Rest gleich danach."], "en": ["Home page faster", "The shelf builds what you see right away and the rest just after."] }
+	],
+	"0.16.86": [
+		{ "icon": "bolt", "de": ["Profil wechselt flüssig", "Die Unterseiten im Profil stehen sofort da. Wer zurückkommt, findet sie, wie er sie verlassen hat."], "en": ["Profile switches smoothly", "Profile sub pages appear at once. Come back and they are as you left them."] },
+		{ "icon": "controller", "de": ["Guide: Reiter mit dem Steuerkreuz", "Hoch führt auf die Reiter, links und rechts wechseln sie, runter geht in den Inhalt."], "en": ["Guide: tabs with the d-pad", "Up lands on the tabs, left and right switch them, down enters the content."] },
+		{ "icon": "heart", "de": ["Wunschliste gleich da", "Die Wunschliste erscheint, sobald Steam sie liefert – ohne erst die Seite zu wechseln."], "en": ["Wishlist right away", "The wishlist shows as soon as Steam delivers it – no need to switch pages first."] },
+		{ "icon": "keyboard", "de": ["„.com“ auf der Tastatur", "Im Browser hat die Bildschirmtastatur eigene Tasten für .com, www. und https://."], "en": ["“.com” on the keyboard", "In the browser, the on-screen keyboard has its own keys for .com, www. and https://."] },
+		{ "icon": "steam", "de": ["Mehr auf Steam", "Unter „Über das Spiel“: Diskussionen, Guides, Artworks, Screenshots und mehr – in Uzais Browser."], "en": ["More on Steam", "Under “About the game”: discussions, guides, artwork, screenshots and more – in Uzai's browser."] },
+		{ "icon": "search", "de": ["Suche mit Kategorien", "Im Shop engen Kategorien die Suche ein – mit Suchwort oder ohne."], "en": ["Search with categories", "In the Shop, categories narrow the search – with or without a search term."] }
+	],
+	"0.16.85": [
+		{ "icon": "live", "de": ["Livestreams in der Suche", "Suchst du in Videos etwas, das gerade live läuft, steht es ganz oben in der Reihe „Gerade live“."], "en": ["Livestreams in search", "Search Videos for something that is live right now and it shows at the top in the “Live now” row."] }
+	],
+	"0.16.84": [
+		{ "icon": "video", "de": ["Das Video bleibt hinter dem Guide", "Öffnest du beim Video, Film oder Stream den Guide, läuft das Bild dahinter sichtbar weiter."], "en": ["The video stays behind the Guide", "Open the Guide during a video, film or stream and the picture keeps playing visibly behind it."] },
+		{ "icon": "live", "de": ["YouTube-Livestreams", "Wer von deinen Abos gerade live ist, steht in Videos in der Reihe „Gerade live“ und im Reiter „Neu“ ganz oben."], "en": ["YouTube livestreams", "Subscriptions that are live right now show in Videos in the “Live now” row and at the top of the “New” tab."] }
+	],
+	"0.16.83": [
+		{ "icon": "check", "de": ["Konsolen nur noch als Regal", "Ein Klick auf eine Konsole öffnet immer ihr Regal – Raster und Liste gibt es dort nicht mehr."], "en": ["Consoles only as a shelf", "Clicking a console always opens its shelf – grid and list are gone there."] }
+	],
+	"0.16.82": [
+		{ "icon": "image", "de": ["Auch ältere Bilder", "Öffnest du einen Discord-Chat, stehen auch die Bilder von früher da; im Pop-up das Bild statt des Dateinamens."], "en": ["Older images too", "Open a Discord chat and earlier images are there too; the pop-up shows the image instead of the file name."] }
+	],
+	"0.16.80": [
+		{ "icon": "image", "de": ["Bilder im Chat wie Bilder", "Ein Bild steht ohne Dateinamen in der Blase, A oder Klick zeigt es groß – und im Pop-up ist es klein zu sehen."], "en": ["Chat images as images", "An image shows in the bubble without a file name, A or a click shows it large – and it appears small in the pop-up."] },
+		{ "icon": "chat", "de": ["Schreiben ohne Umweg", "Mit Maus und Tastatur tippst du direkt unten im Chat; die Schnellantworten sind weg."], "en": ["Type without detours", "With mouse and keyboard you type right at the bottom of the chat; quick replies are gone."] }
+	],
+	"0.16.79": [
+		{ "icon": "image", "de": ["Discord-Bilder im Chat", "Einmal „Bilder anzeigen“ und in Discord bestätigen – dann stehen Bilder und GIFs aus Discord direkt im Chat."], "en": ["Discord images in chat", "Tap “Show images” once and confirm in Discord – then images and GIFs from Discord show right in the chat."] }
+	],
+	"0.16.77": [
+		{ "icon": "check", "de": ["Anruf: Annehmen, Ignorieren, Ablehnen", "Das Anruf-Fenster ist aufgeräumt; Ablehnen klingelt für diesen Anruf nicht noch einmal."], "en": ["Call: accept, ignore, decline", "The call window is tidied up; declining stops ringing for that call."] },
+		{ "icon": "check", "de": ["Bilder und Links im Chat", "Steam-Bilder und Links stehen im Chat, Bilder als Bild; Discord-Anhänge als Karte mit Dateinamen."], "en": ["Images and links in chat", "Steam images and links show in chat, images as pictures; Discord attachments as a card with the file name."] },
+		{ "icon": "check", "de": ["Sauberer gezeichnet", "Tastensymbole sitzen genau mittig, runde Fenster ohne eckige Kante."], "en": ["Drawn more cleanly", "Button symbols sit exactly centred, rounded windows without a square edge."] }
+	],
+	"0.16.76": [
+		{ "icon": "check", "de": ["Steam zeigt wieder jedes Spiel", "Auch mit Steam am PC sehen Freunde Emulator- und fremde Spiele als „Spielt …“."], "en": ["Steam shows every game again", "Even with Steam running on the PC, friends see emulator and other games as “Playing …”."] },
+		{ "icon": "check", "de": ["Klang selbst wählen", "Optionen → Bilder → Von iiDB: im Reiter „Klang“ den Soundbit der Spielseite aussuchen."], "en": ["Choose the sound yourself", "Options → Images → From iiDB: pick the game page's soundbite in the “Sound” tab."] }
+	],
+	"0.16.75": [
+		{ "icon": "check", "de": ["Weiterspielen im Guide wie Beenden", "Keine helle Platte mehr – die Auswahl sieht man jetzt wie bei Beenden."], "en": ["Continue playing in the Guide like Quit", "No more bright plate – the selection now shows just like on Quit."] },
+		{ "icon": "check", "de": ["Knöpfe leuchten unter der Maus", "Auf der Spielseite und überall sonst zeigen Knöpfe unter der Maus einen Schein."], "en": ["Buttons glow under the mouse", "On the game page and everywhere else, buttons show a glow under the mouse."] }
+	],
+	"0.16.73": [
+		{ "icon": "check", "de": ["Eigene Spiele auch unter Steam", "Selbst hinzugefügte Spiele stehen auch unter Steam – frisch hinzugefügt ganz vorn."], "en": ["Your own games under Steam too", "Games you added yourself also show under Steam – freshly added ones up front."] },
+		{ "icon": "check", "de": ["Spielseite und Name", "Die Seite eines eigenen Spiels zeigt die Angaben des gleichnamigen Steam-Spiels; eine Verknüpfung bringt ihren Namen gleich mit."], "en": ["Game page and name", "An added game's page shows the details of the Steam game with the same name; a shortcut brings its name along."] },
+		{ "icon": "check", "de": ["Maus: deutlicher Schein, Bildwahl per Klick", "Kacheln und die Reiter oben leuchten unter der Maus kräftiger; in der Bildwahl genügt ein Klick auf Cover, Logo usw."], "en": ["Mouse: clearer glow, image picker by click", "Tiles and the top tabs glow more clearly under the mouse; in the image picker one click on cover, logo etc. is enough."] }
+	],
+	"0.16.72": [
+		{ "icon": "check", "de": ["Kacheln leuchten unter der Maus", "Spiele, Videos, Streams und Filme zeigen mit einem leisen Schein, was ein Klick öffnet."], "en": ["Tiles glow under the mouse", "Games, videos, streams and movies show with a soft glow what a click opens."] },
+		{ "icon": "check", "de": ["Symbole oben zuerst zeigen", "Ein Klick aufs Symbol oben zeigt den Bereich – Browser und Zimmer öffnen erst beim zweiten Klick."], "en": ["Top icons show first", "A click on a top icon shows the section – the browser and the room open only on the second click."] }
+	],
+	"0.16.71": [
+		{ "icon": "plus", "de": ["Eigene Spiele hinzufügen", "„Hinzufügen“ steht jetzt in der Leiste der Bibliothek: eine .exe, Verknüpfung oder ein ganzer Ordner – mit denselben Optionen wie alle anderen Spiele."], "en": ["Add your own games", "“Add” is now in the library bar: an .exe, shortcut or a whole folder – with the same options as all other games."] },
+		{ "icon": "check", "de": ["Ruhigeres Mausrad", "In Reihen geht das Rad höchstens eine Reihe auf einmal weiter – schnelles Drehen springt nicht mehr über mehrere."], "en": ["Calmer mouse wheel", "In rows the wheel moves at most one row at a time – spinning fast no longer skips several."] }
+	],
+	"0.16.70": [
+		{ "icon": "play", "de": ["Videos, Filme und Streams mit dem Mausrad", "Das Rad geht Reihe für Reihe nach unten. Seitwärts: mit gedrückter Maustaste ziehen."], "en": ["Videos, movies and streams with the mouse wheel", "The wheel goes down row by row. Sideways: drag with the mouse button held."] }
+	],
+	"0.16.69": [
+		{ "icon": "check", "de": ["Maus nur per Klick", "Darüberfahren wählt nichts mehr – Reiter und Kategorien springen nicht um. Ein Klick wählt und öffnet."], "en": ["Mouse by click only", "Hovering no longer selects anything – tabs and categories stay put. One click selects and opens."] }
+	],
+	"0.16.68": [
+		{ "icon": "keyboard", "de": ["Tippen wie am PC", "Mit echter Tastatur kommt die Eingabe ohne Bildschirmtasten – einfach lostippen, Pfeile schieben die Schreibmarke."], "en": ["Type like on a PC", "With a real keyboard, text entry comes without on-screen keys – just type, the arrows move the cursor."] },
+		{ "icon": "check", "de": ["Ruhigere Maus", "Darüberfahren wählt erst, wenn die Maus kurz verweilt, ein Rahmen zeigt, was ein Klick öffnet, und über Klickbarem wird der Zeiger zur Hand."], "en": ["Calmer mouse", "Hovering selects only once the mouse rests, a frame shows what a click opens, and the pointer turns into a hand over clickable things."] }
+	],
+	"0.16.67": [
+		{ "icon": "check", "de": ["Testfassung", "Ohne persönliche Daten und ohne fremde Zugänge. Spielinfos von ScreenScraper sind in dieser Fassung aus."], "en": ["Test version", "No personal data and no third-party credentials. Game info from ScreenScraper is off in this version."] }
+	],
+	"0.16.66": [
+		{ "icon": "discord", "de": ["Volle Discord-Steuerung für alle", "Eigene Discord-App in etwa 3 Minuten mit dem Handy: QR-Code scannen, Anleitung folgen, fertig – dann Sprachkanäle, Stummschalten und Streams im Guide."], "en": ["Full Discord control for everyone", "Your own Discord app in about 3 minutes with your phone: scan the QR code, follow the guide, done – then voice channels, mute and streams in the Guide."] }
+	],
+	"0.16.65": [
+		{ "icon": "shuffle", "de": ["Lieblingssongs richtig gemischt", "„Zufällig“ spielt deine Lieblingssongs wie in Spotify – nicht mehr immer wieder denselben Titel."], "en": ["Liked Songs shuffled properly", "Shuffle plays your Liked Songs like Spotify does, no longer the same track over and over."] },
+		{ "icon": "music", "de": ["Bibliothek bleibt da", "Läuft die Anmeldung bei Spotify ab, holt Uzai eine neue – Bibliothek und Lieblingssongs verschwinden nicht mehr für Stunden."], "en": ["Library stays put", "When the Spotify sign-in expires, Uzai gets a fresh one, so your library and Liked Songs no longer vanish for hours."] }
+	],
+	"0.16.64": [
+		{ "icon": "music", "de": ["Spotify spielt einzelne Titel", "Titel aus „Zuletzt gehört“, der Suche oder von Künstlern starten am PC jetzt in ihrem Album."], "en": ["Spotify plays single tracks", "Tracks from Recently played, search or artists now start on the PC within their album."] },
+		{ "icon": "controller", "de": ["Spotify nimmt Uzai den Fokus nicht mehr", "Die unsichtbare Spotify-Sitzung schob sich nach dem Start vor Uzai. Jetzt bleibt Uzai vorn."], "en": ["Spotify no longer steals focus", "The hidden Spotify session pushed in front of Uzai after start. Uzai now stays in front."] },
+		{ "icon": "check", "de": ["Spotify bleibt angemeldet", "Uzai bestätigt jeden gelungenen Start seines Browser-Kerns – er fällt nicht mehr nach ein paar Starts aus."], "en": ["Spotify stays signed in", "Uzai confirms every successful start of its browser core, so it no longer fails after a few starts."] }
+	],
+	"0.16.63": [
+		{ "icon": "trophy", "de": ["Erfolge in deiner Sprache", "Abzeichen-Pop-ups und Steam-Erfolge folgen jetzt der eingestellten Sprache."], "en": ["Achievements in your language", "Badge pop-ups and Steam achievements now follow the language you picked."] },
+		{ "icon": "controller", "de": ["Start ohne Guide-Taste", "Uzai holt sich nach dem Start selbst nach vorn. Ein Druck am Controller reicht auch."], "en": ["Start without the Guide button", "Uzai brings itself to the front after start. A press on the controller works too."] },
+		{ "icon": "tv", "de": ["Bildfilter übersetzt", "Der Filtername unter dem Spiel steht in der eingestellten Sprache."], "en": ["Image filter translated", "The filter name under the game is in the language you picked."] },
+		{ "icon": "discord", "de": ["Discord sagt, woran es liegt", "Lehnt Discord die Freigabe ab, nennt Uzai den Grund und den Weg über eine eigene App."], "en": ["Discord says what's wrong", "If Discord refuses access, Uzai names the reason and the way via your own app."] }
+	],
+	"0.16.62": [
+		{ "icon": "music", "de": ["Spotify startet den Titel", "Uzai prüft nach dem Abspielen, ob er wirklich läuft, und versucht es sonst auf einem zweiten Weg."], "en": ["Spotify starts the track", "After play, Uzai checks that it's really running and otherwise tries a second route."] },
+		{ "icon": "info", "de": ["Klare Meldung statt Stille", "Startet Spotify nichts, sagt Uzai es – bisher blieb es einfach still."], "en": ["A clear message instead of silence", "If Spotify starts nothing, Uzai says so – it used to just stay silent."] }
+	],
+	"0.16.61": [
+		{ "icon": "music", "de": ["Spotify spielt auf diesem PC", "Uzai startet Spotify hier, statt Fernseher oder Handy zu steuern. Umstellbar unter Klang."], "en": ["Spotify plays on this PC", "Uzai starts Spotify here instead of controlling the TV or phone. Change it under Sound."] },
+		{ "icon": "bolt", "de": ["Spotify spielt wieder ab", "Bricht die Verbindung zu Spotify ab, holt Uzai sofort einen neuen Schlüssel."], "en": ["Spotify plays again", "If the link to Spotify drops, Uzai fetches a fresh key right away."] },
+		{ "icon": "lock", "de": ["Festes Ausgabegerät", "Uzai stellt den Ton zurück auf dein Gerät, sobald es wieder da ist – etwa wenn der Fernseher aus war."], "en": ["Fixed output device", "Uzai switches sound back to your device as soon as it returns – for example after the TV was off."] },
+		{ "icon": "pulse", "de": ["FxSound in Uzai", "An, aus und Klangprofil: im Guide unter Lautstärke und in den Einstellungen unter Klang."], "en": ["FxSound in Uzai", "On, off and sound profile: in the guide under Volume and in settings under Sound."] }
+	],
+	"0.16.60": [
+		{ "icon": "bolt", "de": ["Guide sofort da", "Er öffnet beim Drücken der Taste, nicht erst beim Loslassen."], "en": ["Guide right away", "It opens when you press the button, not when you let go."] },
+		{ "icon": "eye", "de": ["Das Menü steht still", "Hinter dem Guide bewegt sich nichts mehr, auch nicht beim Schließen."], "en": ["The menu holds still", "Nothing moves behind the guide any more, not on closing either."] },
+		{ "icon": "list", "de": ["Halten: Schnellmenü", "Bleibt die Guide-Taste gedrückt, macht der Guide dem Schnellmenü Platz."], "en": ["Hold: quick menu", "Keep the guide button down and the guide makes way for the quick menu."] }
+	],
+	"0.16.59": [
+		{ "icon": "refresh", "de": ["Guide läuft um", "Hoch am oberen Rand geht es unten weiter, runter von der Schnellleiste wieder oben."], "en": ["The guide wraps around", "Up at the top edge continues at the bottom, down from the quick bar back at the top."] },
+		{ "icon": "mic_off", "de": ["Ein Stumm-Knopf", "X schaltet im Sprachkanal überall stumm: bei dir dein Mikro, bei anderen die Person."], "en": ["One mute button", "X mutes everywhere in the voice channel: your mic on your row, the person on theirs."] },
+		{ "icon": "discord", "de": ["Discord aufgeräumt", "Nach dem Verlassen stimmt die Kanal-Liste. „Übertragen“ steht nicht mehr im Reiter."], "en": ["Discord tidied up", "The channel list is right after you leave. “Broadcast” is gone from the tab."] },
+		{ "icon": "bell", "de": ["Steams Pop-ups ausgeblendet", "Am Bildschirmrand, solange Uzai läuft. Im Spiel zeigt Steams Overlay seine weiter."], "en": ["Steam's pop-ups hidden", "At the screen edge while Uzai runs. In games, Steam's overlay still shows its own."] },
+		{ "icon": "list", "de": ["Guide schlanker", "Der Knopf „Optionen“ am Spiel steht nicht mehr im Guide."], "en": ["Leaner guide", "The “Options” button on the game is gone from the guide."] }
+	],
+	"0.16.58": [
+		{ "icon": "chat", "de": ["Chat im Guide ganz rechts", "Das Gespräch steht am rechten Rand, nicht mehr an der Leiste."], "en": ["Chat in the guide on the far right", "The conversation sits at the right edge, no longer next to the bar."] }
+	],
+	"0.16.57": [
+		{ "icon": "bolt", "de": ["Guide flüssiger", "Die Seite hinter dem Guide steht als Bild und verrutscht beim Öffnen nicht mehr."], "en": ["Smoother guide", "The page behind the guide stands as a still image and no longer shifts on open."] },
+		{ "icon": "eye", "de": ["Auswahl klar zu sehen", "Voll hell ist nur noch, worauf du stehst. Der Hauptknopf ist getönt."], "en": ["Selection is clear", "Only what you stand on is fully bright. The main button is tinted."] },
+		{ "icon": "trophy", "de": ["Erfolge mit Beschreibung", "Das Pop-up zeigt, wofür es den Erfolg gab."], "en": ["Achievements with description", "The pop-up shows what you earned it for."] },
+		{ "icon": "room", "de": ["Zimmer: immer durch die Tür", "Du trittst immer an der Tür ein und stehst am Anfang."], "en": ["Room: always through the door", "You always enter at the door and start at the beginning."] },
+		{ "icon": "video", "de": ["Videos, Filme, Streams dichter", "Niedrigere Bühne, die nächste Reihe ist schon zu sehen."], "en": ["Tighter videos, movies, streams", "A lower stage, the next row already shows."] },
+		{ "icon": "controller", "de": ["Guide-Taste nur für Uzai", "Steam öffnet damit kein Big Picture mehr. Uzai stellt das von selbst ein."], "en": ["Guide button just for Uzai", "Steam no longer opens Big Picture with it. Uzai sets this up by itself."] }
+	],
+	"0.16.56": [
+		{ "icon": "controller", "de": ["Nach dem Start sofort bedienbar", "Uzai holt sich beim Start selbst nach vorn."], "en": ["Ready right after start", "Uzai brings itself to the front on start."] },
+		{ "icon": "monitor", "de": ["Bildschirm wählbar", "Unter Einstellungen › Aussehen. Uzai öffnet sich gleich dort."], "en": ["Pick your display", "Under Settings › Appearance. Uzai opens right there."] },
+		{ "icon": "eye", "de": ["Scharf auf jedem Bildschirm", "Auch wenn Fernseher und Monitor verschieden skaliert sind."], "en": ["Sharp on every display", "Even when TV and monitor use different scaling."] },
+		{ "icon": "tv", "de": ["Größe je Bildschirm", "Uzai merkt sich die Größe der Oberfläche für Fernseher und Monitor getrennt."], "en": ["Size per display", "Uzai remembers the interface size for TV and monitor separately."] }
+	],
+	"0.16.55": [
+		{ "icon": "bolt", "de": ["Flüssig mit großer Bibliothek", "Regal, Raster und lange Listen bauen sich ohne Stocken auf."], "en": ["Smooth with a large library", "Shelf, grid and long lists build without stutter."] },
+		{ "icon": "wifi", "de": ["Bleibt nicht mehr stehen", "Antwortet ein Dienst nicht, läuft Uzai weiter."], "en": ["No more freezing", "When a service does not answer, Uzai keeps running."] },
+		{ "icon": "room", "de": ["Zimmer online", "Freunde mit Uzai besuchen dein Zimmer. Du lädst ein und lässt herein."], "en": ["Room online", "Friends with Uzai visit your room. You invite and let them in."] },
+		{ "icon": "image", "de": ["Bilder und Spielklang von iiDB", "Neue Quelle für Cover. Verbinden unter Einstellungen › Konten."], "en": ["Artwork and game sound from iiDB", "A new source for covers. Connect under Settings › Accounts."] },
+		{ "icon": "tag", "de": ["Preise für dein Land", "Der Shop folgt der Sprache. Das Land wählst du unter System."], "en": ["Prices for your country", "The shop follows your language. Pick the country under System."] },
+		{ "icon": "tv", "de": ["Overlay im Spiel (Versuch)", "Der Guide über Vollbild-Spielen. Je Spiel einschaltbar unter Optionen."], "en": ["In-game overlay (experimental)", "The guide above full-screen games. Switch it on per game under Options."] }
+	],
+	"0.16.54": [
+		{ "icon": "pip", "de": ["Mini-Video am richtigen Platz", "Das kleine Video liegt nur noch über Uzai und dem Spiel. Ein neuer Stream ersetzt es."], "en": ["Mini player stays in its place", "The small video only sits above Uzai and your game. A new stream replaces it."] },
+		{ "icon": "video", "de": ["Guide steuert das Video", "Beim Mini-Video stehen Vollbild, Pause und Schließen ganz vorn. Der Guide hält nichts mehr an."], "en": ["Guide controls the video", "With the mini player, full screen, pause and close come first. The guide no longer pauses anything."] },
+		{ "icon": "settings", "de": ["Einstellungen mit dem Steuerkreuz", "Links und rechts wechseln die Spalte, A ändert den Wert."], "en": ["Settings on the d-pad", "Left and right switch columns, A changes the value."] },
+		{ "icon": "steam", "de": ["Nachrichten auch neben Steam am PC", "Pop-ups kommen jetzt auch, wenn Steam auf dem PC angemeldet ist."], "en": ["Messages next to Steam on your PC", "Pop-ups now arrive even when Steam is signed in on this PC."] }
+	],
+	"0.16.53": [
+		{ "icon": "refresh", "de": ["Bleibt nicht mehr hängen", "Anmeldungen, Emulator-Suche und Link-Vorschau kommen nach Fehlern immer weiter."], "en": ["No more getting stuck", "Sign-ins, emulator search and link preview always recover from errors."] },
+		{ "icon": "info", "de": ["Genauere Fehlerberichte", "Ein Fehlerbericht zeigt jetzt, was in Uzai gerade lief."], "en": ["Sharper error reports", "An error report now shows what Uzai was doing at the time."] }
+	],
+	"0.16.52": [
+		{ "icon": "chat", "de": ["Nachrichten verpasst man nicht mehr", "Jede Steam-Nachricht kommt als Pop-up, neue Chats stehen oben im Guide, das laufende Gespräch daneben."], "en": ["Never miss a message", "Every Steam message pops up, new chats sit on top in the guide, the current chat right beside it."] },
+		{ "icon": "play", "de": ["Guide auch über Vollbild-Spielen", "Videos richten sich selbst ein, und PC aus braucht jetzt Halten."], "en": ["Guide over fullscreen games", "Videos set themselves up, and turning off the PC now needs a hold."] }
+	],
+	"0.16.51": [
+		{ "icon": "spark", "de": ["Aufgeräumte Einrichtung", "Konten nach Bereichen, ehrlicher Emulator-Stand, sauberer Übergang zur Startseite."], "en": ["Tidier setup", "Accounts by area, honest emulator status, clean hand-off to the home screen."] }
+	],
+	"0.16.49": [
+		{ "icon": "room", "de": ["Zimmerlicht wie früher", "Lampen leuchten wieder voll, der Raum ist abends hell."], "en": ["Room light as before", "Lamps shine fully again, the room is bright at night."] }
+	],
+	"0.16.47": [
+		{ "icon": "music", "de": ["Mit Spotify anmelden", "Einmal anmelden, dann Bibliothek, Mixe und Suche direkt in Uzai."], "en": ["Sign in with Spotify", "Sign in once, then library, mixes and search right in Uzai."] }
+	],
+	"0.16.44": [
+		{ "icon": "games", "de": ["ScreenScraper für alle Spiele", "Cover, Hintergründe und Logos jetzt auch für PC-Spiele."], "en": ["ScreenScraper for every game", "Covers, backgrounds and logos for PC games too."] }
+	],
+	"0.16.42": [
+		{ "icon": "room", "de": ["Freund ins Zimmer einladen (Test)", "Code oder QR schicken, Freund klopft an, du lässt ihn rein. Nur im Testbetrieb."], "en": ["Invite a friend to your room (test)", "Send a code or QR, your friend knocks, you let them in. Test mode only."] }
+	],
+	"0.16.41": [
+		{ "icon": "browser", "de": ["Genauer Zeiger im Browser", "Feine Kurve, Einrasten auf Links, LB/RB für Feinarbeit. Tempo im Browser-Menü."], "en": ["Precise browser pointer", "Fine curve, snaps to links, LB/RB for fine moves. Speed in the browser menu."] }
+	],
+	"0.16.40": [
+		{ "icon": "film", "de": ["Quellen mit allen Angaben", "Dateiname, Sprachen, Ton und Format stehen bei jeder Quelle. X filtert nach Sprache."], "en": ["Sources with every detail", "File name, languages, audio and format for every source. X filters by language."] }
+	],
+	"0.16.39": [
+		{ "icon": "room", "de": ["Gemütlicheres Licht", "Lampen leuchten weich nach oben und unten, der Raum ist abends lesbar. Der Fernseher zeigt die neue Marke."], "en": ["Cosier light", "Lamps glow softly up and down, the room stays readable at night. The TV shows the new mark."] }
+	],
+	"0.16.38": [
+		{ "icon": "browser", "de": ["Browser hört auf den Controller", "Die Steuerung bleibt im Browser, auch wenn Windows den Fokus verschiebt."], "en": ["Browser listens to the controller", "Controls stay in the browser even if Windows moves focus."] }
+	],
+	"0.16.37": [
+		{ "icon": "browser", "de": ["Browser mit Controller", "Die Steuerung greift jetzt zuverlässig. Google ist die Standardsuche."], "en": ["Browser with controller", "Controls now work reliably. Google is the default search."] }
+	],
+	"0.16.36": [
+		{ "icon": "browser", "de": ["Browser startet", "Ein Fehler beim Start ist behoben. Bei Grafikproblemen startet er mit Software-Grafik."], "en": ["Browser starts", "A startup bug is fixed. With graphics trouble it starts with software graphics."] }
+	],
+	"0.16.35": [
+		{ "icon": "lock", "de": ["Zimmer online zuverlässiger", "Verbindungen im Testbetrieb verlieren keine Daten mehr."], "en": ["Room online more reliable", "Connections in test mode no longer lose data."] }
+	],
+	"0.16.34": [
+		{ "icon": "browser", "de": ["Browser-Fehler mit Grund", "Startet der Browser nicht, stehen Grund und Code im Hinweis."], "en": ["Browser errors with a reason", "If the browser does not start, the reason and a code appear in the notice."] }
+	],
+	"0.16.33": [
+		{ "icon": "browser", "de": ["Browser-Einrichtung", "Der Installer findet die geprüfte Versionsliste."], "en": ["Browser setup", "The installer finds the verified version list."] },
+		{ "icon": "lock", "de": ["Zimmer online: Prüfung", "Der Verbindungstest hängt nicht mehr vom Tempo der Leitung ab."], "en": ["Room online: check", "The connection test no longer depends on line speed."] }
+	],
+	"0.16.32": [
+		{ "icon": "lock", "de": ["Zimmer online: Start", "Das Netzprogramm startet ohne eigenes Konsolenfenster."], "en": ["Room online: start", "The network program starts without its own console window."] }
+	],
+	"0.16.31": [
+		{ "icon": "lock", "de": ["Zimmer online: Fehler mit Grund", "Scheitert der geschützte Start, steht der Grund da."], "en": ["Room online: errors with a reason", "If the protected start fails, the reason is shown."] }
+	],
+	"0.16.30": [
+		{ "icon": "lock", "de": ["Zimmer online: geschützter Start", "Der geschützte Bereich startet jetzt unter Windows."], "en": ["Room online: protected start", "The protected area now starts on Windows."] }
+	],
+	"0.16.29": [
+		{ "icon": "browser", "de": ["Browser-Einrichtung", "Die Einrichtung findet den Browser auch in anders benannten Ordnern."], "en": ["Browser setup", "Setup finds the browser even in differently named folders."] },
+		{ "icon": "lock", "de": ["Verbindungstest korrigiert", "Der Test zeigte nur „nein“. Jetzt stimmt das Ergebnis, mit Grund."], "en": ["Connection test fixed", "The test only showed “no”. The result is now correct, with a reason."] }
+	],
+	"0.16.28": [
+		{ "icon": "room", "de": ["Einrichtung neu", "Das U wie im Intro, ein echtes Retro-Zimmer mit spielenden Figuren und echte Medien in Schauen & Hören."], "en": ["Setup refreshed", "The U as in the intro, a real retro room with players and your own media in Watch & Listen."] },
+		{ "icon": "home", "de": ["Startseite baut sich auf", "Nach der Einrichtung kommt alles nacheinander, die Cover fliegen ins Regal. Die Tür im Zimmer-Reiter zieht nicht mehr mit."], "en": ["Home builds itself", "After setup everything arrives in turn and the covers fly onto the shelf. The room door no longer drags along."] }
+	],
+	"0.16.27": [
+		{ "icon": "power", "de": ["Beenden klappt immer", "Noch einmal Beenden drücken beendet sofort. Hängt ein Spiel, hilft der Guide weiter, und Windows blitzt nicht mehr auf."], "en": ["Quitting always works", "Press Quit again to end it at once. If a game hangs, the Guide helps, and Windows no longer flashes."] },
+		{ "icon": "image", "de": ["Scrapen nach Wahl", "Quelle wählen, alles ersetzen, und je Spiel das Cover aus allen Regionen aussuchen."], "en": ["Scrape your way", "Pick the source, replace everything, and choose each game's cover from every region."] }
+	],
+	"0.16.26": [
+		{ "icon": "browser", "de": ["Browser-Einrichtung", "Fehlende Dateien werden gefunden und vor dem Start geprüft."], "en": ["Browser setup", "Missing files are found and verified before start."] },
+		{ "icon": "friends", "de": ["Vergleichen mit Gesicht", "Beim Erfolge-Vergleich stehen die Profilbilder deiner Freunde."], "en": ["Compare with faces", "Comparing achievements now shows your friends' profile pictures."] },
+		{ "icon": "power", "de": ["Intro weicher, Einrichtung bis zum Ende", "Das Licht im Intro ohne Stufen. Neu eingerichtet geht es jetzt auch bis zur Startseite."], "en": ["Smoother intro, setup to the end", "The intro light without banding. A fresh setup now also ends on the home screen."] }
+	],
+	"0.16.25": [
+		{ "icon": "power", "de": ["Intro wieder da", "Ein Fehler in 0.16.24 hielt das Intro an."], "en": ["Intro is back", "A bug in 0.16.24 stopped the intro."] }
+	],
+	"0.16.24": [
+		{ "icon": "image", "de": ["Spiele scrapen überall", "In der Einrichtung startet es von selbst, in der Bibliothek und in „Für dich“ ist es immer da."], "en": ["Scrape games everywhere", "Setup starts it on its own; it is always there in the library and in For you."] },
+		{ "icon": "room", "de": ["Zimmer online: Testbetrieb", "Signatur und Direktverbindung sind eingebaut. Ein Verbindungstest prüft alles auf diesem PC."], "en": ["Room online: test mode", "Signing and direct connection are built in. A connection test checks everything on this PC."] }
+	],
+	"0.16.23": [
+		{ "icon": "power", "de": ["Name im Intro", "Unter dem U erscheint am Ende klein der Name."], "en": ["Name in the intro", "At the end, the name appears small below the U."] },
+		{ "icon": "image", "de": ["Cover von ScreenScraper", "Covers, Logos und Bilder kommen jetzt auch ohne eigenen Schlüssel."], "en": ["Covers from ScreenScraper", "Covers, logos and art now arrive without a key of your own."] }
+	],
+	"0.16.22": [
+		{ "icon": "disc", "de": ["Hüllen wie echt", "Das Cover liegt unverändert unter der Folie, dazu Kunststoff, Scharnier und das passende Format je System."], "en": ["Cases that look real", "The cover sits unchanged under the wrap, with plastic, hinge and the right format for each system."] },
+		{ "icon": "browser", "de": ["Browser vollständig", "Alle Dateien kommen aus derselben Fassung und werden vor dem Einsatz geprüft."], "en": ["Browser complete", "All files come from the same version and are verified before use."] }
+	],
+	"0.16.21": [
+		{ "icon": "room", "de": ["Zimmer online: Vorschau", "Einladen und Einladungen verwalten sind als Vorschau da. Verbunden wird noch nicht."], "en": ["Room online: preview", "Inviting and managing invitations are available as a preview. Nothing connects yet."] }
+	],
+	"0.16.20": [
+		{ "icon": "power", "de": ["Ruhigeres Intro", "Beim Start steht nur noch das große U, ohne Text und Kasten."], "en": ["A calmer intro", "At startup there is just the large U, without text or a box."] }
+	],
+	"0.16.19": [
+		{ "icon": "browser", "de": ["Browser: Entpacken", "Alle Dateien werden im Archiv gefunden."], "en": ["Browser: unpacking", "All files are found in the archive."] }
+	],
+	"0.16.18": [
+		{ "icon": "browser", "de": ["Browser richtet sich ein", "Fehlende Dateien sind jetzt im Paket."], "en": ["Browser sets itself up", "Missing files are now in the package."] },
+		{ "icon": "room", "de": ["Durch die Tür ohne Kopf von innen", "Bei der Fahrt ins Zimmer bleibt die eigene Figur ausgeblendet, bis du stehst."], "en": ["Through the door without seeing inside your head", "Your own character stays hidden during the ride into the room until you stand."] }
+	],
+	"0.16.17": [
+		{ "icon": "room", "de": ["24 neue Möbel", "Ohrensessel, Bett, Arcade-Automat, Gaming-Schreibtisch, Bogenlampe, Pflanzen, Lichtervorhang, Bilderwand und mehr."], "en": ["24 new furniture pieces", "Wingback chair, bed, arcade cabinet, gaming desk, arc lamp, plants, light curtain, picture wall and more."] },
+		{ "icon": "move", "de": ["Alles verschiebbar", "Tische, Bilder und Teppiche lassen sich wählen, verschieben und wegräumen."], "en": ["Everything movable", "Tables, pictures and rugs can be selected, moved and put away."] },
+		{ "icon": "user", "de": ["Outfit am Jackenständer", "Figur direkt im Zimmer wechseln: links/rechts probieren, A behalten."], "en": ["Outfit at the coat stand", "Change your character right in the room: left/right to try, A to keep."] },
+		{ "icon": "check", "de": ["Zimmer-Fehler behoben", "Keine schwarzen Wände mehr nach neuer Raumgröße, Kissen sitzen richtig, Ankunft hinter der Tür."], "en": ["Room fixes", "No more black walls after resizing, cushions sit right, you arrive behind the door."] },
+		{ "icon": "browser", "de": ["Browser automatisch", "Beim ersten Öffnen wird er geladen und geprüft."], "en": ["Browser automatically", "On first open it is downloaded and verified."] },
+		{ "icon": "controller", "de": ["Controller koppeln", "Uzai sucht aktiv nach Controllern im Kopplungsmodus, auch versteckten. Bis zu 4, mit „Neu koppeln“."], "en": ["Pair controllers", "Uzai actively searches for controllers in pairing mode, hidden ones too. Up to 4, with “Pair again”."] }
+	],
+	"0.16.16": [
+		{ "icon": "play", "de": ["Start und Systemstarts", "Das Uzai-Intro kommt wieder zuverlässig. Die bewährten Systemstarts sind zurück, 3D bleibt wählbar."], "en": ["Startup and system intros", "The Uzai intro shows up reliably again. The familiar system intros are back, 3D stays selectable."] },
+		{ "icon": "games", "de": ["Hüllen nach echten Maßen", "GameCube, Xbox, Xbox 360, Wii U, Saturn, DS und mehr im echten Format, im Regal und im Zimmer."], "en": ["Cases at real size", "GameCube, Xbox, Xbox 360, Wii U, Saturn, DS and more in their real format, on the shelf and in the room."] },
+		{ "icon": "music", "de": ["Eigene Musik überall", "Auch mit Spotify oder Windows-Musik: Reiter „Eigene Musik“ mit Ordnerwahl."], "en": ["Own music everywhere", "Also with Spotify or Windows music: an “Own music” tab with folder selection."] },
+		{ "icon": "user", "de": ["Freunde schneller", "Profil › Freunde zeigt sofort, was schon da ist, und lädt den Rest gleichzeitig nach."], "en": ["Faster friends", "Profile › Friends shows what's there right away and loads the rest in parallel."] }
+	],
+	"0.16.15": [
+		{ "icon": "browser", "de": ["Uzai Browser", "Eigener Chromium-Kern mit Sandbox, beim ersten Öffnen geladen und geprüft. Startbühne mit nahtlosem Aufgang."], "en": ["Uzai Browser", "Its own Chromium core with sandbox, downloaded and verified on first use. Start stage with a seamless rise."] },
+		{ "icon": "lock", "de": ["Werbung und Tracker geblockt", "Eingebauter Blocker, Cookie-Banner werden auf „nur notwendige“ gestellt. Pro Seite abschaltbar."], "en": ["Ads and trackers blocked", "Built-in blocker, cookie banners set to “necessary only”. Can be turned off per site."] },
+		{ "icon": "play", "de": ["Für den Controller", "Wahl-Listen statt Dropdowns, Formular-Assistent, Gliederung, Suche auf der Seite, Video-Fernbedienung."], "en": ["Made for the controller", "Pick lists instead of dropdowns, form helper, outline, find on page, video remote."] }
+	],
+	"0.16.14": [
+		{ "icon": "image", "de": ["Spiele scrapen", "Cover, Hintergründe und Schriftzüge für Emulator-Spiele: in der Einrichtung, unter „Für dich“ und in den Einstellungen."], "en": ["Scrape games", "Covers, backgrounds and logos for emulator games: in setup, under “For you” and in settings."] },
+		{ "icon": "room", "de": ["Tür ins Zimmer", "Eine Hand öffnet die Tür, die Kamera fährt ins echte Zimmer. A am Fernseher: randloses Vollbild, Guide fährt zurück."], "en": ["Door to your room", "A hand opens the door and the camera glides into the real room. A at the TV: borderless fullscreen, Guide brings you back."] },
+		{ "icon": "music", "de": ["Spotify und eigene Musik", "Beide Quellen zugleich, mit Reiter „Eigene Musik“. Es spielt, was du zuletzt gestartet hast."], "en": ["Spotify and your own music", "Both sources at once, with an “Own music” tab. Whatever you started last plays."] },
+		{ "icon": "games", "de": ["Regal wie im Hauptmenü", "Hüllen im Zimmer in echten Maßen mit Kopfband. A nimmt heraus, Y öffnet das Menü."], "en": ["Shelf like the main menu", "Cases in the room at real size with header band. A takes one out, Y opens the menu."] },
+		{ "icon": "spark", "de": ["Neues Zeichen", "Das flache U überall, ein ruhiger Start mit eigenem Akkord und eine lebendige Einrichtung."], "en": ["New mark", "The flat U everywhere, a calm start with its own chord and a livelier setup."] },
+		{ "icon": "image", "de": ["Eigene Screenshots", "Auf der Spielseite im eigenen Abschnitt. Cover im Guide kommen zuverlässiger."], "en": ["Your screenshots", "In their own section on the game page. Covers in the Guide show up more reliably."] }
+	],
+	"0.16.13": [
+		{ "icon": "spark", "de": ["Neues Zeichen", "Das U-Band aus violettem Metall mit Lichtfuge. Echter 3D-Start mit eigenem Klang, neues App-Symbol."], "en": ["New mark", "The U-band in violet metal with a seam of light. A real 3D start with its own sound, new app icon."] },
+		{ "icon": "play", "de": ["System-Starts in 3D", "PS2, GameCube, PlayStation, N64 und Switch starten mit eigener 3D-Szene."], "en": ["System starts in 3D", "PS2, GameCube, PlayStation, N64 and Switch start with their own 3D scene."] },
+		{ "icon": "room", "de": ["Umbauen beim Herumlaufen", "A halten trägt Möbel, Wände direkt ziehen, Hüllen im Regal von Hand umstellen."], "en": ["Rearrange while walking", "Hold A to carry furniture, drag walls directly, rearrange cases on the shelf by hand."] },
+		{ "icon": "room", "de": ["Jackenständer statt Spiegel", "Figur am Ständer wechseln, spart Leistung. Das Fensterbrett flackert nicht mehr."], "en": ["Coat stand instead of mirror", "Change your avatar at the stand, saves performance. The window sill no longer flickers."] },
+		{ "icon": "controller", "de": ["Schneller aufstehen", "Guide zweimal kurz drücken, während das Spiel im Fernseher läuft."], "en": ["Stand up faster", "Press Guide twice quickly while the game runs on the TV."] }
+	],
+	"0.16.12": [
+		{ "icon": "room", "de": ["Zimmer neben dem Spiel flüssig", "Nie unter 60 Bilder/s, in jeder Grafikstufe. Kein Hänger mehr direkt nach dem Betreten."], "en": ["Smooth room next to your game", "Never below 60 fps, at any graphics level. No more hitch right after walking in."] },
+		{ "icon": "room", "de": ["Erst wählen, dann platzieren", "Möbel erst wählen, dann am Cursor platzieren und drehen. Grün passt, rot nicht."], "en": ["Pick first, then place", "Pick furniture first, then place and rotate it at the cursor. Green fits, red doesn't."] }
+	],
+	"0.16.11": [
+		{ "icon": "spark", "de": ["Neues Zeichen", "Schale und Kern: Start im Licht des Kerns, Fenster mit Tiefe, Startanimation je System mit Kamera."], "en": ["New mark", "Shell and core: start in the core's light, windows with depth, per-system start animation with camera."] },
+		{ "icon": "settings", "de": ["Einrichtung neu", "Zeigt Emulatoren, Zimmer, Schauen & Hören. Konten nach Bereichen, Steams Guide-Taste aus."], "en": ["New setup", "Shows emulators, room, watch & listen. Accounts by area, Steam's Guide button off."] },
+		{ "icon": "room", "de": ["Bauen wie im Spiel", "Große Möbel- und Material-Kacheln, Probe direkt im Zimmer, Regal mit echten Hüllen. Tür als Eingang."], "en": ["Build like a game", "Big furniture and material tiles, preview right in the room, shelf with real cases. A door to walk in."] },
+		{ "icon": "controller", "de": ["Spieler 1–4 automatisch", "Auch PS1 und PS2 mit Multitap und Eden & Co. Spiel wartet, solange du im Zimmer läufst."], "en": ["Players 1–4 automatic", "PS1 and PS2 with multitap and Eden & co. too. The game waits while you walk the room."] },
+		{ "icon": "moon", "de": ["Komfort am Abend", "Schlaf-Timer, Nicht stören, Nachts leiser und Nur hören im Schnellmenü."], "en": ["Evening comfort", "Sleep timer, do not disturb, quieter at night and listen only in the quick menu."] },
+		{ "icon": "apps", "de": ["Uzai Browser", "Eigener Browser für den Controller: Ziel für Ziel springen, Tabs, Zoom, Lesemodus. Bei den Apps."], "en": ["Uzai Browser", "A browser built for the controller: jump target to target, tabs, zoom, reader mode. In Apps."] }
+	],
+	"0.16.10": [
+		{ "icon": "room", "de": ["Zimmer flüssig", "Licht vorberechnet: volle Bildrate deines Bildschirms bei gleichem Look, kein Schild mehr auf dem Fernseher."], "en": ["Smoother room", "Pre-baked lighting: your display's full frame rate with the same look, no label over the TV."] },
+		{ "icon": "user", "de": ["Neue Figuren", "19 Menschen zur Wahl: echte Gesichter, Kleidung und Frisuren. Mützen, Brillen und Kopfhörer bleiben."], "en": ["New avatars", "19 people to pick from: real faces, clothes and hair. Hats, glasses and headphones stay."] }
+	],
+	"0.16.9": [
+		{ "icon": "room", "de": ["Zimmer leiser für deinen PC", "Gleicher Look, viel weniger Last: kluge Auflösung mit FSR 2, ruhige Bildrate."], "en": ["Room easier on your PC", "Same look, far less load: smart resolution with FSR 2, calm frame rate."] }
+	],
+	"0.16.8": [
+		{ "icon": "room", "de": ["Zimmer ruhig und klar", "Keine Streifen, kein Flimmern, echte Nacht. Spielbild farbtreu, in 4K scharf."], "en": ["Room calm and clear", "No stripes, no flicker, real night. True game colours, sharp in 4K."] },
+		{ "icon": "tv", "de": ["Fernseher im Zimmer", "Steuern nur vor dem Bildschirm, Ton kommt aus dem Fernseher. Regale füllst du selbst."], "en": ["TV in your room", "Control only in front of the screen, sound comes from the TV. You fill the shelves."] },
+		{ "icon": "grid", "de": ["Schnellmenü nach Wunsch", "Guide halten, Menü-Taste: Kacheln wählen und ordnen."], "en": ["Quick menu your way", "Hold Guide, press Menu: pick and order tiles."] },
+		{ "icon": "music", "de": ["Kürzeres Bestätigen", "Zwei schnelle Töne. Ruhebildschirm scharf und ohne Wackeln."], "en": ["Shorter confirm sound", "Two quick tones. Screensaver sharp and steady."] }
+	],
+	"0.16.7": [
+		{ "icon": "music", "de": ["Reiter klingen gleich", "Beim Blättern mit LB und RB immer derselbe tiefe Ton."], "en": ["Tabs sound the same", "Paging with LB and RB always plays the same low tone."] }
+	],
+	"0.16.6": [
+		{ "icon": "music", "de": ["Neuer Klang: Handpan", "Tief, weich und rund. Alle Menüklänge und die Einrichtung. Die alten Sätze bleiben wählbar."], "en": ["New sound: Handpan", "Deep, soft and round. Every menu sound and the setup. The old sets stay available."] }
+	],
+	"0.16.5": [
+		{ "icon": "music", "de": ["Leiser, weicher Klang", "Neu: Samt, Kiesel, Pad und Haptik. Unter Einstellungen wählbar."], "en": ["Softer, quieter sound", "New: Velvet, Pebble, Pad and Haptic. Pick one in settings."] },
+		{ "icon": "games", "de": ["PS2-Hüllen wie im Regal", "Band mit Logo vorn, Rücken mit PAL-Streifen und Titel."], "en": ["PS2 cases like on your shelf", "Logo band on the front, spine with PAL strip and title."] },
+		{ "icon": "spark", "de": ["Einrichtung kürzer", "Fünf Schritte, großes Intro, ohne Farbstufen."], "en": ["Shorter setup", "Five steps, big intro, no colour banding."] },
+		{ "icon": "tv", "de": ["Fernseher im Zimmer", "Das Spiel läuft weiter, wenn du aufstehst, und das Zimmer ruckelt weniger."], "en": ["TV in your room", "The game keeps showing when you stand up, and the room runs smoother."] }
+	],
+	"0.16.4": [
+		{ "icon": "spark", "de": ["Neue Einrichtung", "Einschalten, deine Spiele ziehen ins Regal, dein Guide über deinem Spiel."], "en": ["New setup", "Power on, your games move onto the shelf, your guide over your game."] },
+		{ "icon": "games", "de": ["Hüllen wie echt", "Rahmen und Logo je System, Cover im richtigen Format."], "en": ["Cases like the real thing", "Frame and logo per system, covers in the right format."] }
+	],
+	"0.16.3": [
+		{ "icon": "games", "de": ["Konsolen als Regal", "Deine Spiele als Hüllen im Regal. Das Raster bleibt unter Y."], "en": ["Consoles as a shelf", "Your games as cases on a shelf. The grid stays under Y."] },
+		{ "icon": "controller", "de": ["Dein Controller ist Spieler 1", "Im Emulator immer der, mit dem du startest – PCSX2 über XInput."], "en": ["Your controller is player 1", "In emulators always the one you start with – PCSX2 via XInput."] },
+		{ "icon": "music", "de": ["Neuer Klang: Perle", "Präzise, gläsern, mit Einrasten. Alte Sätze unter Einstellungen."], "en": ["New sound: Pearl", "Precise, glassy, with a click. Old sets in settings."] },
+		{ "icon": "video", "de": ["Ruhiger am Fernseher", "Videos in SDR und fester Bildrate – kein VRR-Aussetzer."], "en": ["Calmer on the TV", "Videos in SDR at a fixed frame rate – no VRR dropouts."] }
+	],
+	"0.16.2": [
+		{ "icon": "controller", "de": ["Controller in Emulatoren", "Fehlende Belegung trägt Uzai vor dem Start ein, bis zu vier Spieler."], "en": ["Controllers in emulators", "Uzai fills in missing mappings before launch, up to four players."] },
+		{ "icon": "spark", "de": ["Neue Einrichtung", "Guide-Taste ausprobieren, Steam und Discord zusammen, was Uzai kann."], "en": ["New setup", "Try the Guide button, Steam and Discord together, what Uzai can do."] },
+		{ "icon": "music", "de": ["Eigene Musik", "Ohne Spotify ein Player für deinen Musikordner."], "en": ["Your own music", "Without Spotify, a player for your music folder."] },
+		{ "icon": "games", "de": ["Retro-Spiele schöner", "Spielszene scharf als Bildschirm statt gestreckt; Für dich neu."], "en": ["Nicer retro games", "Game scene sharp as a screen instead of stretched; new For you."] }
+	],
+	"0.16.1": [
+		{ "icon": "trophy", "de": ["Steam-Erfolge wieder da", "Direkt aus Steam am PC, dazu dein echter Status."], "en": ["Steam achievements are back", "Straight from Steam on this PC, plus your real status."] },
+		{ "icon": "video", "de": ["Schneller da", "Videos, Shorts und Filme zeigen sofort etwas und laden oben zuerst."], "en": ["Faster", "Videos, Shorts and movies show something right away and load from the top."] },
+		{ "icon": "grid", "de": ["Raster gestalten", "A halten auf einer Kachel."], "en": ["Design your grid", "Hold A on a tile."] },
+		{ "icon": "games", "de": ["Spielseite und Für dich", "Großes Bild wie früher, kleine Pillen; „Für dich“ jetzt auf der Start-Taste."], "en": ["Game page and For you", "Big image like before, small pills; “For you” now on the Start button."] }
+	],
+	"0.16.0": [
+		{ "icon": "music", "de": ["Jetzt läuft, groß", "Im Guide aufs Album: großes Cover, Liedtext läuft mit."], "en": ["Now playing, big", "Select the album in the guide: big cover, lyrics in sync."] },
+		{ "icon": "apps", "de": ["Apps wie auf der Konsole", "Tippen mit dem Controller, kein Fensterrand, Steuerung beim Start."], "en": ["Apps like on a console", "Type with the controller, no window frame, controls shown at launch."] },
+		{ "icon": "video", "de": ["YouTube ruhiger", "Kein Ruckeln beim Durchblättern, Abos auch mit der Fernseher-Anmeldung."], "en": ["Smoother YouTube", "No stutter while browsing, subscriptions with TV sign-in too."] },
+		{ "icon": "info", "de": ["Weniger Text", "Hinweise und Hilfen kurz und klar."], "en": ["Less text", "Hints and help, short and clear."] }
+	],
+	"0.15.1": [
+		{ "icon": "music", "de": ["Spotify ohne eigene App", "Deine ganze Bibliothek aus der Spotify-App am PC, Abspielen ohne Fenster."], "en": ["Spotify without your own app", "Your whole library from the Spotify app on this PC, playback without windows."] },
+		{ "icon": "grid", "de": ["Mosaik aus Glas", "Das Raster füllt den Bildschirm, die Kacheln sind aus Glas."], "en": ["Glass mosaic", "The grid fills the screen, the tiles are glass."] },
+		{ "icon": "home", "de": ["Spiel im Zimmer-Fernseher", "Aufstehen und herumlaufen – das Spiel läuft live im Fernseher weiter."], "en": ["Game on the room TV", "Get up and walk around – the game keeps running live on the TV."] },
+		{ "icon": "moon", "de": ["Ruhemodus mit Diashow", "Der Bildschirm bleibt an, deine Spiele ziehen vorbei."], "en": ["Rest mode with slideshow", "The screen stays on while your games drift by."] }
+	],
+	"0.15.0": [
+		{ "icon": "home", "de": ["Eine neue Einrichtung", "Fünf Schritte, alles mit A. Deine Spiele fliegen ins Regal, am Ende landest du direkt auf deiner Startseite."], "en": ["A new setup", "Five steps, all with A. Your games fly onto the shelf, and you land right on your home screen."] },
+		{ "icon": "spark", "de": ["Leere Bereiche mit einem Druck", "Wo noch nichts verbunden ist, richtet A es ein."], "en": ["Empty areas in one press", "Where nothing is connected yet, A sets it up."] }
+	],
+	"0.14.0": [
+		{ "icon": "home", "de": ["Ein echtes Zimmer", "Licht, Materialien und Figur realistisch, 21 neue Möbel, Bewegung wie in Source."], "en": ["A real room", "Realistic light, materials and figure, 21 new pieces of furniture, Source-style movement."] },
+		{ "icon": "palette", "de": ["Ruhiger und edler", "Neue Leiste, Knöpfe ohne Rahmen, Lichtkanten statt Konturen, weniger Text."], "en": ["Calmer and finer", "New top bar, buttons without frames, light edges instead of outlines, less text."] },
+		{ "icon": "games", "de": ["Shop und Spielseite neu", "Eine Bühne, kuratierte Reihen, Freunde, Wunschliste mit einem Druck."], "en": ["New shop and game page", "One stage, curated rows, friends, wishlist in one press."] },
+		{ "icon": "friends", "de": ["Erfolge mit Freunden", "Vergleich, Feed, Ranglisten und ein großer Moment bei 100 %."], "en": ["Achievements with friends", "Comparison, feed, leaderboards and a big moment at 100%."] },
+		{ "icon": "info", "de": ["Guide und Einstellungen", "Guide mit Kontext und Schnellleiste, Einstellungen mit Suche und klarer Ordnung."], "en": ["Guide and settings", "Guide with context and quick bar, settings with search and a clear order."] },
+		{ "icon": "video", "de": ["Medien aus einem Guss", "Videos, Filme und Streams mit Bühne und Weiterschauen zuerst."], "en": ["Media as one", "Videos, movies and streams with a stage and continue watching first."] }
+	],
+	"0.13.1": [
+		{ "icon": "grid", "de": ["Mosaik je Konsole", "Eigene Seiten mit Spielen, Ordnern und Bildern gestalten."], "en": ["A mosaic per console", "Design your own pages with games, folders and pictures."] },
+		{ "icon": "home", "de": ["Neue Leiste", "Apps als Symbole oben, Freunde mit Select von der Seite."], "en": ["New bar", "Apps as icons at the top, friends slide in with Select."] },
+		{ "icon": "controller", "de": ["Controller wieder wie vorher", "Uzai schreibt die Belegung der Emulatoren nur noch ab zwei Spielern um und legt die Originale zurück."], "en": ["Controllers back as before", "Uzai only rewrites emulator mappings for two or more players and restores the originals."] },
+		{ "icon": "friends", "de": ["Steam-Freunde und Chat", "Laufen jetzt auch, wenn Steam die Anmeldung im Web ablehnt."], "en": ["Steam friends and chat", "Now work even if Steam rejects the web sign-in."] },
+		{ "icon": "image", "de": ["Cover holen", "Vorn unter Emulation, für Emulator-Spiele."], "en": ["Get covers", "Up front under Emulation, for emulator games."] },
+		{ "icon": "play", "de": ["Ruhiger Start", "Kein Bildfilter-Hinweis, nur noch „Beenden“, größere Cover."], "en": ["Calmer start", "No image filter notice, just “Quit”, bigger covers."] }
+	],
+	"0.13.0": [
+		{ "icon": "home", "de": ["Dein Zimmer lebt", "Frei laufen mit Maus und Stick, Menüs direkt am Möbel, Konsolen im Lowboard, der Plattenspieler spielt deine Musik."], "en": ["Your room comes alive", "Walk freely with mouse and stick, menus right on the furniture, consoles in the lowboard, the record player plays your music."] },
+		{ "icon": "play", "de": ["Jede Konsole startet anders", "Eigene Startanimation je System, mit A oder B zu überspringen."], "en": ["Every console boots its own way", "Its own start animation per system, skip with A or B."] },
+		{ "icon": "controller", "de": ["Spieler & Controller", "Mit „Drück A“ festlegen, wer Spieler 1–4 ist; Emulatoren richten sich danach."], "en": ["Players & controllers", "Press A to set who is player 1–4; emulators follow."] },
+		{ "icon": "grid", "de": ["Apps im Vollbild", "Netflix und Co. randlos, Uzai dahinter, Bedienung mit dem Controller."], "en": ["Apps in full screen", "Netflix and co. borderless, Uzai behind, controlled with the controller."] },
+		{ "icon": "volume", "de": ["Filz & Glas", "Der neue Standard-Klang: warm angeschlagen, ein heller Schimmer darüber."], "en": ["Felt & glass", "The new default sound: a warm touch with a bright shimmer on top."] }
+	],
+	"0.12.0": [
+		{ "icon": "play", "de": ["Fließender", "Ein Takt für alle Bewegungen: überblenden statt ersetzen, nichts federt, nichts ruckt nach."], "en": ["Smoother", "One rhythm for all motion: crossfades instead of cuts, nothing bounces, nothing jumps after."] },
+		{ "icon": "controller", "de": ["Der Cursor gleitet", "Antwort im ersten Bild, gleichmäßiges Halten, am Ende einer Liste ein Anstoß."], "en": ["The cursor glides", "Answers in the first frame, steady when held, one nudge at the end of a list."] },
+		{ "icon": "volume", "de": ["Neue Klänge zur Wahl", "Glas kurz, Filz und Luft; ein Druck, ein Klang; abends und nach Pausen leiser."], "en": ["New sounds to choose", "Short glass, felt and air; one press, one sound; quieter at night and after a break."] },
+		{ "icon": "grid", "de": ["Eigene Apps", "Store-Apps wie Netflix und eigene Programme in der Reihe der Apps."], "en": ["Your own apps", "Store apps like Netflix and your own programs in the apps row."] },
+		{ "icon": "home", "de": ["Ruhe unter dem Cursor", "Nichts blättert oder baut sich von selbst um, wo du gerade stehst."], "en": ["Calm under the cursor", "Nothing flips or rebuilds by itself where you are."] }
+	],
+	"0.11.0": [
+		{ "icon": "palette", "de": ["Neues Gesicht", "Eckig, matt, ein Cursor, Schrift IBM Plex und das neue U-Zeichen."], "en": ["A new face", "Square, matte, one cursor, IBM Plex type and the new U mark."] },
+		{ "icon": "info", "de": ["Guide als Seitenleiste", "Das Spiel bleibt sichtbar, alles Wichtige in einer Spalte."], "en": ["Guide as a side panel", "The game stays visible, everything important in one column."] },
+		{ "icon": "grid", "de": ["Apps", "Musik, Videos, Filme, Streams und Zimmer unter einem Reiter, gleich in der App."], "en": ["Apps", "Music, videos, movies, streams and your room under one tab, straight into the app."] },
+		{ "icon": "controller", "de": ["Ordnen mit langem A", "Konsolen und Apps verschieben, ausblenden und zurückholen."], "en": ["Arrange with a long A", "Move, hide and bring back consoles and apps."] },
+		{ "icon": "home", "de": ["Zimmer direkt einrichten", "Anschauen, anfassen, absetzen – ohne Umweg über Menüs."], "en": ["Furnish the room directly", "Look, pick up, put down – no detour through menus."] }
+	],
+	"0.10.1": [
+		{ "icon": "play", "de": ["Ohne Desktop dazwischen", "Spielstart und Spielende ohne Windows im Hintergrund."], "en": ["No desktop in between", "Starting and quitting games without Windows showing through."] },
+		{ "icon": "tv", "de": ["Spielen im Zimmer-Fernseher", "Ein eingelegtes Spiel läuft im Fernseher. Guide-Taste: Vollbild und zurück."], "en": ["Play on the room TV", "A game you insert runs on the TV. Guide button: full screen and back."] },
+		{ "icon": "download", "de": ["Epic ohne Launcher", "Eigene Epic-Spiele direkt in Uzai installieren."], "en": ["Epic without launcher", "Install your Epic games directly in Uzai."] },
+		{ "icon": "save", "de": ["Weiter, wo du warst", "Mehrere Spielstände mit Bild, Laden im Guide, Discs direkt vom Laufwerk."], "en": ["Continue where you left off", "Several save states with pictures, loading in the Guide, discs straight from the drive."] }
+	],
+	"0.10.0": [
+		{ "icon": "palette", "de": ["Themes, die alles verändern", "Sieben Themes – Welle, Klingen, Kacheln, Regal, Retro und mehr – mit eigener Startseite, eigenem Guide und eigenen Dialogen. Einstellungen → Aussehen."], "en": ["Themes that change everything", "Seven themes – Wave, Blades, Tiles, Shelf, Retro and more – each with its own home, Guide and dialogs. Settings → Appearance."] },
+		{ "icon": "edit", "de": ["Theme-Editor und eigene Startseite", "Farben, Schrift, Hintergrund und Klänge mit dem Controller ändern, die Startseite aus Feldern selbst bauen und als Datei oder QR teilen."], "en": ["Theme editor and your own home", "Change colours, font, background and sounds with the controller, build your home from tiles and share it as a file or QR."] },
+		{ "icon": "home", "de": ["Dein Zimmer – ganz nach dir", "Möbel, Wände, Licht und Regale frei einrichten, eigene Möbel bauen, stimmungsvolles Licht in drei Grafikstufen."], "en": ["Your room – just how you like it", "Furnish freely, build your own furniture, atmospheric lighting in three quality levels."] },
+		{ "icon": "user", "de": ["Figur und Haustier", "Eine eigene Figur mit Emotes und ein Haustier, das dir folgt. Neues schaltest du nur durchs Spielen frei."], "en": ["Avatar and pet", "Your own avatar with emotes and a pet that follows you. New items unlock only by playing."] },
+		{ "icon": "tv", "de": ["Das Spiel im Zimmer-Fernseher", "Im Spiel über den Guide ins Zimmer: Der Fernseher zeigt dein Spiel live. Zimmer teilen und Fotomodus."], "en": ["Your game on the room TV", "Open your room from the Guide while playing: the TV shows your game live. Share rooms and take photos."] },
+		{ "icon": "friends", "de": ["Mehrere Profile", "„Wer spielt?“ beim Start, eigene Einstellungen, Anmeldungen und Zimmer je Profil, Kinderprofil mit Zeitlimit."], "en": ["Several profiles", "“Who's playing?” at start, own settings, sign-ins and room per profile, child profile with a time limit."] },
+		{ "icon": "controller", "de": ["Einrichtung und Uzai-Doktor", "In zwei Minuten fertig, Controller direkt aus Uzai koppeln, Probleme als Karten mit „Beheben“."], "en": ["Setup and Uzai Doctor", "Done in two minutes, pair controllers right from Uzai, problems as cards with “Fix”."] },
+		{ "icon": "games", "de": ["Mehr Launcher", "GOG, Ubisoft Connect, Battle.net, Xbox/Game Pass, Amazon, itch.io und Riot – doppelte Spiele als ein Eintrag."], "en": ["More launchers", "GOG, Ubisoft Connect, Battle.net, Xbox/Game Pass, Amazon, itch.io and Riot – duplicates shown as one entry."] },
+		{ "icon": "video", "de": ["Filme aus Plex, Jellyfin und mehr", "Plex, Jellyfin, Emby und dein Stremio-Konto in der Filme-Oberfläche, auch mehrere zugleich."], "en": ["Movies from Plex, Jellyfin and more", "Plex, Jellyfin, Emby and your Stremio account in the movies section, even several at once."] }
+	],
+	"0.9.0": [
+		{ "icon": "grid", "de": ["Schnellmenü", "Guide-Taste halten: Bildschirmfoto, Clip, Mikro, Ruhemodus oder Spiel beenden – mit einem Druck."], "en": ["Quick menu", "Hold the Guide button: screenshot, clip, mic, rest mode or quit the game – in one press."] },
+		{ "icon": "volume", "de": ["Lautstärke und Mikro", "Guide → System: jedes Programm mit Ton einzeln regeln, das Mikro mit einem Druck stumm."], "en": ["Volume and mic", "Guide → System: adjust every app that plays sound, mute the mic in one press."] },
+		{ "icon": "search", "de": ["Suche über alles", "R3, F oder die Lupe: Spiele, Einstellungen und Freunde sofort, dazu Shop, Musik, Streams und Filme."], "en": ["Search everything", "R3, F or the magnifier: games, settings and friends instantly, plus store, music, streams and movies."] },
+		{ "icon": "sort", "de": ["Filter, Ansichten und Tags", "In „Alle Spiele“ ordnet Y nach Plattform, Genre, Reihe oder eigenen Tags – auch für mehrere Spiele auf einmal."], "en": ["Filters, views and tags", "In “All games”, Y groups by platform, genre, series or your own tags – also for several games at once."] },
+		{ "icon": "history", "de": ["Nach dem Spielen", "Eine kurze Zusammenfassung der Runde und auf der Spielseite dein Verlauf mit Meilensteinen."], "en": ["After playing", "A short summary of the session, and your history with milestones on the game page."] },
+		{ "icon": "info", "de": ["Hilfe, wenn etwas hakt", "Hängt ein Spiel, bietet der Guide „Sofort beenden“ an. Erste Hilfe und ein Controller-Problemlöser stehen unter Einstellungen."], "en": ["Help when things go wrong", "If a game hangs, the Guide offers “End now”. First aid and a controller troubleshooter are in Settings."] }
+	],
+	"0.8.3": [
+		{ "icon": "video", "de": ["Filme schneller", "Nuvio gleicht nach dem ersten Mal nur noch Änderungen ab und lädt nichts, solange ein Spiel oder Film läuft."], "en": ["Faster movies", "After the first sync, Nuvio only fetches changes and loads nothing while a game or movie is running."] },
+		{ "icon": "friends", "de": ["Steam und Discord getrennt", "Im Guide werden Freunde mit gleichem Namen nicht mehr zusammengelegt."], "en": ["Steam and Discord kept apart", "In the Guide, friends with the same name are no longer merged."] },
+		{ "icon": "phone", "de": ["Discord-Anrufe annehmen", "Ein Anruf kommt als Karte in der Mitte; im Spiel reicht die Guide-Taste."], "en": ["Answer Discord calls", "A call shows up as a card in the middle; in a game, the Guide button is enough."] }
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "streams": [
+    {
+      "name": "[RD⚡] Comet 2160p",
+      "description": "📄 Beispielfilm.2024.MULTi.2160p.WEB-DL.DV.HDR10+.H265-GRP\n📹 HEVC • HDR10+ • DV\n🔊 DDP • 5.1\n🗣️ 🇫🇷/🇬🇧/🇩🇪\n💾 18.2 GB 👥 34\n🔎 Torrentio",
+      "url": "https://comet.example/playback/abc",
+      "behaviorHints": {
+        "filename": "Beispielfilm.2024.MULTi.2160p.WEB-DL.DV.HDR10+.H265-GRP.mkv",
+        "bingeGroup": "comet|abc",
+        "videoSize": 19542107340
+      }
+    },
+    {
+      "name": "[TB⬇️] Comet 1080p",
+      "description": "📄 Beispielfilm 2024 1080p AMZN WEB-DL DDP5 1 Atmos H 264-GRP\n📹 AVC\n🔊 Atmos • DDP\n🗣️ 🇬🇧\n💾 10.3 GB 👥 77\n🔎 Jackett",
+      "url": "https://comet.example/playback/def"
+    }
+  ]
+}

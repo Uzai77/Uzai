@@ -1,0 +1,50 @@
+Microsoft Edge WebView2 SDK – Microsoft.Web.WebView2.Core.dll, WebView2Loader.dll (x64)
+
+Wofür:     Kern des Uzai-Browsers (Wunschliste 120). Der Browser-Wirt (helper/uzai-browser-wirt.cs) lädt damit
+           die WebView2-Laufzeit, die mit Windows 10/11 und Microsoft Edge kommt und von Windows aktuell
+           gehalten wird. Uzai liefert keine eigene Browser-Engine mit.
+Herkunft:  NuGet-Paket Microsoft.Web.WebView2, Fassung 1.0.4258.31 (veröffentlicht 2026-09-28),
+           https://api.nuget.org/v3-flatcontainer/microsoft.web.webview2/1.0.4258.31/microsoft.web.webview2.1.0.4258.31.nupkg
+           Paket-Prüfsumme laut NuGet-Katalog (SHA-512, Base64), beim Laden verglichen:
+           HlGVwvyP/IWiXAU8K57Vmg59khY3DWMOxMnH4AHusFRy0/vDAjKItXUIVNXiXXaq4CLfSZyNUic1wOIlnPLsPQ==
+Dateien:   lib/net462/Microsoft.Web.WebView2.Core.dll     698208 Bytes
+             SHA-256 d60e6e94245078cb56e44ebd5f360dc04bf18e460136be93bfc4cfca43b98505
+           runtimes/win-x64/native/WebView2Loader.dll      194912 Bytes
+             SHA-256 3426dcc55fdfb8b5e7ac623cf33b4ccf283fbf68a0c5a65bddfdb4d749a8abee
+Signatur:  Authenticode, Microsoft Corporation (Microsoft Code Signing PCA 2024), beide Dateien.
+Prüfung:   Uzai (src/core/browser_wirt.gd), der Helfer (helper/uzai-helper.ps1, Browser-Bauen) und der Wirt
+           selbst (UzbPruefung) vergleichen die SHA-256 oben und – Helfer und Wirt – die Signatur von
+           Microsoft Corporation, bevor irgendetwas daraus geladen wird. tests/logic_browser.gd und
+           tests/browser_cs.ps1 prüfen, dass alle Stellen dieselben Werte nennen.
+Lizenz:    Lizenz des Pakets (LICENSE.txt im Paket), wörtlich:
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * The name of Microsoft Corporation, or the names of its contributors 
+may not be used to endorse or promote products derived from this
+software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Die WebView2-Laufzeit selbst ist nicht Teil von Uzai; sie gehört zu Windows/Microsoft Edge und steht unter
+den Bedingungen von Microsoft (https://developer.microsoft.com/microsoft-edge/webview2/).

@@ -1,0 +1,17 @@
+IBM Plex Sans und IBM Plex Sans Condensed (IBM Corp., SIL Open Font License 1.1 mit dem
+reservierten Namen „Plex“, siehe OFL-IBMPlex.txt). Unverändert übernommen, nur die Dateinamen
+sind kürzer. Geladen am 25.10.2026 über HTTPS aus dem offiziellen Google-Fonts-Archiv
+(github.com/google/fonts, Quelle dort: github.com/googlefonts/plex):
+
+IBMPlexSans-VF.ttf
+  https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/IBMPlexSans%5Bwdth,wght%5D.ttf
+  SHA-256 3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3
+IBMPlexSansCondensed-Bold.ttf
+  https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Bold.ttf
+  SHA-256 b65492d86cdd5cd9d43d2671b55d5d36fec36859fc8b08bc6aba78e441d6c849
+IBMPlexSansCondensed-SemiBold.ttf
+  https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBold.ttf
+  SHA-256 a081ca60548aea14100757a2d6fe71ca60fd90ebce779c9a8ae5a0c8fb4526d4
+OFL-IBMPlex.txt
+  https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/OFL.txt
+  SHA-256 7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da

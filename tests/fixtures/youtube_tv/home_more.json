@@ -1,0 +1,303 @@
+{
+ "responseContext": {},
+ "continuationContents": {
+  "sectionListContinuation": {
+   "contents": [
+    {
+     "shelfRenderer": {
+      "headerRenderer": {
+       "shelfHeaderRenderer": {
+        "title": {
+         "runs": [
+          {
+           "text": "Musik"
+          }
+         ]
+        }
+       }
+      },
+      "content": {
+       "horizontalListRenderer": {
+        "items": [
+         {
+          "tileRenderer": {
+           "style": "TILE_STYLE_YTLR_DEFAULT",
+           "contentType": "TILE_CONTENT_TYPE_VIDEO",
+           "contentId": "mmmmmmmmm01",
+           "header": {
+            "tileHeaderRenderer": {
+             "thumbnail": {
+              "thumbnails": [
+               {
+                "url": "https://i.ytimg.com/vi/mmmmmmmmm01/mqdefault.jpg",
+                "width": 320,
+                "height": 180
+               },
+               {
+                "url": "https://i.ytimg.com/vi/mmmmmmmmm01/hqdefault.jpg?sqp=tv",
+                "width": 480,
+                "height": 360
+               }
+              ]
+             },
+             "thumbnailOverlays": [
+              {
+               "thumbnailOverlayTimeStatusRenderer": {
+                "text": {
+                 "simpleText": "3:33"
+                },
+                "style": "DEFAULT"
+               }
+              }
+             ],
+             "style": "TILE_HEADER_STYLE_PADDED"
+            }
+           },
+           "metadata": {
+            "tileMetadataRenderer": {
+             "title": {
+              "simpleText": "Konzert"
+             },
+             "lines": [
+              {
+               "lineRenderer": {
+                "items": [
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "runs": [
+                     {
+                      "text": "Musikhaus",
+                      "navigationEndpoint": {
+                       "browseEndpoint": {
+                        "browseId": "UCmusikhaus00000000000a",
+                        "canonicalBaseUrl": "/@x"
+                       }
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "lineRenderer": {
+                "items": [
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "simpleText": "3 Mrd. Aufrufe"
+                   }
+                  }
+                 },
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "simpleText": "vor 1 Jahr"
+                   }
+                  }
+                 }
+                ]
+               }
+              }
+             ]
+            }
+           },
+           "onSelectCommand": {
+            "clickTrackingParams": "CT",
+            "watchEndpoint": {
+             "videoId": "mmmmmmmmm01",
+             "watchEndpointSupportedOnesieConfig": {}
+            }
+           },
+           "menu": {
+            "menuRenderer": {
+             "items": [
+              {
+               "menuNavigationItemRenderer": {
+                "text": {
+                 "runs": [
+                  {
+                   "text": "Zur Warteschlange"
+                  }
+                 ]
+                },
+                "navigationEndpoint": {
+                 "browseEndpoint": {
+                  "browseId": "UCmenuwrong00000000000"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           },
+           "onLongPressCommand": {
+            "showMenuCommand": {
+             "menu": {
+              "menuRenderer": {
+               "items": []
+              }
+             }
+            }
+           },
+           "trackingParams": "TP",
+           "accessibility": {
+            "accessibilityData": {
+             "label": "Konzert von Musikhaus vor 3 Tagen 12 Minuten"
+            }
+           }
+          }
+         },
+         {
+          "tileRenderer": {
+           "style": "TILE_STYLE_YTLR_DEFAULT",
+           "contentType": "TILE_CONTENT_TYPE_VIDEO",
+           "contentId": "mmmmmmmmm02",
+           "header": {
+            "tileHeaderRenderer": {
+             "thumbnail": {
+              "thumbnails": [
+               {
+                "url": "https://i.ytimg.com/vi/mmmmmmmmm02/mqdefault.jpg",
+                "width": 320,
+                "height": 180
+               },
+               {
+                "url": "https://i.ytimg.com/vi/mmmmmmmmm02/hqdefault.jpg?sqp=tv",
+                "width": 480,
+                "height": 360
+               }
+              ]
+             },
+             "thumbnailOverlays": [
+              {
+               "thumbnailOverlayTimeStatusRenderer": {
+                "text": {
+                 "simpleText": "4:01"
+                },
+                "style": "DEFAULT"
+               }
+              }
+             ],
+             "style": "TILE_HEADER_STYLE_PADDED"
+            }
+           },
+           "metadata": {
+            "tileMetadataRenderer": {
+             "title": {
+              "simpleText": "Playlist-Stück"
+             },
+             "lines": [
+              {
+               "lineRenderer": {
+                "items": [
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "runs": [
+                     {
+                      "text": "Musikhaus",
+                      "navigationEndpoint": {
+                       "browseEndpoint": {
+                        "browseId": "UCmusikhaus00000000000a",
+                        "canonicalBaseUrl": "/@x"
+                       }
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 }
+                ]
+               }
+              },
+              {
+               "lineRenderer": {
+                "items": [
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "simpleText": "987 Aufrufe"
+                   }
+                  }
+                 },
+                 {
+                  "lineItemRenderer": {
+                   "text": {
+                    "simpleText": "vor 2 Wochen"
+                   }
+                  }
+                 }
+                ]
+               }
+              }
+             ]
+            }
+           },
+           "onSelectCommand": {
+            "clickTrackingParams": "CT",
+            "watchEndpoint": {
+             "videoId": "mmmmmmmmm02",
+             "watchEndpointSupportedOnesieConfig": {}
+            }
+           },
+           "menu": {
+            "menuRenderer": {
+             "items": [
+              {
+               "menuNavigationItemRenderer": {
+                "text": {
+                 "runs": [
+                  {
+                   "text": "Zur Warteschlange"
+                  }
+                 ]
+                },
+                "navigationEndpoint": {
+                 "browseEndpoint": {
+                  "browseId": "UCmenuwrong00000000000"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           },
+           "onLongPressCommand": {
+            "showMenuCommand": {
+             "menu": {
+              "menuRenderer": {
+               "items": []
+              }
+             }
+            }
+           },
+           "trackingParams": "TP",
+           "accessibility": {
+            "accessibilityData": {
+             "label": "Playlist-Stück von Musikhaus vor 3 Tagen 12 Minuten"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "trackingParams": "TP",
+      "tvhtml5ShelfRendererType": "TVHTML5_SHELF_RENDERER_TYPE_GRID"
+     }
+    }
+   ],
+   "continuations": [
+    {
+     "nextContinuationData": {
+      "continuation": "HOMEPAGE3"
+     }
+    }
+   ]
+  }
+ }
+}

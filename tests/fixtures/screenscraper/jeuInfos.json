@@ -1,0 +1,50 @@
+{
+	"header": { "APIversion": "2.0", "dateTime": "2026-10-31 12:00:00", "commandRequested": "jeuInfos", "success": "true", "error": "" },
+	"response": {
+		"serveurs": { "cpu1": "12", "threadsmin": "40", "nbscrapeurs": "200", "apiacces": "1000" },
+		"ssuser": { "id": "beispiel", "niveau": "1", "maxthreads": "1", "requeststoday": "120", "maxrequestsperday": "20000",
+			"requestskotoday": "3", "maxrequestskoperday": "2000", "visites": "5", "favregion": "eu" },
+		"jeu": {
+			"id": "3017",
+			"romid": "99",
+			"notgame": "false",
+			"noms": [ { "region": "jp", "text": "Ōkami (JP)" }, { "region": "eu", "text": "Okami" }, { "region": "us", "text": "Okami US" } ],
+			"systeme": { "id": "58", "text": "PlayStation 2" },
+			"medias": [
+				{ "type": "box-2D", "parent": "jeu", "region": "us", "format": "png", "size": "812345",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&devpassword=GEHEIM&softname=Uzai&ssid=&sspassword=&systemeid=58&jeuid=3017&media=box-2D(us)" },
+				{ "type": "box-2D", "parent": "jeu", "region": "eu", "format": "png", "size": "802345",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&devpassword=GEHEIM&softname=Uzai&systemeid=58&jeuid=3017&media=box-2D(eu)" },
+				{ "type": "box-2D", "parent": "jeu", "region": "jp", "format": "jpg", "size": "702345",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&devpassword=GEHEIM&softname=Uzai&systemeid=58&jeuid=3017&media=box-2D(jp)" },
+				{ "type": "box-2D", "parent": "jeu", "region": "eu", "format": "png", "size": "802345",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&devpassword=GEHEIM&softname=Uzai&systemeid=58&jeuid=3017&media=box-2D(eu)" },
+				{ "type": "box-2D", "parent": "jeu", "region": "de", "format": "png",
+					"url": "https://screenscraper.fr.evil.example/m.php?media=box-2D(de)" },
+				{ "type": "box-2D", "parent": "jeu", "region": "wor", "format": "png", "size": "99999999999",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=3017&media=box-2D(wor)" },
+				{ "type": "box-3D", "parent": "jeu", "region": "eu", "format": "png",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&jeuid=3017&media=box-3D(eu)" },
+				{ "type": "box-2D-side", "parent": "jeu", "region": "eu", "format": "png",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&jeuid=3017&media=box-2D-side(eu)" },
+				{ "type": "fanart", "parent": "jeu", "format": "jpg",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&jeuid=3017&media=fanart" },
+				{ "type": "ss", "parent": "jeu", "region": "eu", "format": "png",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&jeuid=3017&media=ss(eu)" },
+				{ "type": "sstitle", "parent": "jeu", "region": "wor", "format": "png",
+					"url": "http://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=3017&media=sstitle(wor)" },
+				{ "type": "wheel", "parent": "jeu", "region": "wor", "format": "svg",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=3017&media=wheel(wor)" },
+				{ "type": "wheel-hd", "parent": "jeu", "region": "eu", "format": "png",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?devid=BEISPIEL&jeuid=3017&media=wheel-hd(eu)" },
+				{ "type": "wheel-carbon", "parent": "jeu", "region": "wor", "format": "png",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaJeu.php?jeuid=3017&media=wheel-carbon(wor)" },
+				{ "type": "manuel", "parent": "jeu", "region": "eu", "format": "pdf",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaManuelJeu.php?jeuid=3017&media=manuel(eu)" },
+				{ "type": "video", "parent": "jeu", "format": "mp4",
+					"url": "https://neoclone.screenscraper.fr/api2/mediaVideoJeu.php?jeuid=3017&media=video" },
+				"kaputt", 42, null
+			]
+		}
+	}
+}

@@ -1,0 +1,22 @@
+Schriften der Website
+
+IBM Plex Sans und IBM Plex Sans Condensed (IBM Corp.), SIL Open Font License 1.1 mit dem
+reservierten Namen „Plex“ (Lizenztext: OFL-IBMPlex.txt). Quelle sind die unveränderten Dateien
+aus assets/fonts/ (Herkunft dort: assets/fonts/IBMPlex-Quelle.txt).
+
+Für das Web nur verpackt, nicht verändert: WOFF2 mit Brotli, ohne Teilmenge, ohne Umbau der
+Glyphen (fontTools woff2.compress, transform_tables leer). Alle Tabellen kommen beim Entpacken
+Byte für Byte zurück; nur head.checkSumAdjustment wird vom Format neu gerechnet, und die alte
+DSIG-Signatur der Condensed-Datei fällt weg (WOFF2 macht sie ungültig). Namen, Glyphen und
+Metadaten bleiben, darum gilt der Name „Plex“ weiter (OFL-FAQ: Formatwechsel ohne Änderung).
+
+IBMPlexSans-VF.woff2
+  aus assets/fonts/IBMPlexSans-VF.ttf (SHA-256 3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3)
+  SHA-256 e291b60bbb1859d657bb5ce619ac7bb72f66b65eaad569ca1248ce668f04361c
+IBMPlexSansCondensed-Bold.woff2
+  aus assets/fonts/IBMPlexSansCondensed-Bold.ttf (SHA-256 b65492d86cdd5cd9d43d2671b55d5d36fec36859fc8b08bc6aba78e441d6c849)
+  SHA-256 5b83674a0b615e2742cfd5c329b798ea23a2ceaab7b4aa7657d67d1688d68626
+
+Neu erzeugen (Python mit fontTools und brotli):
+  from fontTools.ttLib import woff2
+  woff2.compress("assets/fonts/IBMPlexSans-VF.ttf", "website/fonts/IBMPlexSans-VF.woff2", transform_tables=set())

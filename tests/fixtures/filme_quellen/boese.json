@@ -1,0 +1,16 @@
+{
+  "streams": [
+    {
+      "name": "[b]Fett[/b]\u0007 Quelle‮\n4K",
+      "title": "Film​.2024\u0001.2160p\u0085.mkv\n[color=red]rot[/color] ﻿",
+      "description": "Zeile 1\r\nZeile 2\rZeile 3 Zeile 4\n\n\n\t  Zeile   5  ",
+      "url": "https://x.example/a.mkv",
+      "behaviorHints": { "filename": { "kein": "text" } }
+    },
+    {
+      "name": { "object": true },
+      "title": ["liste"],
+      "url": "https://x.example/b.mkv"
+    }
+  ]
+}

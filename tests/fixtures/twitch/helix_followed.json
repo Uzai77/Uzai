@@ -1,0 +1,33 @@
+{
+ "data": [
+  {
+   "id": "1",
+   "user_id": "7",
+   "user_login": "speedwurm",
+   "user_name": "Speedwurm",
+   "game_id": "27471",
+   "game_name": "Minecraft",
+   "type": "live",
+   "title": "Any% Weltrekordversuche",
+   "viewer_count": 4711,
+   "started_at": "2026-10-17T09:00:00Z",
+   "language": "de",
+   "thumbnail_url": "{BASE}/img/live_user_speedwurm-{width}x{height}.png"
+  },
+  {
+   "id": "2",
+   "user_id": "8",
+   "user_login": "pixelbude",
+   "user_name": "Pixelbude",
+   "game_id": "27284",
+   "game_name": "Retro",
+   "type": "live",
+   "title": "",
+   "viewer_count": 18400,
+   "started_at": "2026-10-17T10:00:00Z",
+   "language": "de",
+   "thumbnail_url": "{BASE}/img/live_user_pixelbude-{width}x{height}.png"
+  }
+ ],
+ "pagination": {}
+}

@@ -1,0 +1,11 @@
+"UserLocalConfigStore"
+{
+	"friends"
+	{
+		"PersonaStateDesired"		"1"
+	}
+	"WebStorage"
+	{
+		"FriendStoreLocalPrefs_12345"		"{\"ePersonaState\":3,\"strNonFriendsAllowedToMsg\":\"\"}"
+	}
+}

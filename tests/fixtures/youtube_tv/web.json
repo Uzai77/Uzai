@@ -1,0 +1,234 @@
+{
+ "contents": {
+  "twoColumnBrowseResultsRenderer": {
+   "tabs": [
+    {
+     "tabRenderer": {
+      "selected": true,
+      "content": {
+       "richGridRenderer": {
+        "contents": [
+         {
+          "richItemRenderer": {
+           "content": {
+            "lockupViewModel": {
+             "contentImage": {
+              "thumbnailViewModel": {
+               "image": {
+                "sources": [
+                 {
+                  "url": "https://i.ytimg.com/vi/llllllllll1/hqdefault.jpg",
+                  "width": 480,
+                  "height": 270
+                 }
+                ]
+               },
+               "overlays": [
+                {
+                 "thumbnailOverlayBadgeViewModel": {
+                  "thumbnailBadges": [
+                   {
+                    "thumbnailBadgeViewModel": {
+                     "text": "8:05",
+                     "badgeStyle": "THUMBNAIL_OVERLAY_BADGE_STYLE_DEFAULT"
+                    }
+                   }
+                  ]
+                 }
+                }
+               ]
+              }
+             },
+             "metadata": {
+              "lockupMetadataViewModel": {
+               "title": {
+                "content": "Lockup Video"
+               },
+               "metadata": {
+                "contentMetadataViewModel": {
+                 "metadataRows": [
+                  {
+                   "metadataParts": [
+                    {
+                     "text": {
+                      "content": "Kanal Neu",
+                      "commandRuns": [
+                       {
+                        "onTap": {
+                         "innertubeCommand": {
+                          "browseEndpoint": {
+                           "browseId": "UClockup000000000000000a"
+                          }
+                         }
+                        }
+                       }
+                      ]
+                     }
+                    }
+                   ]
+                  },
+                  {
+                   "metadataParts": [
+                    {
+                     "text": {
+                      "content": "45.678 Aufrufe"
+                     }
+                    },
+                    {
+                     "text": {
+                      "content": "vor 2 Stunden"
+                     }
+                    }
+                   ]
+                  }
+                 ]
+                }
+               }
+              }
+             },
+             "contentId": "llllllllll1",
+             "contentType": "LOCKUP_CONTENT_TYPE_VIDEO"
+            }
+           }
+          }
+         },
+         {
+          "richItemRenderer": {
+           "content": {
+            "lockupViewModel": {
+             "contentId": "PLmix",
+             "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST",
+             "metadata": {
+              "lockupMetadataViewModel": {
+               "title": {
+                "content": "Mix"
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "richItemRenderer": {
+           "content": {
+            "videoRenderer": {
+             "videoId": "vvvvvvvvvv1",
+             "title": {
+              "runs": [
+               {
+                "text": "Klassisches Video"
+               }
+              ]
+             },
+             "longBylineText": {
+              "runs": [
+               {
+                "text": "Alter Kanal",
+                "navigationEndpoint": {
+                 "browseEndpoint": {
+                  "browseId": "UCalt0000000000000000a"
+                 }
+                }
+               }
+              ]
+             },
+             "lengthText": {
+              "simpleText": "3:21"
+             },
+             "viewCountText": {
+              "simpleText": "7.890 Aufrufe"
+             },
+             "publishedTimeText": {
+              "simpleText": "vor 1 Tag"
+             },
+             "thumbnail": {
+              "thumbnails": [
+               {
+                "url": "https://i.ytimg.com/vi/vvvvvvvvvv1/hq720.jpg",
+                "width": 720,
+                "height": 404
+               }
+              ]
+             },
+             "badges": [
+              {
+               "metadataBadgeRenderer": {
+                "style": "BADGE_STYLE_TYPE_SIMPLE",
+                "label": "Neu"
+               }
+              }
+             ]
+            }
+           }
+          }
+         },
+         {
+          "richSectionRenderer": {
+           "content": {
+            "richShelfRenderer": {
+             "title": {
+              "runs": [
+               {
+                "text": "Shorts"
+               }
+              ]
+             },
+             "contents": [
+              {
+               "richItemRenderer": {
+                "content": {
+                 "shortsLockupViewModel": {
+                  "entityId": "shorts-shelf-item-sssssssssh3",
+                  "onTap": {
+                   "innertubeCommand": {
+                    "reelWatchEndpoint": {
+                     "videoId": "sssssssssh3"
+                    }
+                   }
+                  },
+                  "overlayMetadata": {
+                   "primaryText": {
+                    "content": "Web-Short"
+                   },
+                   "secondaryText": {
+                    "content": "1 Mio. Aufrufe"
+                   }
+                  },
+                  "thumbnail": {
+                   "sources": [
+                    {
+                     "url": "https://i.ytimg.com/vi/sssssssssh3/frame0.jpg",
+                     "width": 405
+                    }
+                   ]
+                  }
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         },
+         {
+          "continuationItemRenderer": {
+           "trigger": "CONTINUATION_TRIGGER_ON_ITEM_SHOWN",
+           "continuationEndpoint": {
+            "continuationCommand": {
+             "token": "WEBNEXT",
+             "request": "CONTINUATION_REQUEST_TYPE_BROWSE"
+            }
+           }
+          }
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  }
+ }
+}

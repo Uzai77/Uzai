@@ -1,0 +1,44 @@
+"AppState"
+{
+	"appid"		"1245620"
+	"universe"		"1"
+	"name"		"ELDEN RING"
+	"StateFlags"		"4"
+	"installdir"		"ELDEN RING"
+	"LastUpdated"		"1758300000"
+	"SizeOnDisk"		"60123456789"
+	"buildid"		"18100000"
+	"InstalledDepots"
+	{
+		"1245621"
+		{
+			"manifest"		"1112223334445556667"
+			"size"		"49000000000"
+		}
+		"2778581"
+		{
+			"manifest"		"2223334445556667778"
+			"size"		"11000000000"
+			"dlcappid"		"2778580"
+		}
+		"9990001"
+		{
+			"manifest"		"3334445556667778889"
+			"size"		"1000"
+			"DLCAppID"		"9990000"
+		}
+		"9990002"
+		{
+			"manifest"		"4445556667778889990"
+			"dlcappid"		"kaputt"
+		}
+	}
+	"SharedDepots"
+	{
+		"228988"		"228980"
+	}
+	"UserConfig"
+	{
+		"language"		"german"
+	}
+}

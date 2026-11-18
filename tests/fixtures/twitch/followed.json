@@ -1,0 +1,80 @@
+{
+ "data": {
+  "user": {
+   "id": "4242",
+   "login": "testkonto",
+   "displayName": "Testkonto",
+   "profileImageURL": "{BASE}/img/avatar_testkonto-70x70.png",
+   "followedLiveUsers": {
+    "edges": [
+     {
+      "cursor": "c0",
+      "node": {
+       "id": "u_speedwurm",
+       "login": "speedwurm",
+       "displayName": "Speedwurm",
+       "profileImageURL": "{BASE}/img/avatar_speedwurm-70x70.png",
+       "stream": {
+        "id": "s9",
+        "title": "Any% Weltrekordversuche",
+        "viewersCount": 4711,
+        "createdAt": "2026-10-17T09:00:00Z",
+        "previewImageURL": "{BASE}/img/live_user_speedwurm-{width}x{height}.png",
+        "broadcaster": null,
+        "game": {
+         "id": "27471",
+         "displayName": "Minecraft"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "c1",
+      "node": {
+       "id": "u_pixelbude",
+       "login": "pixelbude",
+       "displayName": "Pixelbude",
+       "profileImageURL": "{BASE}/img/avatar_pixelbude-70x70.png",
+       "stream": {
+        "id": "s1",
+        "title": "Retro-Sonntag: alle Zelda-Teile am Stück",
+        "viewersCount": 18400,
+        "createdAt": "2026-10-17T10:00:00Z",
+        "previewImageURL": "{BASE}/img/live_user_pixelbude-{width}x{height}.png",
+        "broadcaster": {
+         "id": "u_pixelbude",
+         "login": "pixelbude",
+         "displayName": "Pixelbude",
+         "profileImageURL": "{BASE}/img/avatar_pixelbude-70x70.png",
+         "broadcastSettings": null
+        },
+        "game": {
+         "id": "27284",
+         "displayName": "Retro",
+         "slug": "retro",
+         "boxArtURL": "{BASE}/img/box_27284-{width}x{height}.png"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "c2",
+      "node": {
+       "id": "u_offline",
+       "login": "offline",
+       "displayName": "Offline",
+       "stream": null
+      }
+     },
+     {
+      "cursor": "x",
+      "node": null
+     }
+    ],
+    "pageInfo": {
+     "hasNextPage": false
+    }
+   }
+  }
+ }
+}

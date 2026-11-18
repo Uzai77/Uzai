@@ -1,0 +1,27 @@
+LIBRARY uzai-datachannel.dll
+EXPORTS
+    rtcInitLogger
+    rtcPreload
+    rtcCleanup
+    rtcSetThreadPoolSize
+    rtcSetSctpSettings
+    rtcCreatePeerConnection
+    rtcClosePeerConnection
+    rtcDeletePeerConnection
+    rtcSetStateChangeCallback
+    rtcSetGatheringStateChangeCallback
+    rtcSetDataChannelCallback
+    rtcSetLocalDescription
+    rtcSetRemoteDescription
+    rtcGetLocalDescription
+    rtcGetLocalDescriptionType
+    rtcCreateDataChannelEx
+    rtcDeleteDataChannel
+    rtcSendMessage
+    rtcReceiveMessage
+    rtcGetAvailableAmount
+    rtcGetBufferedAmount
+    rtcIsOpen
+    rtcIsClosed
+    rtcClose
+    rtcDelete

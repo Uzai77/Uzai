@@ -1,0 +1,19 @@
+{
+  "streams": [
+    {
+      "name": "MediaFusion | RD ⚡️ 4K",
+      "description": "📂 Beispielfilm 2024\n┈➤ Beispielfilm.2024.2160p.iT.WEB-DL.DDP5.1.Atmos.DV.HDR10.H.265-GRP.mkv\n💾 22.4 GB 👤 89\n🌐 English + German + Spanish\n🔗 Torrentio",
+      "url": "https://mediafusion.example/streaming_provider/abc/stream",
+      "behaviorHints": {
+        "bingeGroup": "MediaFusion-RD-4K",
+        "filename": "Beispielfilm.2024.2160p.iT.WEB-DL.DDP5.1.Atmos.DV.HDR10.H.265-GRP.mkv",
+        "videoSize": 24051704217
+      }
+    },
+    {
+      "name": "AIO | Deutsch 1080p",
+      "description": "🎥 BluRay 🎞️ HEVC\n🎧 DTS-HD MA 7.1\n🗣 DE | EN\n📦 12.1 GB\n🏷️ Beispielfilm.Teil.Zwei.2024.German.DTSHD.DL.1080p.BluRay.x265-GRP",
+      "url": "https://aio.example/play/xyz"
+    }
+  ]
+}

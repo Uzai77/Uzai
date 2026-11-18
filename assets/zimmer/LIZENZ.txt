@@ -1,0 +1,111 @@
+Fremde Oberflächen und Modelle im Zimmer (assets/zimmer/tex, assets/zimmer/modelle)
+
+Alles hier wurde am 26.10.2026 über HTTPS aus öffentlichen Git-Archiven geladen (Commit und
+SHA-256 unten), mit eigenen Werkzeugen umgepackt (tools/zimmer_texturen.py, glTF-Transform 4.1.1)
+und wird in Uzai ohne Etiketten, Logos oder Herstellernamen gezeigt. Lizenzen: CC0 1.0 (frei, ohne
+Namensnennung) und CC BY 4.0 (frei mit Namensnennung – die steht hier und unter Einstellungen ›
+System › Fremde Software).
+  CC0 1.0:   https://creativecommons.org/publicdomain/zero/1.0/
+  CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+
+1. Oberflächen (assets/zimmer/tex)
+
+Eigene Karten (Putz, Beton, Stoffe, Leder, Hölzer, Lack, Metall, Haut): aus tools/zimmer_texturen.py
+gerechnet, keine fremden Bilder.
+
+Von ambientCG (ambientcg.com, Lennart Demes), Lizenz CC0 1.0, geladen aus dem Archiv von
+Poimandres (pmndrs, „market-assets“, dort mit creator „ambientcg“ und Lizenz CC0 verzeichnet):
+  https://github.com/pmndrs/market-assets  Commit c9cfa0236a012093edd5affe200808752375bd90
+  files/materials/<name>/  – Color, Normal, Roughness (1K), von uns nur neu gepackt (JPEG) und als
+  dielen_*, marmor_*, fliesen_*, messing_* abgelegt.
+
+  wood-floor-43 (ambientCG WoodFloor043) → dielen_farbe/normal/rau.jpg
+    Quelle  WoodFloor043_1K_Color.jpg      e323925469e18ecc4f20dee43426982f8eb936905fde91b8036ce44e559b5ed0
+            WoodFloor043_1K_Normal.jpg     e48bc55207c3b87d46013b73fa19c9bdce9bbf55ccb4d892de94c36670101568
+            WoodFloor043_1K_Roughness.jpg  9987a20400d69279b935af57a0c7c6c1ea7941f407e3aeb155f22b77392b6445
+    Bei uns dielen_farbe.jpg   f6cf0b426a89411ee88067a253b3b0cd33be08b87464a56eeb08a88ea24de9f7
+            dielen_normal.jpg  aa0ef9f8f794ef3c3946a4844edb7737dad568a8b7146a18e5af779ee2fb168c
+            dielen_rau.jpg     bd48c7b54eae4f1bf2d92ad9aed7199dbdc8968ad26c45a42fa2703bfd3b2f43
+  marble (ambientCG Marble006) → marmor_*
+    Quelle  Marble006_1K_Color.jpg         9124f4e2babfcc27e81ed01c9066d370bc5da2d1fd8d147bf6b6663645845cd2
+            Marble006_1K_Normal.jpg        258a1ec282317f1f20bf85193d840f0f7655186b63c574e0cca0a8d471cecbd7
+            Marble006_1K_Roughness.jpg     c4c996700157c42355a130066e721f00a58c4966b10f9ce79e66595b97c002da
+    Bei uns marmor_farbe.jpg   ea0b81d82f5425a29439b3f5559ad01320d32aa7c102a976fdccaf1298d7cd46
+            marmor_normal.jpg  beab85b7bab6775ae3add7ff60546681a0a10b230126455d2722b0413a2c1f31
+            marmor_rau.jpg     f12c748aa1906312a01bc8b000684e8e65bbfc4179c024e147f29cc457cb644e
+  tiles (ambientCG Tiles036) → fliesen_*
+    Quelle  Tiles036_1K_Color.jpg          58d0508d6f98fa96fe15ad5f667f2d9aeed365050d630d6f47502e402631014e
+            Tiles036_1K_Normal.jpg         a881fe3d71ea02824f8b2f205c02c9dfdc5f9704d3c1408c741f05a90a301576
+            Tiles036_1K_Roughness.jpg      81519efae86ac8b2a731e6d32882cd84cf457511c3306b8439009584c5f9a
+    Bei uns fliesen_farbe.jpg  8410f984747bed0923c8f8cfcd7b0a4d0941dabbdbe82e298e942743d77f74d8
+            fliesen_normal.jpg b2a7f48f4c41ca5f29610ebab848392296aae394ffbd4bb5c5900e7c600bc7ff
+            fliesen_rau.jpg    c979c16c54f2aeb0575be27c46c0cd101c42541e6cd7bb641ed2b5b2dc57e669
+  gold (ambientCG Metal007) → messing_*
+    Quelle  Metal007_1K_Color.jpg          bedac0a09a8210be6a04395e12bdd0e548d71fc472153c20f2141d3355d1af4d
+            Metal007_1K_Normal.jpg         eab0d91f49cf46b355511ea5142b950509d4f1c3adfea927044bf9ac48ea4e5a
+            Metal007_1K_Roughness.jpg      ff2e1291f870a2eef281a617313f47202a75e6afd775477baac45e1384f65d26
+    Bei uns messing_farbe.jpg  495cdb6370bbe85a4511bab0d9e5d36e0278daaa3f9c7e0db5ad6c3c8e99a6c5
+            messing_normal.jpg ca7acd3a311fe49d08048ac649f54915d739b70d3c45abdafb204b2d040d040c
+            messing_rau.jpg    69cdab531dfe62d21cabeb3516028b46cc31173613d2a71518f2e3ba03b2ef79
+
+
+2. Modelle (assets/zimmer/modelle)
+
+Aus den Khronos glTF Sample Assets (jedes Modell mit eigener Lizenz, siehe README.md des Modells):
+  https://github.com/KhronosGroup/glTF-Sample-Assets   Commit 8f492390ddc7a2ae221a1369ef560589cf8c70fb
+  Models/<Name>/glTF-Binary/<Name>.glb, geladen am 26.10.2026 über HTTPS
+Umgepackt mit tools/glb_umpacken.mjs bzw. tools/glb_vereinfachen.mjs (glTF-Transform 4.1.1,
+meshoptimizer): Etiketten, Lichter und Animationen entfernt, Texturen auf 512–1024 Punkte als WebP,
+bei Deko die Netze vereinfacht; abgelegt als .gltf mit eigener .bin und den Texturen daneben
+(<name>_<n>.webp), damit nichts doppelt im Archiv liegt. Form, Material und Urheber sind unverändert.
+
+  sessel_samt.gltf       aus SheenChair          © 2020 Wayfair LLC – Eric Chadwick, CC0 1.0
+    Quelle  f0af2a2b102d28d540236306ae19f8fb36842df76bd38cf76f063f9bd2853399
+    Bei uns sessel_samt.gltf c5f807b1b06a3208e2af37370cda5eeb5402f44be0aa99588a9a9dd448453d13
+            sessel_samt.bin  a604df6dcb9eef055d93dc60d5f33501bd84eb18932735596241f3e77ad7d75c
+  sofa_samt.gltf         aus GlamVelvetSofa      © 2021 Wayfair LLC – Eric Chadwick, CC BY 4.0
+    Quelle  67202c74a1a33377771f162dc7fad612a6c9bd51ee15124c488e9851d9ac5266
+    Bei uns sofa_samt.gltf 00104cfb1b373a20536f6beb6b3a48332e3f6bc02cbd914c85e8ea9faebebc75
+            sofa_samt.bin  270922d697a4e6192f8d143df22c78512b063975aee1dba7aa0119a22d51e179
+  sofa_leder.gltf        aus SheenWoodLeatherSofa  Original Fran Calvente CC0 1.0;
+                         Verbesserungen © 2024 Darmstadt Graphics Group GmbH – Eric Chadwick, CC BY 4.0
+    Quelle  5349e042ad41e695e89f1110230c4ee0c75b2bc62ef830c7016be6ecf665bfb6
+    Bei uns sofa_leder.gltf a69728f8a900f2beb66279c94d855b67d04991d4b3e0a20487ea8ed4d62fa6dd
+            sofa_leder.bin  0398e582c57ac514703c1fff0813d038ae32e884fe9c5300fabfcb5707233e88
+  sessel_damast.gltf     aus ChairDamaskPurplegold  © 2021 Wayfair – Eric Chadwick, CC BY 4.0
+    Quelle  9862ff753f25ca6738bf5924afbfde01b794fae73db3f94bcd8cdc7cc570d9bb
+    Bei uns sessel_damast.gltf 2de211069c4e34940d1bd32811d366033c55e3de480eaa44444323de8fcdd54d
+            sessel_damast.bin  105bff5331bbdf167f9117fa75719f5315e4e7d3d2646c4ab239d58f57626dc8
+  pflanze_busch.gltf     aus DiffuseTransmissionPlant  Original Rico Cilliers CC0 1.0;
+                         Material © 2024 Darmstadt Graphics Group GmbH – Eric Chadwick, CC BY 4.0
+    Quelle  1748be8847e24bdd5cb6c5ac2bfd0afe8f11efc4f85091148550555e47c7ee83
+    Bei uns pflanze_busch.gltf 4f1a59c44248eb9dd979d48f3745fa50b7a0a419a271e615030a062a522213b1
+            pflanze_busch.bin  558e58fb1a9cbd21cab647992815012ed21a3861bf6a3aa83b253c0d2cfd6608
+  tasse.gltf             aus DiffuseTransmissionTeacup  Polyhaven.com und Eric Chadwick, CC0 1.0
+    Quelle  d4f567186fea262819aac6664cb9d7cef7f4600406038046771a69e10363935b
+    Bei uns tasse.gltf baf8ccf0c66bd43191aa02ddc776013e9cc27a2afc3a98400872e9ae46f8b68c
+            tasse.bin  cc9752e48331e8a24621907b523c807954f24f9dcf403e21b8e840251da5d5c4
+  stehlampe_dreiarm.gltf aus LightsPunctualLamp  © 2021 DGG (Darmstadt Graphics Group), CC BY 4.0
+    Quelle  b9a95cd0e17dea5284117e54807b49b746960038457a31a0011b9344acc11104
+    Bei uns stehlampe_dreiarm.gltf e700015838b291571bdb9abeb052346ae2ae10b7bd92faf3076b2dbe784f5eb5
+            stehlampe_dreiarm.bin  8c28a2ebe5af74c7a1371d0f3119d1ba52a1fd6e73a36ddd48c44e65d56b433a
+  wandlampe.gltf         aus AnisotropyBarnLamp  © 2023 Wayfair LLC – Eric Chadwick, CC BY 4.0
+    Quelle  0e728826c30bd6f3a18a0911db9f5f9ddc2dafa8e20bf9c3312c9625d1e32a24
+    Bei uns wandlampe.gltf 27df3db86ee76371cfad6174ae2f28cd010e951f1077c0c935bb95b5d2a906d2
+            wandlampe.bin  782b31f6d4a60625879a8bc5c311b09f0586e1d9d0bae323dcbfb7953e754e37
+  vase_blumen.gltf       aus GlassVaseFlowers    Eric Chadwick (Vase) und Rico Cilliers (Blumen), CC0 1.0
+    Quelle  faa2e19329961652b585cc62132ef50b1d95dca8a6a2fd63409158e680563761
+    Bei uns vase_blumen.gltf 69057502ec707903794b0d082f89b8076b81df1d6c9b28340b8dd283dbd17104
+            vase_blumen.bin  2928d8ab54874c310657c825e7ffffb1604048ad0bbc23a8fee29d75482bd7d9
+  spielzeugauto.gltf     aus ToyCar              Guido Odendahl und Eric Chadwick, CC0 1.0
+    Quelle  01a60862de55cd4b9f3acfab0b0def86451800f9c42467fcd61052c16cb9838c
+    Bei uns spielzeugauto.gltf 41c38d891a2428c6a87e8ca521a47900c792c32299a661db952247d568d9e679
+            spielzeugauto.bin  c6d63e7631577189609e511f445a38b92ca58f1e74fa00516fd842abb050b522
+  radio.gltf             aus BoomBox             © 2017 Microsoft, CC0 1.0
+    Quelle  f8b918445ebdd006768232205a62f5182d2208ca57f84c6ccc084943c0bc8f15
+    Bei uns radio.gltf 354a598aaef00ea6c88271bfc6dc82b2ab3b6fbadd0959ebdcdcfe2881e76b0e
+            radio.bin  060e15c463d6541ad4fce5ee23736f0c052ddf5ee3f8b99aed01ab66bef296ee
+
+Wie sie im Zimmer stehen (Maß, Farbe, Lampen) regelt src/room/moebel.gd (MODELLE); Stoffe der
+Sofas und Sessel werden nach Wunschfarbe getönt (src/room/shaders/modell_stoff.gdshader).

@@ -1,0 +1,443 @@
+{
+  "_info": "Systeme, die Uzai kennt. Alles hier lässt sich in Uzai unter Einstellungen → Systeme ändern; diese Datei sind nur die Startwerte.",
+  "systems": [
+    {
+      "id": "ps2",
+      "name": "PlayStation 2",
+      "short": "PS2",
+      "color": "#22379a",
+      "enabled": true,
+      "emulator": "pcsx2",
+      "filter": "crt480",
+      "aspect": 1.3333,
+      "ra_console": 21,
+      "extensions": [
+        "iso",
+        "chd",
+        "cso",
+        "zso",
+        "gz",
+        "cue",
+        "elf"
+      ]
+    },
+    {
+      "id": "ps1",
+      "name": "PlayStation",
+      "short": "PS1",
+      "color": "#8a8e98",
+      "enabled": true,
+      "emulator": "duckstation",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 12,
+      "extensions": [
+        "cue",
+        "chd",
+        "pbp",
+        "m3u",
+        "iso",
+        "img",
+        "ecm"
+      ]
+    },
+    {
+      "id": "gc",
+      "name": "GameCube",
+      "short": "GC",
+      "color": "#4c3a8c",
+      "enabled": true,
+      "emulator": "dolphin",
+      "filter": "crt480",
+      "aspect": 1.3333,
+      "ra_console": 16,
+      "extensions": [
+        "rvz",
+        "iso",
+        "gcz",
+        "ciso",
+        "gcm",
+        "dol"
+      ]
+    },
+    {
+      "id": "gba",
+      "name": "Game Boy Advance",
+      "short": "GBA",
+      "color": "#2f7d6b",
+      "enabled": true,
+      "emulator": "mgba",
+      "filter": "",
+      "aspect": 1.5,
+      "ra_console": 5,
+      "extensions": [
+        "gba",
+        "zip",
+        "7z"
+      ]
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "short": "Switch",
+      "color": "#c8323d",
+      "enabled": true,
+      "emulator": "ryubing",
+      "filter": "",
+      "aspect": 1.7778,
+      "ra_console": 0,
+      "extensions": [
+        "nsp",
+        "xci",
+        "nro"
+      ]
+    },
+    {
+      "id": "wii",
+      "name": "Wii",
+      "short": "Wii",
+      "color": "#d9dadc",
+      "enabled": false,
+      "emulator": "dolphin",
+      "filter": "crt480",
+      "aspect": 1.7778,
+      "ra_console": 19,
+      "extensions": [
+        "rvz",
+        "wbfs",
+        "iso",
+        "wia",
+        "wad"
+      ]
+    },
+    {
+      "id": "n64",
+      "name": "Nintendo 64",
+      "short": "N64",
+      "color": "#2c7a3a",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "mupen64plus_next",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 2,
+      "extensions": [
+        "z64",
+        "n64",
+        "v64",
+        "zip"
+      ]
+    },
+    {
+      "id": "snes",
+      "name": "Super Nintendo",
+      "short": "SNES",
+      "color": "#6b679a",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "snes9x",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 3,
+      "extensions": [
+        "sfc",
+        "smc",
+        "zip"
+      ]
+    },
+    {
+      "id": "nes",
+      "name": "NES",
+      "short": "NES",
+      "color": "#a8382d",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "mesen",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 7,
+      "extensions": [
+        "nes",
+        "zip"
+      ]
+    },
+    {
+      "id": "megadrive",
+      "name": "Mega Drive",
+      "short": "MD",
+      "color": "#1c1c1f",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "genesis_plus_gx",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 1,
+      "extensions": [
+        "md",
+        "gen",
+        "smd",
+        "bin",
+        "zip"
+      ]
+    },
+    {
+      "id": "dreamcast",
+      "name": "Dreamcast",
+      "short": "DC",
+      "color": "#d8641f",
+      "enabled": false,
+      "emulator": "flycast",
+      "filter": "crt480",
+      "aspect": 1.3333,
+      "ra_console": 40,
+      "extensions": [
+        "gdi",
+        "cdi",
+        "chd",
+        "m3u"
+      ]
+    },
+    {
+      "id": "psp",
+      "name": "PlayStation Portable",
+      "short": "PSP",
+      "color": "#3b3d44",
+      "enabled": false,
+      "emulator": "ppsspp",
+      "filter": "",
+      "aspect": 1.7647,
+      "ra_console": 41,
+      "extensions": [
+        "iso",
+        "cso",
+        "chd",
+        "pbp"
+      ]
+    },
+    {
+      "id": "nds",
+      "name": "Nintendo DS",
+      "short": "DS",
+      "color": "#9aa0a8",
+      "enabled": false,
+      "emulator": "melonds",
+      "filter": "",
+      "aspect": 1.3333,
+      "ra_console": 18,
+      "extensions": [
+        "nds",
+        "zip"
+      ]
+    },
+    {
+      "id": "3ds",
+      "name": "Nintendo 3DS",
+      "short": "3DS",
+      "color": "#b5303a",
+      "enabled": false,
+      "emulator": "azahar",
+      "filter": "",
+      "aspect": 1.6667,
+      "ra_console": 0,
+      "extensions": [
+        "3ds",
+        "cci",
+        "cxi",
+        "app"
+      ]
+    },
+    {
+      "id": "wiiu",
+      "name": "Wii U",
+      "short": "Wii U",
+      "color": "#1d86a6",
+      "enabled": false,
+      "emulator": "cemu",
+      "filter": "",
+      "aspect": 1.7778,
+      "ra_console": 0,
+      "extensions": [
+        "wua",
+        "wud",
+        "wux",
+        "rpx"
+      ]
+    },
+    {
+      "id": "ps3",
+      "name": "PlayStation 3",
+      "short": "PS3",
+      "color": "#141416",
+      "enabled": false,
+      "emulator": "rpcs3",
+      "filter": "",
+      "aspect": 1.7778,
+      "ra_console": 0,
+      "extensions": [
+        "iso",
+        "pkg"
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox",
+      "short": "Xbox",
+      "color": "#3c7a2c",
+      "enabled": false,
+      "emulator": "xemu",
+      "filter": "crt480",
+      "aspect": 1.3333,
+      "ra_console": 0,
+      "extensions": [
+        "iso",
+        "xiso"
+      ]
+    },
+    {
+      "id": "xbox360",
+      "name": "Xbox 360",
+      "short": "X360",
+      "color": "#7fae3e",
+      "enabled": false,
+      "emulator": "xenia",
+      "filter": "",
+      "aspect": 1.7778,
+      "ra_console": 0,
+      "extensions": [
+        "iso",
+        "xex",
+        "zar"
+      ]
+    },
+    {
+      "id": "gb",
+      "name": "Game Boy",
+      "short": "GB",
+      "color": "#8b956d",
+      "enabled": false,
+      "emulator": "mgba",
+      "filter": "",
+      "aspect": 1.111,
+      "ra_console": 4,
+      "extensions": [
+        "gb",
+        "zip"
+      ]
+    },
+    {
+      "id": "gbc",
+      "name": "Game Boy Color",
+      "short": "GBC",
+      "color": "#7c3fa0",
+      "enabled": false,
+      "emulator": "mgba",
+      "filter": "",
+      "aspect": 1.111,
+      "ra_console": 6,
+      "extensions": [
+        "gbc",
+        "zip"
+      ]
+    },
+    {
+      "id": "mastersystem",
+      "name": "Master System",
+      "short": "SMS",
+      "color": "#3a3a40",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "genesis_plus_gx",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 11,
+      "extensions": [
+        "sms",
+        "zip"
+      ]
+    },
+    {
+      "id": "gamegear",
+      "name": "Game Gear",
+      "short": "GG",
+      "color": "#2d2d33",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "genesis_plus_gx",
+      "filter": "",
+      "aspect": 1.2,
+      "ra_console": 15,
+      "extensions": [
+        "gg",
+        "zip"
+      ]
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "short": "SAT",
+      "color": "#4a4f5a",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "mednafen_saturn",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 39,
+      "extensions": [
+        "cue",
+        "chd",
+        "m3u"
+      ]
+    },
+    {
+      "id": "pce",
+      "name": "PC Engine",
+      "short": "PCE",
+      "color": "#e6e3da",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "mednafen_pce",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 8,
+      "extensions": [
+        "pce",
+        "cue",
+        "chd",
+        "zip"
+      ]
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "short": "Arcade",
+      "color": "#b8342c",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "fbneo",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 27,
+      "extensions": [
+        "zip",
+        "7z"
+      ]
+    },
+    {
+      "id": "atari2600",
+      "name": "Atari 2600",
+      "short": "2600",
+      "color": "#6b4a2b",
+      "enabled": false,
+      "emulator": "retroarch",
+      "core": "stella",
+      "filter": "crt-rgb",
+      "aspect": 1.3333,
+      "ra_console": 25,
+      "extensions": [
+        "a26",
+        "bin",
+        "zip"
+      ]
+    }
+  ]
+}

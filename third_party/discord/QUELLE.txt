@@ -1,0 +1,12 @@
+Discord Social SDK – discord_partner_sdk.dll (Windows x64)
+
+Herkunft:  Discord Developer Portal, App „Uzai“ (Social SDK eingeschaltet), vom Projektinhaber geladen.
+Lizenz:    Discord Social SDK Terms (https://support-dev.discord.com/hc/en-us/articles/30225844245271)
+           – Weitergabe nur eingebaut in die eigene App. Darum liegt die DLL NICHT im Git-Repo
+           (siehe .gitignore), sondern nur im Windows-Paket neben Uzai.exe.
+Signatur:  Authenticode, Discord Inc. (DigiCert Trusted G4 Code Signing), signiert 2026-09-01, gültig geprüft.
+SHA-256:   f9953495b0d6263cc0b926e70f00adc2e3dda478e216ac6c8b36ba23840ab8ee
+Größe:     9882040 Bytes
+
+Uzai lädt die DLL nur, wenn WinVerifyTrust sie als gültig signiert meldet und der Aussteller
+Discord Inc. ist (helper/uzai-helper.ps1, UzDsdk.SignedByDiscord).

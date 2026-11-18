@@ -1,0 +1,5 @@
+{"appnews": {"appid": 1245620, "count": 3, "newsitems": [
+ {"gid": "11", "title": "Patch 1.16.1", "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/11", "is_external_url": true, "author": "FromSoftware", "contents": "[h3]Fehlerbehebungen[/h3][list][*]Absturz beim Laden behoben.[*]Balance angepasst.[/list][url=http://example.com/boese]Mehr[/url] [img]{STEAM_CLAN_IMAGE}/1/x.png[/img]<script>alert(1)</script>Danke!", "feedlabel": "Community Announcements", "date": 1758300000, "feedname": "steam_community_announcements", "feed_type": 1, "appid": 1245620, "tags": ["patchnotes"]},
+ {"gid": "12", "title": "Shadow of the Erdtree &amp; &quot;Nightreign&quot;", "url": "", "author": "Bandai Namco", "contents": "Danke f\u00fcr ein Jahr &lt;3 voller Abenteuer.", "date": 1750000000, "feedname": "steam_community_announcements", "tags": "kaputt"},
+ {"gid": "13", "title": "", "contents": "ohne Titel", "date": 1740000000}
+]}}

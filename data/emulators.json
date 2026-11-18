@@ -1,0 +1,580 @@
+{
+  "_info": "Vorlagen für Emulatoren. Platzhalter in den Startparametern: {rom} Spieldatei, {rom_dir} ihr Ordner, {rom_name} Dateiname ohne Endung, {title} Spieltitel, {core} RetroArch-Kern des Systems, {emudir} Ordner des Emulators. Alles ist in Uzai unter Einstellungen → Emulatoren änderbar, eigene Emulatoren lassen sich dort anlegen.",
+  "emulators": [
+    {
+      "id": "pcsx2",
+      "name": "PCSX2",
+      "systems": [
+        "ps2"
+      ],
+      "exe_hint": "C:/Emulatoren/PCSX2/pcsx2-qt.exe",
+      "args": "-fullscreen -nogui -batch -- \"{rom}\"",
+      "keys": {
+        "save": "F1",
+        "load": "F3",
+        "screenshot": "F8"
+      },
+      "window_hint": "PCSX2"
+    },
+    {
+      "id": "duckstation",
+      "name": "DuckStation",
+      "systems": [
+        "ps1"
+      ],
+      "exe_hint": "C:/Emulatoren/DuckStation/duckstation-qt-x64-ReleaseLTCG.exe",
+      "args": "-batch -fullscreen -nogui -- \"{rom}\"",
+      "keys": {
+        "save": "F2",
+        "load": "F1",
+        "screenshot": "F10"
+      },
+      "window_hint": "DuckStation"
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "systems": [
+        "gc",
+        "wii"
+      ],
+      "exe_hint": "C:/Emulatoren/Dolphin/Dolphin.exe",
+      "args": "-b -C Dolphin.Display.Fullscreen=True -e \"{rom}\"",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": "F9"
+      },
+      "window_hint": "Dolphin"
+    },
+    {
+      "id": "mgba",
+      "name": "mGBA",
+      "systems": [
+        "gba",
+        "gb",
+        "gbc"
+      ],
+      "exe_hint": "C:/Emulatoren/mGBA/mGBA.exe",
+      "args": "-f \"{rom}\"",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": "F12"
+      },
+      "window_hint": "mGBA"
+    },
+    {
+      "id": "ryubing",
+      "name": "Ryubing (Ryujinx)",
+      "systems": [
+        "switch"
+      ],
+      "exe_hint": "C:/Emulatoren/Ryubing/Ryujinx.exe",
+      "args": "--fullscreen \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Ryujinx"
+    },
+    {
+      "id": "retroarch",
+      "name": "RetroArch",
+      "systems": [
+        "n64",
+        "snes",
+        "nes",
+        "megadrive",
+        "gba",
+        "gb",
+        "gbc",
+        "ps1",
+        "mastersystem",
+        "gamegear",
+        "saturn",
+        "pce",
+        "arcade",
+        "atari2600",
+        "dreamcast",
+        "psp",
+        "nds"
+      ],
+      "exe_hint": "C:/RetroArch/retroarch.exe",
+      "args": "-f -L \"{emudir}/cores/{core}_libretro.dll\" \"{rom}\"",
+      "keys": {
+        "save": "F2",
+        "load": "F4",
+        "screenshot": "F8"
+      },
+      "window_hint": "RetroArch"
+    },
+    {
+      "id": "flycast",
+      "name": "Flycast",
+      "systems": [
+        "dreamcast"
+      ],
+      "exe_hint": "C:/Emulatoren/Flycast/flycast.exe",
+      "args": "\"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Flycast"
+    },
+    {
+      "id": "ppsspp",
+      "name": "PPSSPP",
+      "systems": [
+        "psp"
+      ],
+      "exe_hint": "C:/Emulatoren/PPSSPP/PPSSPPWindows64.exe",
+      "args": "--fullscreen \"{rom}\"",
+      "keys": {
+        "save": "F2",
+        "load": "F4",
+        "screenshot": "F12"
+      },
+      "window_hint": "PPSSPP"
+    },
+    {
+      "id": "melonds",
+      "name": "melonDS",
+      "systems": [
+        "nds"
+      ],
+      "exe_hint": "C:/Emulatoren/melonDS/melonDS.exe",
+      "args": "-f \"{rom}\"",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": ""
+      },
+      "window_hint": "melonDS"
+    },
+    {
+      "id": "azahar",
+      "name": "Azahar",
+      "systems": [
+        "3ds"
+      ],
+      "exe_hint": "C:/Emulatoren/Azahar/azahar.exe",
+      "args": "-f \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Azahar"
+    },
+    {
+      "id": "cemu",
+      "name": "Cemu",
+      "systems": [
+        "wiiu"
+      ],
+      "exe_hint": "C:/Emulatoren/Cemu/Cemu.exe",
+      "args": "-f -g \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Cemu"
+    },
+    {
+      "id": "rpcs3",
+      "name": "RPCS3",
+      "systems": [
+        "ps3"
+      ],
+      "exe_hint": "C:/Emulatoren/RPCS3/rpcs3.exe",
+      "args": "--no-gui \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "RPCS3"
+    },
+    {
+      "id": "xemu",
+      "name": "xemu",
+      "systems": [
+        "xbox"
+      ],
+      "exe_hint": "C:/Emulatoren/xemu/xemu.exe",
+      "args": "-full-screen -dvd_path \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "xemu"
+    },
+    {
+      "id": "xenia",
+      "name": "Xenia Canary",
+      "systems": [
+        "xbox360"
+      ],
+      "exe_hint": "C:/Emulatoren/Xenia/xenia_canary.exe",
+      "args": "--fullscreen \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Xenia"
+    },
+    {
+      "id": "eden",
+      "name": "Eden",
+      "systems": [
+        "switch"
+      ],
+      "exe_hint": "C:/Emulatoren/Eden/eden.exe",
+      "args": "-f -g \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "eden"
+    },
+    {
+      "id": "citron",
+      "name": "Citron",
+      "systems": [
+        "switch"
+      ],
+      "exe_hint": "C:/Emulatoren/Citron/citron.exe",
+      "args": "-f -g \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "citron"
+    },
+    {
+      "id": "sudachi",
+      "name": "Sudachi",
+      "systems": [
+        "switch"
+      ],
+      "exe_hint": "C:/Emulatoren/Sudachi/sudachi.exe",
+      "args": "-f -g \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "sudachi"
+    },
+    {
+      "id": "yuzu",
+      "name": "yuzu (und Ableger wie Torzu, Suyu)",
+      "systems": [
+        "switch"
+      ],
+      "exe_hint": "C:/Emulatoren/yuzu/yuzu.exe",
+      "args": "-f -g \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "yuzu"
+    },
+    {
+      "id": "lime3ds",
+      "name": "Lime3DS",
+      "systems": [
+        "3ds"
+      ],
+      "exe_hint": "C:/Emulatoren/Lime3DS/lime3ds.exe",
+      "args": "-f \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Lime3DS"
+    },
+    {
+      "id": "citra",
+      "name": "Citra",
+      "systems": [
+        "3ds"
+      ],
+      "exe_hint": "C:/Emulatoren/Citra/citra-qt.exe",
+      "args": "-f \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Citra"
+    },
+    {
+      "id": "skyemu",
+      "name": "SkyEmu",
+      "systems": [
+        "gba",
+        "gb",
+        "gbc",
+        "nds"
+      ],
+      "exe_hint": "C:/Emulatoren/SkyEmu/SkyEmu.exe",
+      "args": "\"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "SkyEmu"
+    },
+    {
+      "id": "nanoboy",
+      "name": "NanoBoyAdvance",
+      "systems": [
+        "gba"
+      ],
+      "exe_hint": "C:/Emulatoren/NanoBoyAdvance/NanoBoyAdvance.exe",
+      "args": "\"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "NanoBoyAdvance"
+    },
+    {
+      "id": "vbam",
+      "name": "VisualBoyAdvance-M",
+      "systems": [
+        "gba",
+        "gb",
+        "gbc"
+      ],
+      "exe_hint": "C:/Emulatoren/VBA-M/visualboyadvance-m.exe",
+      "args": "\"{rom}\"",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": ""
+      },
+      "window_hint": "VisualBoyAdvance-M"
+    },
+    {
+      "id": "bizhawk",
+      "name": "BizHawk",
+      "systems": [
+        "nes",
+        "snes",
+        "n64",
+        "gb",
+        "gbc",
+        "gba",
+        "megadrive",
+        "mastersystem",
+        "gamegear",
+        "ps1",
+        "saturn",
+        "pce",
+        "nds",
+        "atari2600"
+      ],
+      "exe_hint": "C:/Emulatoren/BizHawk/EmuHawk.exe",
+      "args": "\"{rom}\" --fullscreen",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": "F12"
+      },
+      "window_hint": "BizHawk"
+    },
+    {
+      "id": "ares",
+      "name": "ares",
+      "systems": [
+        "nes",
+        "snes",
+        "n64",
+        "gb",
+        "gbc",
+        "gba",
+        "megadrive",
+        "mastersystem",
+        "gamegear",
+        "pce",
+        "ps1",
+        "saturn"
+      ],
+      "exe_hint": "C:/Emulatoren/ares/ares.exe",
+      "args": "--fullscreen \"{rom}\"",
+      "keys": {
+        "save": "F5",
+        "load": "F7",
+        "screenshot": ""
+      },
+      "window_hint": "ares"
+    },
+    {
+      "id": "mesen",
+      "name": "Mesen",
+      "systems": [
+        "nes",
+        "snes",
+        "gb",
+        "gbc",
+        "gba",
+        "pce",
+        "mastersystem",
+        "gamegear"
+      ],
+      "exe_hint": "C:/Emulatoren/Mesen/Mesen.exe",
+      "args": "--fullscreen \"{rom}\"",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": "F12"
+      },
+      "window_hint": "Mesen"
+    },
+    {
+      "id": "snes9x",
+      "name": "Snes9x",
+      "systems": [
+        "snes"
+      ],
+      "exe_hint": "C:/Emulatoren/Snes9x/snes9x-x64.exe",
+      "args": "-fullscreen \"{rom}\"",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": ""
+      },
+      "window_hint": "Snes9x"
+    },
+    {
+      "id": "project64",
+      "name": "Project64",
+      "systems": [
+        "n64"
+      ],
+      "exe_hint": "C:/Emulatoren/Project64/Project64.exe",
+      "args": "\"{rom}\"",
+      "keys": {
+        "save": "F5",
+        "load": "F7",
+        "screenshot": ""
+      },
+      "window_hint": "Project64"
+    },
+    {
+      "id": "simple64",
+      "name": "simple64",
+      "systems": [
+        "n64"
+      ],
+      "exe_hint": "C:/Emulatoren/simple64/simple64-gui.exe",
+      "args": "--nogui \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "simple64"
+    },
+    {
+      "id": "redream",
+      "name": "Redream",
+      "systems": [
+        "dreamcast"
+      ],
+      "exe_hint": "C:/Emulatoren/Redream/redream.exe",
+      "args": "\"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "redream"
+    },
+    {
+      "id": "desmume",
+      "name": "DeSmuME",
+      "systems": [
+        "nds"
+      ],
+      "exe_hint": "C:/Emulatoren/DeSmuME/DeSmuME.exe",
+      "args": "\"{rom}\"",
+      "keys": {
+        "save": "Shift+F1",
+        "load": "F1",
+        "screenshot": ""
+      },
+      "window_hint": "DeSmuME"
+    },
+    {
+      "id": "xenia_master",
+      "name": "Xenia",
+      "systems": [
+        "xbox360"
+      ],
+      "exe_hint": "C:/Emulatoren/Xenia/xenia.exe",
+      "args": "--fullscreen \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Xenia"
+    },
+    {
+      "id": "cxbx",
+      "name": "Cxbx-Reloaded",
+      "systems": [
+        "xbox"
+      ],
+      "exe_hint": "C:/Emulatoren/Cxbx-Reloaded/cxbx.exe",
+      "args": "/load \"{rom}\"",
+      "keys": {
+        "save": "",
+        "load": "",
+        "screenshot": ""
+      },
+      "window_hint": "Cxbx"
+    },
+    {
+      "id": "mednafen",
+      "name": "Mednafen",
+      "systems": [
+        "ps1",
+        "saturn",
+        "pce",
+        "gba",
+        "gb",
+        "gbc",
+        "nes",
+        "snes",
+        "megadrive",
+        "mastersystem",
+        "gamegear"
+      ],
+      "exe_hint": "C:/Emulatoren/Mednafen/mednafen.exe",
+      "args": "-video.fs 1 \"{rom}\"",
+      "keys": {
+        "save": "F5",
+        "load": "F7",
+        "screenshot": "F9"
+      },
+      "window_hint": "Mednafen"
+    }
+  ]
+}

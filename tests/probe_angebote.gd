@@ -1,0 +1,40 @@
+extends "res://tests/probe_base.gd"
+## Probe für Gratis-Spiele und Angebote auf der Wunschliste (Punkt 110): Reihe „Gratis“ unter
+## Entdecken, Reiter Gratis, die Seite eines Epic-Gratis-Spiels (jetzt und angekündigt), die
+## Wunschliste mit „Neu im Angebot“, die Mitteilungen dazu und der Schalter in den Einstellungen.
+
+
+func run() -> void:
+	main.goto("shop")
+	await shot("01_entdecken", 3.5)
+	await press("down", 2)
+	await shot("02_entdecken_gratis", 0.9)
+	await press("right")
+	await shot("03_entdecken_gratis_rechts", 0.6)
+	await press("down")
+	await shot("04_wunschliste_im_angebot", 0.9)
+	main.goto("shop", "gratis")
+	await shot("05_gratis", 1.5)
+	await press("a")
+	await shot("06_epic_jetzt", 1.2)
+	await press("b")
+	await wait(0.6)
+	await press("down")
+	await shot("07_gratis_bald", 0.9)
+	await press("a")
+	await shot("08_epic_bald", 1.2)
+	await press("b")
+	await wait(0.6)
+	await press("down")
+	await shot("09_gratis_f2p", 1.2)
+	main.goto("shop", "wunschliste")
+	await shot("10_wunschliste", 1.5)
+	Store.show_sales([Store.wishlist[0]])
+	await shot("11_mitteilung_einzeln", 1.2)
+	await wait(7.5)
+	Store.show_sales(Store.wishlist.filter(func(x: Dictionary) -> bool: return int(x.get("discount", 0)) > 0) + Store.lists.get("specials", []).slice(0, 3))
+	await shot("12_mitteilung_sammel", 1.2)
+	main.goto("settings", "mitteilungen")
+	await wait(1.2)
+	await press("down", 4)
+	await shot("13_einstellungen_schalter", 0.9)

@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-Rxo9SRARJeW3y7yXUCifuTPphzIcEbeIGa7sxiRtBPQ='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; media-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Uzai · Your Windows PC, as a console</title>
+<meta name="description" content="Every game on your PC, from Steam to your emulators, in one controller-first frontend.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/IBMPlexSans-VF.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/IBMPlexSansCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/uzai.css">
+<script>(function(h){h.classList.add("js","boot-on");h.setAttribute("data-area","home");try{history.scrollRestoration="manual";if(location.hash)history.replaceState(null,"",location.pathname+location.search)}catch(e){}})(document.documentElement)</script>
+<script src="config.js" defer></script>
+<script src="js/uzai.js" defer></script>
+</head>
+<body>
+<div class="welt">
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4.5 20 11v8a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19Z"/></symbol>
+  <symbol id="i-apps" viewBox="0 0 24 24"><rect x="3.75" y="3.75" width="6.5" height="6.5" rx="2"/><rect x="3.75" y="13.75" width="6.5" height="6.5" rx="2"/><rect x="13.75" y="13.75" width="6.5" height="6.5" rx="2"/><circle cx="17" cy="7" r="3.25"/></symbol>
+  <symbol id="i-games" viewBox="0 0 24 24"><path d="M8 7.5h8a4.5 4.5 0 0 1 4.35 3.35l.9 3.4a2.6 2.6 0 0 1-4.3 2.55L15.4 15.3H8.6l-1.55 1.5a2.6 2.6 0 0 1-4.3-2.55l.9-3.4A4.5 4.5 0 0 1 8 7.5Z"/><path d="M8 10.3v3.4M6.3 12h3.4M15.6 11.2h.01M17.6 13h.01"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5.5" y="10.5" width="13" height="9.5" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-controller" viewBox="0 0 24 24"><path d="M7.5 8h9a4.5 4.5 0 0 1 4.3 5.8l-1 3.4a2.4 2.4 0 0 1-4.1.9L14 16h-4l-1.7 2.1a2.4 2.4 0 0 1-4.1-.9l-1-3.4A4.5 4.5 0 0 1 7.5 8Z"/><circle cx="8.5" cy="12" r="1.5"/><path d="M15.5 11h.01M17.5 13h.01"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><path d="M15.5 5.2a3 3 0 0 1 0 5.6M17.5 14.3c1.7.6 2.8 2.2 3 4.7"/></symbol>
+  <symbol id="i-invite" viewBox="0 0 24 24"><circle cx="10" cy="8" r="3.4"/><path d="M3.5 19.5c.7-3.4 3.3-5.3 6.5-5.3 1.4 0 2.7.4 3.7 1.1"/><path d="M18 13.5v6M15 16.5h6"/></symbol>
+  <symbol id="i-pip" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><rect x="12" y="11.5" width="6.5" height="5" rx="1"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4.5 17a8 8 0 1 1 15 0"/><path d="M12 14l3.5-4.5"/><circle cx="12" cy="14" r="1.2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M4 9.5a12 12 0 0 1 16 0M7 13a7.5 7.5 0 0 1 10 0M10 16.3a3 3 0 0 1 4 0"/><path d="M12 19.5h.01"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 4 8.5 4.5L12 13 3.5 8.5Z"/><path d="m3.5 12.5 8.5 4.5 8.5-4.5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10.5 9.5 4 2.5-4 2.5Z"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M5 7h9M18 7h1M5 12h2M11 12h8M5 17h7M16 17h3"/><circle cx="16" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="14" cy="17" r="2"/></symbol>
+  <symbol id="i-broadcast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M8.2 8.2a5.4 5.4 0 0 0 0 7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6M5.4 5.4a9.3 9.3 0 0 0 0 13.2M18.6 5.4a9.3 9.3 0 0 1 0 13.2"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.7"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-cursor" viewBox="0 0 24 24"><path d="M6 3.5 18 13l-5.2.8 3 5.6-2.4 1.2-3-5.6L6.5 18.5Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.5c0 4.3-3 7.7-7 9-4-1.3-7-4.7-7-9V6Z"/></symbol>
+  <symbol id="i-handheld" viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="10" rx="3"/><rect x="8" y="9" width="8" height="6" rx="1"/><path d="M5 12h1.5M18 11v.01M18.8 13v.01"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-retro" viewBox="0 0 24 24"><rect x="6" y="3.5" width="12" height="17" rx="2"/><rect x="8.5" y="6" width="7" height="5.5" rx="1"/><path d="M9.5 15.5h2M10.5 14.5v2M14.8 15h.01"/></symbol>
+  <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.2"/><path d="M12 6.4a5.6 5.6 0 0 1 5.6 5.6"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2l1.5-2h6l1.5 2h2A1.5 1.5 0 0 1 20 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5Z"/><circle cx="12" cy="13" r="3.2"/></symbol>
+  <symbol id="i-browser" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5M12 3.5C9.6 5.9 8.4 8.7 8.4 12s1.2 6.1 3.6 8.5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10Z"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4Z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12.5h4l2.2-5.5 4.6 11 2.2-5.5H21"/></symbol>
+  <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="3" y="6.5" width="18" height="11" rx="2"/><path d="M7 10h.01M10.5 10h.01M14 10h.01M17 10h.01M8 14h8"/></symbol>
+  <symbol id="i-restart" viewBox="0 0 24 24"><path d="M5 12a7 7 0 1 0 2-5M5 4.5v4h4"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3.5h7l4 4V20a.5.5 0 0 1-.5.5h-10A.5.5 0 0 1 7 20Z"/><path d="M14 3.5V8h4"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v3.5H8"/><path d="M12 8v4.5l3 1.8"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7 7 17"/></symbol>
+  <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3.5v8"/><path d="M7 6.3a7.5 7.5 0 1 0 10 0"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/><path d="M8 6H5a2.5 2.5 0 0 0 3 4M16 6h3a2.5 2.5 0 0 1-3 4M12 13v3.5M8.5 20h7M9.5 20c0-2 1-3.5 2.5-3.5s2.5 1.5 2.5 3.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5 10 17 19 7.5"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="room" aria-hidden="true">
+  <div class="lights"><div class="lichtsatz an"><i></i><i></i><i></i></div><div class="lichtsatz"><i></i><i></i><i></i></div></div>
+  <div class="stage"></div>
+  <div class="room-shade"></div>
+</div>
+
+<button class="mark" type="button" aria-label="Guide" aria-keyshortcuts="G" data-nav-group="bar">
+  <svg class="u" viewBox="58 50 140 156" aria-hidden="true" focusable="false">
+    <path class="u-out" d="M132.39 202.86 L136.76 202.43 L141.09 201.71 L145.37 200.71 L149.57 199.44 L153.68 197.89 L157.68 196.08 L161.55 194.01 L165.28 191.69 L168.85 189.13 L172.25 186.35 L175.45 183.35 L178.45 180.14 L181.24 176.75 L183.8 173.18 L186.11 169.45 L188.19 165.57 L190 161.57 L191.54 157.46 L192.82 153.26 L193.82 148.99 L194.53 144.65 L194.96 140.28 L195.11 135.89 L195.11 53 L178.13 53 L178.13 135.94 L178.03 139.17 L177.7 142.44 L177.17 145.67 L176.43 148.87 L175.47 152.01 L174.32 155.08 L172.96 158.07 L171.42 160.96 L169.68 163.75 L167.77 166.41 L165.69 168.95 L163.45 171.34 L161.06 173.59 L158.52 175.67 L155.85 177.58 L153.07 179.31 L150.17 180.86 L147.19 182.21 L144.11 183.37 L140.98 184.32 L137.78 185.06 L134.54 185.6 L131.28 185.92 L128 186.03 L124.72 185.92 L121.46 185.6 L118.22 185.06 L115.02 184.32 L111.89 183.37 L108.81 182.21 L105.83 180.86 L102.93 179.31 L100.15 177.58 L97.48 175.67 L94.94 173.59 L92.55 171.34 L90.31 168.95 L88.23 166.41 L86.32 163.75 L84.58 160.96 L83.04 158.07 L81.68 155.08 L80.53 152.01 L79.57 148.87 L78.83 145.67 L78.3 142.44 L77.97 139.17 L77.87 135.94 L77.87 53 L60.89 53 L60.89 135.89 L61.04 140.28 L61.47 144.65 L62.18 148.99 L63.18 153.26 L64.46 157.46 L66 161.57 L67.81 165.57 L69.89 169.45 L72.2 173.18 L74.76 176.75 L77.55 180.14 L80.55 183.35 L83.75 186.35 L87.15 189.13 L90.72 191.69 L94.45 194.01 L98.32 196.08 L102.32 197.89 L106.43 199.44 L110.63 200.71 L114.91 201.71 L119.24 202.43 L123.61 202.86 L128 203 Z"/>
+    <path class="u-in" d="M130.92 180.4 L133.82 180.12 L136.7 179.64 L139.55 178.98 L142.33 178.13 L145.07 177.1 L147.73 175.9 L150.3 174.53 L152.79 172.98 L155.15 171.28 L157.41 169.43 L159.54 167.43 L161.53 165.3 L163.39 163.04 L165.08 160.68 L166.63 158.19 L168 155.63 L169.21 152.96 L170.24 150.22 L171.08 147.44 L171.75 144.59 L172.22 141.72 L172.51 138.81 L172.61 135.85 L172.61 53 L155.63 53 L155.63 135.89 L155.57 137.7 L155.4 139.5 L155.1 141.29 L154.69 143.05 L154.17 144.78 L153.53 146.47 L152.78 148.12 L151.93 149.71 L150.97 151.25 L149.92 152.72 L148.77 154.11 L147.54 155.43 L146.22 156.67 L144.82 157.82 L143.35 158.87 L141.82 159.82 L140.22 160.68 L138.57 161.42 L136.88 162.06 L135.15 162.58 L133.39 163 L131.61 163.29 L129.81 163.47 L128 163.53 L126.19 163.47 L124.39 163.29 L122.61 163 L120.85 162.58 L119.12 162.06 L117.43 161.42 L115.78 160.68 L114.18 159.82 L112.65 158.87 L111.18 157.82 L109.78 156.67 L108.46 155.43 L107.23 154.11 L106.08 152.72 L105.03 151.25 L104.07 149.71 L103.22 148.12 L102.47 146.47 L101.83 144.78 L101.31 143.05 L100.9 141.29 L100.6 139.5 L100.43 137.7 L100.37 135.89 L100.37 53 L83.39 53 L83.39 135.85 L83.49 138.81 L83.78 141.72 L84.25 144.59 L84.92 147.44 L85.76 150.22 L86.79 152.96 L88 155.63 L89.37 158.19 L90.92 160.68 L92.61 163.04 L94.47 165.3 L96.46 167.43 L98.59 169.43 L100.85 171.28 L103.21 172.98 L105.7 174.53 L108.27 175.9 L110.93 177.1 L113.67 178.13 L116.45 178.98 L119.3 179.64 L122.18 180.12 L125.08 180.4 L128 180.5 Z"/>
+    <path class="u-line" pathLength="1" d="M80.63 53 L80.63 135.89 L80.73 138.99 L81.04 142.08 L81.54 145.14 L82.25 148.15 L83.15 151.12 L84.24 154.02 L85.52 156.85 L86.98 159.58 L88.61 162.21 L90.42 164.73 L92.39 167.13 L94.51 169.39 L96.77 171.51 L99.16 173.47 L101.68 175.28 L104.32 176.92 L107.05 178.38 L109.87 179.66 L112.77 180.75 L115.74 181.65 L118.76 182.35 L121.82 182.86 L124.9 183.16 L128 183.26 L131.1 183.16 L134.18 182.86 L137.24 182.35 L140.26 181.65 L143.23 180.75 L146.13 179.66 L148.95 178.38 L151.68 176.92 L154.32 175.28 L156.84 173.47 L159.23 171.51 L161.49 169.39 L163.61 167.13 L165.58 164.73 L167.39 162.21 L169.02 159.58 L170.48 156.85 L171.76 154.02 L172.85 151.12 L173.75 148.15 L174.46 145.14 L174.96 142.08 L175.27 138.99 L175.37 135.89 L175.37 53"/>
+    <path class="u-pulse" pathLength="1" d="M80.63 53 L80.63 135.89 L80.73 138.99 L81.04 142.08 L81.54 145.14 L82.25 148.15 L83.15 151.12 L84.24 154.02 L85.52 156.85 L86.98 159.58 L88.61 162.21 L90.42 164.73 L92.39 167.13 L94.51 169.39 L96.77 171.51 L99.16 173.47 L101.68 175.28 L104.32 176.92 L107.05 178.38 L109.87 179.66 L112.77 180.75 L115.74 181.65 L118.76 182.35 L121.82 182.86 L124.9 183.16 L128 183.26 L131.1 183.16 L134.18 182.86 L137.24 182.35 L140.26 181.65 L143.23 180.75 L146.13 179.66 L148.95 178.38 L151.68 176.92 L154.32 175.28 L156.84 173.47 L159.23 171.51 L161.49 169.39 L163.61 167.13 L165.58 164.73 L167.39 162.21 L169.02 159.58 L170.48 156.85 L171.76 154.02 L172.85 151.12 L173.75 148.15 L174.46 145.14 L174.96 142.08 L175.27 138.99 L175.37 135.89 L175.37 53"/>
+  </svg>
+</button>
+
+<header class="bar">
+  <div class="bar-rest">
+    <span class="g bar-end" data-k="lt" aria-hidden="true"></span>
+    <nav class="tabs" aria-label="Sections" data-nav-group="bar" data-entry="active">
+      <a class="tab" href="#home" data-area="home"><svg class="i" aria-hidden="true"><use href="#i-home"/></svg><span class="tab-word" data-label="Home">Home</span></a>
+      <a class="tab" href="#features" data-area="features"><svg class="i" aria-hidden="true"><use href="#i-apps"/></svg><span class="tab-word" data-label="Features">Features</span></a>
+      <a class="tab" href="#get" data-area="get"><svg class="i" aria-hidden="true"><use href="#i-download"/></svg><span class="tab-word" data-label="Get Uzai">Get Uzai</span></a>
+      <a class="tab" href="#privacy" data-area="privacy"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg><span class="tab-word" data-label="Privacy">Privacy</span></a>
+      <i class="tab-pill" aria-hidden="true"></i>
+      <i class="tab-dot" aria-hidden="true"></i>
+    </nav>
+    <span class="g bar-end" data-k="rt" aria-hidden="true"></span>
+    <div class="status">
+      <span class="pad-state" hidden><svg class="i" aria-hidden="true"><use href="#i-controller"/></svg><span class="pad-name"></span></span>
+      <time class="clock" aria-hidden="true"></time>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <section class="area area-home" id="home" data-area="home" aria-labelledby="home-title">
+    <div class="home-copy">
+      <p class="kicker" data-rise><span class="badge">Windows 10 · 11</span><span class="quiet">Controller first · English · Deutsch</span></p>
+      <h1 class="title" id="home-title" data-rise>Your Windows PC,<br> as&nbsp;a&nbsp;console.</h1>
+      <p class="lead" data-rise>Every game on your PC, from Steam to your&nbsp;emulators, in one controller&#8209;first frontend.</p>
+      <div class="actions" data-rise>
+        <button class="btn primary" type="button" data-weiter data-default>Start</button>
+      </div>
+      <p class="invite" data-rise><span class="g invite-g" data-k="guide" aria-hidden="true"></span><svg class="i invite-i" aria-hidden="true"><use href="#i-controller"/></svg><span class="invite-text">The Guide opens over any game. Try it.</span></p>
+    </div>
+    <figure class="home-shot" data-rise>
+      <img src="media/hero.webp" srcset="media/hero-1200.webp 1200w, media/hero.webp 2000w" sizes="(min-width: 900px) 64vw, 100vw" width="2000" height="1250" alt="Uzai on a TV: every game in one library" fetchpriority="high" decoding="async">
+    </figure>
+    <div class="sources" data-rise>
+      <p class="sources-list"><span>Steam</span><span>Epic</span><span>EA</span><span>GOG</span><span>Ubisoft</span><span>Battle.net</span><span>Xbox</span><span>Amazon</span><span>Riot</span><span>itch.io</span></p>
+      <p class="sources-count">Found automatically · 34 emulator templates</p>
+    </div>
+  </section>
+
+  <section class="area area-features" id="features" data-area="features" aria-labelledby="features-title">
+    <h2 class="area-title" id="features-title">Features</h2>
+    <div class="stage-copy" aria-hidden="true">
+      <p class="kicker"><span class="badge" data-stage="cat">Every game</span></p>
+      <p class="stage-title" data-stage="title">One library</p>
+      <p class="lead" data-stage="text">Uzai scans your PC for every game, from Steam, Epic and GOG to your emulators and ROMs, and puts them all in one library.</p>
+    </div>
+    <div class="chips-row" data-rise>
+      <span class="g chips-end" data-k="lb" aria-hidden="true"></span>
+      <div class="chips" data-nav-group="chips" data-entry="active" aria-label="Feature groups" role="group">
+        <button class="chip" type="button" data-cat="all">Every game</button>
+        <button class="chip" type="button" data-cat="game">In a game</button>
+        <button class="chip" type="button" data-cat="library">Library</button>
+        <button class="chip" type="button" data-cat="watch">Watch</button>
+        <button class="chip" type="button" data-cat="room">Your Room</button>
+        <button class="chip" type="button" data-cat="more">Also inside</button>
+        <i class="chip-line" aria-hidden="true"></i>
+      </div>
+      <span class="g chips-end" data-k="rb" aria-hidden="true"></span>
+      <p class="shelf-count" aria-hidden="true"></p>
+    </div>
+    <div class="shelf" data-nav-group="shelf" data-entry="last">
+      <section class="shelf-group" data-cat="all" aria-labelledby="sg-all">
+        <h3 class="shelf-head" id="sg-all">Every game</h3>
+        <ul class="shelf-list">
+          <li><a class="card" href="media/library.webp" data-color="#a0403a" data-tv data-default>
+            <span class="card-img"><img src="media/library-s.webp" data-klein="media/library-s.webp" width="640" height="360" alt="Uzai's library: every game sorted by source, from Steam to PS2 and Switch" loading="lazy" decoding="async"></span>
+            <span class="card-title">One library</span>
+            <span class="card-text">Uzai scans your PC for every game, from Steam, Epic and GOG to your emulators and ROMs, and puts them all in one library.</span>
+          </a></li>
+        </ul>
+      </section>
+      <section class="shelf-group" data-cat="game" aria-labelledby="sg-game">
+        <h3 class="shelf-head" id="sg-game">In a game</h3>
+        <ul class="shelf-list">
+          <li><a class="card" href="media/guide-home.webp" data-color="#8a5a48">
+            <span class="card-img"><img src="media/guide-home-s.webp" data-klein="media/guide-home-s.webp" width="640" height="360" alt="The Guide over the library" loading="lazy" decoding="async"></span>
+            <span class="card-title">The Guide</span>
+            <span class="card-text">Press the Guide button in any game and Uzai opens on top: friends, Discord, music, captures and power, without leaving the game.</span>
+          </a></li>
+          <li><a class="card" href="media/quick-menu.webp" data-color="#9a3f58">
+            <span class="card-img"><img src="media/quick-menu-s.webp" data-klein="media/quick-menu-s.webp" width="640" height="360" alt="Quick menu over the library" loading="lazy" decoding="async"></span>
+            <span class="card-title">Quick menu</span>
+            <span class="card-text">Hold the Guide button for the essentials: screenshot, the last 30&nbsp;seconds as a clip, mic on and off, rest mode or quit. You choose which tiles it shows.</span>
+          </a></li>
+          <li><a class="card" href="media/guide-friends.webp" data-color="#9a7448">
+            <span class="card-img"><img src="media/guide-friends-s.webp" data-klein="media/guide-friends-s.webp" width="640" height="360" alt="Steam and Discord friends in the Guide (names hidden for this picture)" loading="lazy" decoding="async"></span>
+            <span class="card-title">Friends and Discord</span>
+            <span class="card-text">Steam and Discord friends in one list, with chat, voice channels and invites, while you play.</span>
+          </a></li>
+          <li><a class="card" href="media/guide-music.webp" data-color="#9c8551">
+            <span class="card-img"><img src="media/guide-music-s.webp" data-klein="media/guide-music-s.webp" width="640" height="360" alt="Music controls in the Guide over a game" loading="lazy" decoding="async"></span>
+            <span class="card-title">Music while you play</span>
+            <span class="card-text">Spotify with queue, playlists and liked songs, or your own music, without leaving the game.</span>
+          </a></li>
+        </ul>
+      </section>
+      <section class="shelf-group" data-cat="library" aria-labelledby="sg-library">
+        <h3 class="shelf-head" id="sg-library">Library</h3>
+        <ul class="shelf-list">
+          <li><a class="card" href="media/store.webp" data-color="#b8a64a">
+            <span class="card-img"><img src="media/store-s.webp" data-klein="media/store-s.webp" width="640" height="360" alt="Store with today's deals" loading="lazy" decoding="async"></span>
+            <span class="card-title">Store</span>
+            <span class="card-text">The Steam store made for a controller: deals, wishlist, trailers, reviews and search. Free Epic games too.</span>
+          </a></li>
+          <li><a class="card" href="media/artwork.webp" data-color="#a8484b">
+            <span class="card-img"><img src="media/artwork-s.webp" data-klein="media/artwork-s.webp" width="640" height="360" alt="Choosing cover art from SteamGridDB" loading="lazy" decoding="async"></span>
+            <span class="card-title">Artwork your way</span>
+            <span class="card-text">Covers, backgrounds, logos and icons from SteamGridDB or iiDB, picked with the controller.</span>
+          </a></li>
+          <li><a class="card" href="media/profile.webp" data-color="#9a7560">
+            <span class="card-img"><img src="media/profile-s.webp" data-klein="media/profile-s.webp" width="640" height="360" alt="Profile with level and most-played games" loading="lazy" decoding="async"></span>
+            <span class="card-title">Profile</span>
+            <span class="card-text">Your level, playtime, most-played games and backlog in one place.</span>
+          </a></li>
+          <li><a class="card" href="media/achievements.webp" data-color="#6d7fa8">
+            <span class="card-img"><img src="media/achievements-s.webp" data-klein="media/achievements-s.webp" width="640" height="360" alt="Achievements with showcase and recent unlocks" loading="lazy" decoding="async"></span>
+            <span class="card-title">Achievements</span>
+            <span class="card-text">Steam achievements, RetroAchievements for emulated games and Uzai's own levels, with a pop-up in every game.</span>
+          </a></li>
+        </ul>
+      </section>
+      <section class="shelf-group" data-cat="watch" aria-labelledby="sg-watch">
+        <h3 class="shelf-head" id="sg-watch">Watch</h3>
+        <ul class="shelf-list">
+          <li><a class="card" href="media/videos.webp" data-color="#a8865c">
+            <span class="card-img"><img src="media/videos-s.webp" data-klein="media/videos-s.webp" width="640" height="360" alt="YouTube home with recommendations" loading="lazy" decoding="async"></span>
+            <span class="card-title">YouTube</span>
+            <span class="card-text">Recommendations, subscriptions, Shorts and search. Sign in once with a code, like on a TV.</span>
+          </a></li>
+          <li><a class="card" href="media/streams.webp" data-color="#8a6aa8">
+            <span class="card-img"><img src="media/streams-s.webp" data-klein="media/streams-s.webp" width="640" height="360" alt="Twitch categories by viewers" loading="lazy" decoding="async"></span>
+            <span class="card-title">Twitch</span>
+            <span class="card-text">Browse categories and the channels you follow. Streams play right inside Uzai.</span>
+          </a></li>
+          <li><a class="card" href="media/movies.webp" data-color="#94557f">
+            <span class="card-img"><img src="media/movies-s.webp" data-klein="media/movies-s.webp" width="640" height="360" alt="Movies and shows with catalogs" loading="lazy" decoding="async"></span>
+            <span class="card-title">Movies and shows</span>
+            <span class="card-text">Plex, Jellyfin, Emby and add-on sources in one place, with picture-in-picture while you game.</span>
+          </a></li>
+        </ul>
+      </section>
+      <section class="shelf-group" data-cat="room" aria-labelledby="sg-room">
+        <h3 class="shelf-head" id="sg-room">Your Room</h3>
+        <ul class="shelf-list">
+          <li><a class="card" href="media/room.webp" data-color="#a8693a">
+            <span class="card-img"><img src="media/room-s.webp" data-klein="media/room-s.webp" width="640" height="360" alt="Walking through your own 3D room" loading="lazy" decoding="async"></span>
+            <span class="card-title">Your Room</span>
+            <span class="card-text">A small 3D room of your own: furnish it and put your games on the shelf. Invite friends who use Uzai over with a code, and play your local games together online with Remote Play Together.</span>
+          </a></li>
+        </ul>
+      </section>
+      <section class="shelf-group" data-cat="more" aria-labelledby="sg-more">
+        <h3 class="shelf-head" id="sg-more">Also inside</h3>
+        <ul class="shelf-list">
+          <li class="breit"><div class="more" tabindex="0" role="group" aria-labelledby="sg-more">
+            <span class="card-title sr-only">Also inside</span><span class="card-text" hidden></span>
+            <section class="more-g" aria-labelledby="mg-bild">
+              <h4 class="more-gt" id="mg-bild">Picture and emulation</h4>
+              <ul class="more-list">
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-pulse"/></svg><span class="more-copy"><span class="more-t">Frame rate ×2</span><span class="more-s">Lossless Scaling doubles or quadruples the frame rate of any game, from the Guide or at launch. Lossless Scaling is sold separately on Steam.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-retro"/></svg><span class="more-copy"><span class="more-t">CRT filters</span><span class="more-s">ShaderGlass lays a tube-TV look over the emulator at launch, with presets for PS1, PS2 and GameCube or your own. ShaderGlass is installed separately.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-download"/></svg><span class="more-copy"><span class="more-t">Retro setup in one step</span><span class="more-s">Downloads RetroArch, DuckStation, PCSX2, PPSSPP, Dolphin and melonDS from their official sources once you agree. Never BIOS, firmware or games.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-controller"/></svg><span class="more-copy"><span class="more-t">Controllers set up for you</span><span class="more-s">In the emulator, player 1 is the controller you started with; players 2 to 4 follow, on PS1 and PS2 through a multitap.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-grid"/></svg><span class="more-copy"><span class="more-t">34 emulator templates</span><span class="more-s">Games start straight in full screen, without the emulator’s own game list.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-history"/></svg><span class="more-copy"><span class="more-t">Quick resume for emulators</span><span class="more-s">Quit from the Guide and the game page offers to continue where you left off, with DuckStation, PCSX2, PPSSPP, Dolphin and RetroArch.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-sliders"/></svg><span class="more-copy"><span class="more-t">Settings per game</span><span class="more-s">Audio output, resolution, refresh rate, HDR, mic and music switch over when a game starts and come back after it.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-play"/></svg><span class="more-copy"><span class="more-t">Launch like a console</span><span class="more-s">A full-screen launch card, and a short start scene for PlayStation, PS2, GameCube, N64 and Switch games.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-disc"/></svg><span class="more-copy"><span class="more-t">Insert a disc</span><span class="more-s">A PS1 or PS2 disc in the drive comes first on the home screen and plays from your copy or the disc.</span></span></li>
+              </ul>
+            </section>
+            <section class="more-g" aria-labelledby="mg-zusammen">
+              <h4 class="more-gt" id="mg-zusammen">Playing together</h4>
+              <ul class="more-list">
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><span class="more-copy"><span class="more-t">Remote Play Together for every game</span><span class="more-s">Play local versus and co-op games online with Steam friends, emulator games included, through a Steam game you own such as the free RetroArch. Still being tested with Steam.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-invite"/></svg><span class="more-copy"><span class="more-t">Invite the whole call</span><span class="more-s">One press invites everyone in your Discord call to Remote Play, and player 2 is set up in the emulator for you.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-broadcast"/></svg><span class="more-copy"><span class="more-t">Go live on Discord</span><span class="more-s">Start your Discord screen share for the game from the Guide, with the Discord app.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-games"/></svg><span class="more-copy"><span class="more-t">Playing, on Discord</span><span class="more-s">Your Discord status shows the game with its cover and system, emulator and Epic games included.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-link"/></svg><span class="more-copy"><span class="more-t">Invite without the overlay</span><span class="more-s">Invite a friend to the Steam game you’re playing, straight from the Guide.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><span class="more-copy"><span class="more-t">Friends at a glance</span><span class="more-s">Friend requests, your Steam and Discord status, and a quiet note when a friend comes online.</span></span></li>
+              </ul>
+            </section>
+            <section class="more-g" aria-labelledby="mg-spiel">
+              <h4 class="more-gt" id="mg-spiel">In a game</h4>
+              <ul class="more-list">
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-pip"/></svg><span class="more-copy"><span class="more-t">Picture-in-picture</span><span class="more-s">YouTube, movies and Twitch keep playing small over your game; move it, resize it, give it its own volume.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-help"/></svg><span class="more-copy"><span class="more-t">Walkthrough help</span><span class="more-s">YouTube guides for the game you’re playing open in picture-in-picture over the game.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-volume"/></svg><span class="more-copy"><span class="more-t">Game volume on LT/RT</span><span class="more-s">Turns only the game up or down; a mixer per app and TV or headset are a press away.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-gauge"/></svg><span class="more-copy"><span class="more-t">Performance</span><span class="more-s">CPU, GPU, RAM, VRAM and temperature in the Guide or in a corner of the screen.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-cursor"/></svg><span class="more-copy"><span class="more-t">Controller as mouse</span><span class="more-s">The left stick moves the pointer, the right stick scrolls, A clicks.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-camera"/></svg><span class="more-copy"><span class="more-t">Captures</span><span class="more-s">Uzai’s own recorder keeps the last 30 seconds; trim, slow motion, and share to your phone by QR or to Discord.</span></span></li>
+              </ul>
+            </section>
+            <section class="more-g" aria-labelledby="mg-bibliothek">
+              <h4 class="more-gt" id="mg-bibliothek">Library</h4>
+              <ul class="more-list">
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-grid"/></svg><span class="more-copy"><span class="more-t">Every store, one library</span><span class="more-s">Steam, Epic, EA, GOG, Ubisoft, Battle.net, Xbox, Amazon, Riot and itch.io, found automatically.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-download"/></svg><span class="more-copy"><span class="more-t">Install from Uzai</span><span class="more-s">Install Steam and Epic games without their windows coming up, also overnight. Still being tested on Windows.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-games"/></svg><span class="more-copy"><span class="more-t">Every Epic game you own</span><span class="more-s">Installed or not, right next to the rest of your library.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg><span class="more-copy"><span class="more-t">One entry per game</span><span class="more-s">The same game in several launchers shows once and starts through the launcher you choose.</span></span></li>
+              </ul>
+            </section>
+            <section class="more-g" aria-labelledby="mg-konsole">
+              <h4 class="more-gt" id="mg-konsole">Media and console</h4>
+              <ul class="more-list">
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-play"/></svg><span class="more-copy"><span class="more-t">YouTube without ads</span><span class="more-s">Sponsor segments are skipped with SponsorBlock. Ad-free playback may break YouTube’s terms.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-browser"/></svg><span class="more-copy"><span class="more-t">A browser for the couch</span><span class="more-s">Every link is a target, with tabs, zoom and reader mode.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span class="more-copy"><span class="more-t">Phone as keyboard</span><span class="more-s">Scan a QR code and type on your phone.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-power"/></svg><span class="more-copy"><span class="more-t">Feels like a console</span><span class="more-s">Starts with Windows, rest mode and quick resume.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-moon"/></svg><span class="more-copy"><span class="more-t">Screensaver and sleep timer</span><span class="more-s">A slow pan over your games’ artwork, and timers for music and video.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg><span class="more-copy"><span class="more-t">Profiles for the family</span><span class="more-s">Profiles with a PIN, and a friendly daily play time for children.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-handheld"/></svg><span class="more-copy"><span class="more-t">Handhelds</span><span class="more-s">Steam Deck and Windows handhelds: button icons, battery and power profiles.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-wifi"/></svg><span class="more-copy"><span class="more-t">Set up with the controller</span><span class="more-s">Wi-Fi, Bluetooth and pairing up to four controllers, no mouse needed.</span></span></li>
+                <li class="more-row"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span class="more-copy"><span class="more-t">Uzai Doctor</span><span class="more-s">Known problems show up as cards with a safe fix.</span></span></li>
+              </ul>
+            </section>
+          </div></li>
+        </ul>
+      </section>
+    </div>
+  </section>
+
+  <section class="area area-side area-get" id="get" data-area="get" aria-labelledby="get-title">
+    <div class="side-copy">
+      <h2 class="title-xl" id="get-title" data-rise>Get Uzai</h2>
+      <p class="lead" data-rise>Windows 10 or 11 (64-bit) and an Xbox or PlayStation controller. Keyboard and mouse work too.</p>
+      <div class="actions" data-rise>
+        <a class="btn primary btn-gross" data-link="download" data-los data-default href="https://github.com/Uzai77/Uzai/releases/latest"><svg class="i" aria-hidden="true"><use href="#i-download"/></svg>Download</a>
+      </div>
+      <p class="quiet small get-note" data-rise>Opens the latest release on GitHub.</p>
+    </div>
+    <div class="get-side">
+      <ol class="steps" data-rise>
+        <li><span class="step-n" aria-hidden="true">1</span><span class="row-copy"><span class="row-title">Download</span><span class="row-sub"><code>Uzai-windows.zip</code> from Releases.</span></span></li>
+        <li><span class="step-n" aria-hidden="true">2</span><span class="row-copy"><span class="row-title">Unzip and start</span><span class="row-sub">Unzip it anywhere and start <code>Uzai.exe</code>. Keep <code>Uzai.pck</code> next to it.</span></span></li>
+        <li><span class="step-n" aria-hidden="true">3</span><span class="row-copy"><span class="row-title">Set up</span><span class="row-sub">A short setup walks you through controller, game folders and accounts. Every account is optional.</span></span></li>
+      </ol>
+      <div class="facts" data-rise>
+        <div class="fact"><h3>Updates install themselves</h3><p>Uzai checks for a new release once a day, verifies its signature and puts it in place when you close Uzai. Change it under <em>Settings › System › Updates</em>.</p></div>
+        <div class="fact"><h3>Portable</h3><p>Create an empty folder <code>uzai-daten</code> next to <code>Uzai.exe</code>.</p></div>
+        <div class="fact"><h3>The Guide button</h3><p>So that it opens only Uzai, Uzai turns off Steam's own Guide-button shortcut on first start. It asks first, you can keep Steam's, and you can switch it back under <em>Settings › Controller</em>.</p></div>
+      </div>
+      <details class="build" data-rise>
+        <summary><span>Build from source</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+        <p>Uzai is written in GDScript with Godot 4.5.1. The whole interface is built in code. Source on <a data-link="repo" href="https://github.com/Uzai77/Uzai">GitHub</a>.</p>
+<pre><code>godot --path . -- --demo --windowed --no-boot
+godot --headless --path . res://tests/check.tscn
+godot --headless --path . --export-release "Windows" build/Uzai.exe</code></pre>
+      </details>
+    </div>
+  </section>
+
+  <section class="area area-side area-privacy" id="privacy" data-area="privacy" aria-labelledby="privacy-title">
+    <div class="side-copy">
+      <h2 class="title-xl" id="privacy-title" data-rise>Privacy</h2>
+      <p class="lead" data-rise>Nothing is sent anywhere unless you connect a service.</p>
+    </div>
+    <ul class="rows privacy-list" data-rise>
+      <li class="row"><span class="row-copy"><span class="row-title">No account needed</span><span class="row-sub">Steam, Epic and PC games are found without signing in. Every sign-in is optional.</span></span></li>
+      <li class="row"><span class="row-copy"><span class="row-title">Your sign-ins stay on your PC</span><span class="row-sub">In the Windows credential vault, never in plain files, logs or URLs.</span></span></li>
+      <li class="row"><span class="row-copy"><span class="row-title">No telemetry</span><span class="row-sub">The daily update check only asks GitHub for the latest release.</span></span></li>
+      <li class="row"><span class="row-copy"><span class="row-title">Signed updates</span><span class="row-sub">An update is installed only if its signature matches the key built into Uzai.</span></span></li>
+      <li class="row"><span class="row-copy"><span class="row-title">This website</span><span class="row-sub">No cookies, no trackers, no analytics. Fonts, pictures and sounds come from this site. Guide settings and achievements stay in this tab and go when you close it.</span></span></li>
+    </ul>
+    <div class="legal" data-rise>
+      <h3>Legal</h3>
+      <p>Uzai is not affiliated with Valve, Microsoft, Sony, Nintendo, Epic Games, Electronic Arts, Spotify, Discord, Google or Twitch. Game titles, artwork and logos in the screenshots belong to their owners and only illustrate the software. yt-dlp, mpv and Deno are downloaded and run as separate programs; ad-free YouTube playback may break YouTube's terms. Console logos are loaded from Wikimedia Commons at runtime.</p>
+      <p><strong>License:</strong> <a href="https://github.com/Uzai77/Uzai/blob/main/LICENSE" data-link="license">GPL-3.0</a>. Bundled fonts, models, sounds and the browser filter list keep their own licenses; they are listed under About Uzai in the settings and next to the files. To report a security problem, see <a href="https://github.com/Uzai77/Uzai/blob/main/SECURITY.md" data-link="security">SECURITY.md</a>.</p>
+      <p>Set in IBM Plex Sans and IBM Plex Sans Condensed under the SIL Open Font License 1.1 (<a href="fonts/OFL-IBMPlex.txt">license text</a>).</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="hints" aria-hidden="true"></footer>
+
+<div class="veil" aria-hidden="true"></div>
+
+<aside class="guide" id="guide" role="dialog" aria-modal="true" aria-labelledby="guide-title" hidden>
+  <div class="guide-head">
+    <span class="guide-mark-space" aria-hidden="true"></span>
+    <div class="guide-who">
+      <p class="guide-name" id="guide-title">Guide</p>
+      <p class="quiet" data-stufe>Level 1 · 0 points</p>
+    </div>
+    <time class="clock" aria-hidden="true"></time>
+  </div>
+  <div class="guide-tabs">
+    <span class="g" data-k="lb" aria-hidden="true"></span>
+    <div class="guide-tablist" role="tablist" aria-label="Guide" data-nav-group="gtabs" data-entry="active">
+      <button class="gtab" role="tab" type="button" id="gt-home" aria-controls="gp-home" aria-selected="true">Home</button>
+      <button class="gtab" role="tab" type="button" id="gt-erfolge" aria-controls="gp-erfolge" aria-selected="false">Achievements<small class="gtab-n" data-erfolg-n></small></button>
+      <button class="gtab" role="tab" type="button" id="gt-controls" aria-controls="gp-controls" aria-selected="false">Controls</button>
+      <button class="gtab" role="tab" type="button" id="gt-system" aria-controls="gp-system" aria-selected="false">System</button>
+      <i class="chip-line" aria-hidden="true"></i>
+    </div>
+    <span class="g" data-k="rb" aria-hidden="true"></span>
+  </div>
+  <div class="guide-body">
+    <div class="guide-pane" id="gp-home" role="tabpanel" aria-labelledby="gt-home">
+      <div class="guide-game">
+        <span class="guide-now"><svg class="i" aria-hidden="true"><use href="#i-home" data-now-icon/></svg></span>
+        <div>
+          <p class="guide-game-title" data-now-title>Home</p>
+          <p class="quiet" data-now-sub>Next: Features</p>
+        </div>
+      </div>
+      <button class="btn primary wide" type="button" data-weiter data-default>Continue</button>
+      <ul class="glist">
+        <li><a class="grow" href="#home" data-goto="home"><svg class="i" aria-hidden="true"><use href="#i-home"/></svg><span class="grow-t">Home<span class="grow-s">Your PC, as a console</span></span><svg class="i grow-end" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+        <li><a class="grow" href="#features" data-goto="features"><svg class="i" aria-hidden="true"><use href="#i-apps"/></svg><span class="grow-t">Features<span class="grow-s">Guide, store, room</span></span><svg class="i grow-end" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+        <li><a class="grow" href="#get" data-goto="get"><svg class="i" aria-hidden="true"><use href="#i-download"/></svg><span class="grow-t">Get Uzai<span class="grow-s">Three steps</span></span><svg class="i grow-end" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+        <li><a class="grow" href="#privacy" data-goto="privacy"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg><span class="grow-t">Privacy<span class="grow-s">No telemetry</span></span><svg class="i grow-end" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+      </ul>
+      <p class="glabel">GitHub<span> · 3</span></p>
+      <ul class="glist">
+        <li><a class="grow" data-link="repo" href="https://github.com/Uzai77/Uzai"><svg class="i" aria-hidden="true"><use href="#i-link"/></svg><span class="grow-t">Source code</span><span class="grow-v">github.com</span></a></li>
+        <li><a class="grow" data-link="releases" href="https://github.com/Uzai77/Uzai/releases"><svg class="i" aria-hidden="true"><use href="#i-history"/></svg><span class="grow-t">All releases</span></a></li>
+        <li><a class="grow" data-link="manual" href="https://github.com/Uzai77/Uzai/blob/main/docs/README.de.md" hreflang="de"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg><span class="grow-t">Manual</span><span class="grow-v">Deutsch</span></a></li>
+      </ul>
+    </div>
+    <div class="guide-pane" id="gp-erfolge" role="tabpanel" aria-labelledby="gt-erfolge" hidden>
+      <p class="guide-lead quiet">This page has its own achievements, like every game in Uzai.</p>
+      <ul class="glist erfolg-liste"></ul>
+    </div>
+    <div class="guide-pane" id="gp-controls" role="tabpanel" aria-labelledby="gt-controls" hidden>
+      <p class="guide-lead quiet">Every screen in Uzai works with a controller. Keyboard and mouse work too.</p>
+      <ul class="rows controls-list">
+        <li class="row" data-keys="a b"><span class="row-keys"><span class="g" data-k="a">A</span><span class="g" data-k="b">B</span></span><span class="row-copy"><span class="row-title">Select / back</span></span></li>
+        <li class="row" data-keys="x y"><span class="row-keys"><span class="g" data-k="x">X</span><span class="g" data-k="y">Y</span></span><span class="row-copy"><span class="row-title">Extra actions</span><span class="row-sub">Always shown at the bottom of the screen</span></span></li>
+        <li class="row" data-keys="lb rb"><span class="row-keys"><span class="g" data-k="lb">LB</span><span class="g" data-k="rb">RB</span></span><span class="row-copy"><span class="row-title">Switch rows and tabs</span></span></li>
+        <li class="row" data-keys="lt rt"><span class="row-keys"><span class="g" data-k="lt">LT</span><span class="g" data-k="rt">RT</span></span><span class="row-copy"><span class="row-title">Switch areas</span><span class="row-sub">Games, store, profile, apps, settings</span></span></li>
+        <li class="row" data-keys="guide"><span class="row-keys"><span class="g" data-k="guide">Guide</span></span><span class="row-copy"><span class="row-title">The Guide, also in a game</span><span class="row-sub">Hold it for the quick menu</span></span></li>
+        <li class="row" data-keys="view menu"><span class="row-keys"><span class="g" data-k="view">View</span><span class="row-plus" aria-hidden="true">+</span><span class="g" data-k="menu">Start</span></span><span class="row-copy"><span class="row-title">The Guide</span><span class="row-sub">If Windows or Steam already use the Guide button</span></span></li>
+        <li class="row" data-keys="r3"><span class="row-keys"><span class="g" data-k="r3">R3</span></span><span class="row-copy"><span class="row-title">Search everything</span></span></li>
+      </ul>
+    </div>
+    <div class="guide-pane" id="gp-system" role="tabpanel" aria-labelledby="gt-system" hidden>
+      <ul class="glist">
+        <li><button class="grow" type="button" role="switch" aria-checked="false" data-set="sound"><svg class="i" aria-hidden="true"><use href="#i-volume"/></svg><span class="grow-t">Sounds</span><span class="grow-v" data-val>Off</span></button></li>
+        <li><button class="grow" type="button" data-set="motion"><svg class="i" aria-hidden="true"><use href="#i-pulse"/></svg><span class="grow-t">Motion</span><span class="grow-v" data-val>Like your system</span></button></li>
+        <li><button class="grow" type="button" data-set="glyphs"><svg class="i" aria-hidden="true"><use href="#i-keyboard"/></svg><span class="grow-t">Button prompts</span><span class="grow-v" data-val>Automatic</span></button></li>
+        <li><button class="grow" type="button" data-set="intro"><svg class="i" aria-hidden="true"><use href="#i-restart"/></svg><span class="grow-t">Play the intro again</span></button></li>
+        <li><button class="grow" type="button" data-aus><svg class="i" aria-hidden="true"><use href="#i-power"/></svg><span class="grow-t">Turn off</span></button></li>
+      </ul>
+      <p class="quiet small guide-note">Kept for this tab only. No cookies.</p>
+    </div>
+  </div>
+  <div class="guide-hints" aria-hidden="true"></div>
+</aside>
+
+<div class="quick" role="dialog" aria-modal="true" aria-labelledby="quick-title" hidden>
+  <div class="quick-card">
+    <div class="quick-head">
+      <p class="quick-title" id="quick-title">Quick menu</p>
+      <time class="clock" aria-hidden="true"></time>
+    </div>
+    <div class="quick-tiles">
+      <button class="qtile" type="button" role="switch" aria-checked="false" data-set="sound" data-default><svg class="i" aria-hidden="true"><use href="#i-volume"/></svg><span class="qt">Sounds</span><span class="qs" data-val>Off</span></button>
+      <button class="qtile" type="button" data-set="motion"><svg class="i" aria-hidden="true"><use href="#i-pulse"/></svg><span class="qt">Motion</span><span class="qs" data-val>Like your system</span></button>
+      <button class="qtile" type="button" data-set="glyphs"><svg class="i" aria-hidden="true"><use href="#i-keyboard"/></svg><span class="qt">Prompts</span><span class="qs" data-val>Automatic</span></button>
+      <button class="qtile" type="button" data-q="guide"><svg class="i" aria-hidden="true"><use href="#i-grid"/></svg><span class="qt">Guide</span></button>
+      <button class="qtile" type="button" data-aus><svg class="i" aria-hidden="true"><use href="#i-power"/></svg><span class="qt">Turn off</span></button>
+    </div>
+  </div>
+  <div class="quick-hints" aria-hidden="true"></div>
+</div>
+
+<div class="detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" tabindex="-1" hidden>
+  <figure class="detail-shot"><img alt="" decoding="async"></figure>
+  <div class="detail-copy">
+    <p class="kicker"><span class="badge" data-d="cat"></span><span class="quiet" data-d="pos"></span></p>
+    <h2 class="title-xl" id="detail-title" data-d="title"></h2>
+    <p class="lead" data-d="text"></p>
+  </div>
+  <div class="detail-nav">
+    <button class="round" type="button" data-d-step="-1" aria-label="Previous feature"><svg class="i" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+    <button class="round" type="button" data-d-step="1" aria-label="Next feature"><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+    <button class="round" type="button" data-d-close aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+</div>
+
+<div class="toasts" role="status" aria-live="polite"></div>
+
+</div>
+
+<div class="erfolg" role="status" aria-live="polite">
+  <div class="ach" hidden>
+    <i class="ach-schatten"></i><i class="ach-pille"><i class="ach-glanz"></i></i><i class="ach-ring"></i>
+    <span class="ach-disc"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+    <span class="ach-text"><span class="ach-l1"></span><span class="ach-l1b"></span><span class="ach-l2"></span></span>
+    <span class="ach-pts"><b></b><small>Uzai points</small></span>
+  </div>
+</div>
+
+<div class="power" hidden><i class="power-punkt"></i><p class="power-hint">Press any button to turn on</p></div>
+<i class="los" aria-hidden="true"></i>
+
+<div class="boot" aria-hidden="true">
+  <svg class="boot-u" viewBox="58 50 140 156" focusable="false">
+    <defs>
+      <linearGradient id="bo" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#795cb9"/><stop offset="1" stop-color="#36167b"/></linearGradient>
+      <linearGradient id="bi" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#451d9e"/><stop offset="1" stop-color="#28115c"/></linearGradient>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      <clipPath id="bclip"><path d="M132.39 202.86 L136.76 202.43 L141.09 201.71 L145.37 200.71 L149.57 199.44 L153.68 197.89 L157.68 196.08 L161.55 194.01 L165.28 191.69 L168.85 189.13 L172.25 186.35 L175.45 183.35 L178.45 180.14 L181.24 176.75 L183.8 173.18 L186.11 169.45 L188.19 165.57 L190 161.57 L191.54 157.46 L192.82 153.26 L193.82 148.99 L194.53 144.65 L194.96 140.28 L195.11 135.89 L195.11 53 L178.13 53 L178.13 135.94 L178.03 139.17 L177.7 142.44 L177.17 145.67 L176.43 148.87 L175.47 152.01 L174.32 155.08 L172.96 158.07 L171.42 160.96 L169.68 163.75 L167.77 166.41 L165.69 168.95 L163.45 171.34 L161.06 173.59 L158.52 175.67 L155.85 177.58 L153.07 179.31 L150.17 180.86 L147.19 182.21 L144.11 183.37 L140.98 184.32 L137.78 185.06 L134.54 185.6 L131.28 185.92 L128 186.03 L124.72 185.92 L121.46 185.6 L118.22 185.06 L115.02 184.32 L111.89 183.37 L108.81 182.21 L105.83 180.86 L102.93 179.31 L100.15 177.58 L97.48 175.67 L94.94 173.59 L92.55 171.34 L90.31 168.95 L88.23 166.41 L86.32 163.75 L84.58 160.96 L83.04 158.07 L81.68 155.08 L80.53 152.01 L79.57 148.87 L78.83 145.67 L78.3 142.44 L77.97 139.17 L77.87 135.94 L77.87 53 L60.89 53 L60.89 135.89 L61.04 140.28 L61.47 144.65 L62.18 148.99 L63.18 153.26 L64.46 157.46 L66 161.57 L67.81 165.57 L69.89 169.45 L72.2 173.18 L74.76 176.75 L77.55 180.14 L80.55 183.35 L83.75 186.35 L87.15 189.13 L90.72 191.69 L94.45 194.01 L98.32 196.08 L102.32 197.89 L106.43 199.44 L110.63 200.71 L114.91 201.71 L119.24 202.43 L123.61 202.86 L128 203 Z"/><path d="M130.92 180.4 L133.82 180.12 L136.7 179.64 L139.55 178.98 L142.33 178.13 L145.07 177.1 L147.73 175.9 L150.3 174.53 L152.79 172.98 L155.15 171.28 L157.41 169.43 L159.54 167.43 L161.53 165.3 L163.39 163.04 L165.08 160.68 L166.63 158.19 L168 155.63 L169.21 152.96 L170.24 150.22 L171.08 147.44 L171.75 144.59 L172.22 141.72 L172.51 138.81 L172.61 135.85 L172.61 53 L155.63 53 L155.63 135.89 L155.57 137.7 L155.4 139.5 L155.1 141.29 L154.69 143.05 L154.17 144.78 L153.53 146.47 L152.78 148.12 L151.93 149.71 L150.97 151.25 L149.92 152.72 L148.77 154.11 L147.54 155.43 L146.22 156.67 L144.82 157.82 L143.35 158.87 L141.82 159.82 L140.22 160.68 L138.57 161.42 L136.88 162.06 L135.15 162.58 L133.39 163 L131.61 163.29 L129.81 163.47 L128 163.53 L126.19 163.47 L124.39 163.29 L122.61 163 L120.85 162.58 L119.12 162.06 L117.43 161.42 L115.78 160.68 L114.18 159.82 L112.65 158.87 L111.18 157.82 L109.78 156.67 L108.46 155.43 L107.23 154.11 L106.08 152.72 L105.03 151.25 L104.07 149.71 L103.22 148.12 L102.47 146.47 L101.83 144.78 L101.31 143.05 L100.9 141.29 L100.6 139.5 L100.43 137.7 L100.37 135.89 L100.37 53 L83.39 53 L83.39 135.85 L83.49 138.81 L83.78 141.72 L84.25 144.59 L84.92 147.44 L85.76 150.22 L86.79 152.96 L88 155.63 L89.37 158.19 L90.92 160.68 L92.61 163.04 L94.47 165.3 L96.46 167.43 L98.59 169.43 L100.85 171.28 L103.21 172.98 L105.7 174.53 L108.27 175.9 L110.93 177.1 L113.67 178.13 L116.45 178.98 L119.3 179.64 L122.18 180.12 L125.08 180.4 L128 180.5 Z"/></clipPath>
+    </defs>
+    <g class="boot-whole">
+      <g class="boot-out"><path class="b-elox" fill="url(#bo)" d="M132.39 202.86 L136.76 202.43 L141.09 201.71 L145.37 200.71 L149.57 199.44 L153.68 197.89 L157.68 196.08 L161.55 194.01 L165.28 191.69 L168.85 189.13 L172.25 186.35 L175.45 183.35 L178.45 180.14 L181.24 176.75 L183.8 173.18 L186.11 169.45 L188.19 165.57 L190 161.57 L191.54 157.46 L192.82 153.26 L193.82 148.99 L194.53 144.65 L194.96 140.28 L195.11 135.89 L195.11 53 L178.13 53 L178.13 135.94 L178.03 139.17 L177.7 142.44 L177.17 145.67 L176.43 148.87 L175.47 152.01 L174.32 155.08 L172.96 158.07 L171.42 160.96 L169.68 163.75 L167.77 166.41 L165.69 168.95 L163.45 171.34 L161.06 173.59 L158.52 175.67 L155.85 177.58 L153.07 179.31 L150.17 180.86 L147.19 182.21 L144.11 183.37 L140.98 184.32 L137.78 185.06 L134.54 185.6 L131.28 185.92 L128 186.03 L124.72 185.92 L121.46 185.6 L118.22 185.06 L115.02 184.32 L111.89 183.37 L108.81 182.21 L105.83 180.86 L102.93 179.31 L100.15 177.58 L97.48 175.67 L94.94 173.59 L92.55 171.34 L90.31 168.95 L88.23 166.41 L86.32 163.75 L84.58 160.96 L83.04 158.07 L81.68 155.08 L80.53 152.01 L79.57 148.87 L78.83 145.67 L78.3 142.44 L77.97 139.17 L77.87 135.94 L77.87 53 L60.89 53 L60.89 135.89 L61.04 140.28 L61.47 144.65 L62.18 148.99 L63.18 153.26 L64.46 157.46 L66 161.57 L67.81 165.57 L69.89 169.45 L72.2 173.18 L74.76 176.75 L77.55 180.14 L80.55 183.35 L83.75 186.35 L87.15 189.13 L90.72 191.69 L94.45 194.01 L98.32 196.08 L102.32 197.89 L106.43 199.44 L110.63 200.71 L114.91 201.71 L119.24 202.43 L123.61 202.86 L128 203 Z"/><path class="b-flat" d="M132.39 202.86 L136.76 202.43 L141.09 201.71 L145.37 200.71 L149.57 199.44 L153.68 197.89 L157.68 196.08 L161.55 194.01 L165.28 191.69 L168.85 189.13 L172.25 186.35 L175.45 183.35 L178.45 180.14 L181.24 176.75 L183.8 173.18 L186.11 169.45 L188.19 165.57 L190 161.57 L191.54 157.46 L192.82 153.26 L193.82 148.99 L194.53 144.65 L194.96 140.28 L195.11 135.89 L195.11 53 L178.13 53 L178.13 135.94 L178.03 139.17 L177.7 142.44 L177.17 145.67 L176.43 148.87 L175.47 152.01 L174.32 155.08 L172.96 158.07 L171.42 160.96 L169.68 163.75 L167.77 166.41 L165.69 168.95 L163.45 171.34 L161.06 173.59 L158.52 175.67 L155.85 177.58 L153.07 179.31 L150.17 180.86 L147.19 182.21 L144.11 183.37 L140.98 184.32 L137.78 185.06 L134.54 185.6 L131.28 185.92 L128 186.03 L124.72 185.92 L121.46 185.6 L118.22 185.06 L115.02 184.32 L111.89 183.37 L108.81 182.21 L105.83 180.86 L102.93 179.31 L100.15 177.58 L97.48 175.67 L94.94 173.59 L92.55 171.34 L90.31 168.95 L88.23 166.41 L86.32 163.75 L84.58 160.96 L83.04 158.07 L81.68 155.08 L80.53 152.01 L79.57 148.87 L78.83 145.67 L78.3 142.44 L77.97 139.17 L77.87 135.94 L77.87 53 L60.89 53 L60.89 135.89 L61.04 140.28 L61.47 144.65 L62.18 148.99 L63.18 153.26 L64.46 157.46 L66 161.57 L67.81 165.57 L69.89 169.45 L72.2 173.18 L74.76 176.75 L77.55 180.14 L80.55 183.35 L83.75 186.35 L87.15 189.13 L90.72 191.69 L94.45 194.01 L98.32 196.08 L102.32 197.89 L106.43 199.44 L110.63 200.71 L114.91 201.71 L119.24 202.43 L123.61 202.86 L128 203 Z"/></g>
+      <g class="boot-in"><path class="b-elox" fill="url(#bi)" d="M130.92 180.4 L133.82 180.12 L136.7 179.64 L139.55 178.98 L142.33 178.13 L145.07 177.1 L147.73 175.9 L150.3 174.53 L152.79 172.98 L155.15 171.28 L157.41 169.43 L159.54 167.43 L161.53 165.3 L163.39 163.04 L165.08 160.68 L166.63 158.19 L168 155.63 L169.21 152.96 L170.24 150.22 L171.08 147.44 L171.75 144.59 L172.22 141.72 L172.51 138.81 L172.61 135.85 L172.61 53 L155.63 53 L155.63 135.89 L155.57 137.7 L155.4 139.5 L155.1 141.29 L154.69 143.05 L154.17 144.78 L153.53 146.47 L152.78 148.12 L151.93 149.71 L150.97 151.25 L149.92 152.72 L148.77 154.11 L147.54 155.43 L146.22 156.67 L144.82 157.82 L143.35 158.87 L141.82 159.82 L140.22 160.68 L138.57 161.42 L136.88 162.06 L135.15 162.58 L133.39 163 L131.61 163.29 L129.81 163.47 L128 163.53 L126.19 163.47 L124.39 163.29 L122.61 163 L120.85 162.58 L119.12 162.06 L117.43 161.42 L115.78 160.68 L114.18 159.82 L112.65 158.87 L111.18 157.82 L109.78 156.67 L108.46 155.43 L107.23 154.11 L106.08 152.72 L105.03 151.25 L104.07 149.71 L103.22 148.12 L102.47 146.47 L101.83 144.78 L101.31 143.05 L100.9 141.29 L100.6 139.5 L100.43 137.7 L100.37 135.89 L100.37 53 L83.39 53 L83.39 135.85 L83.49 138.81 L83.78 141.72 L84.25 144.59 L84.92 147.44 L85.76 150.22 L86.79 152.96 L88 155.63 L89.37 158.19 L90.92 160.68 L92.61 163.04 L94.47 165.3 L96.46 167.43 L98.59 169.43 L100.85 171.28 L103.21 172.98 L105.7 174.53 L108.27 175.9 L110.93 177.1 L113.67 178.13 L116.45 178.98 L119.3 179.64 L122.18 180.12 L125.08 180.4 L128 180.5 Z"/><path class="b-flat" d="M130.92 180.4 L133.82 180.12 L136.7 179.64 L139.55 178.98 L142.33 178.13 L145.07 177.1 L147.73 175.9 L150.3 174.53 L152.79 172.98 L155.15 171.28 L157.41 169.43 L159.54 167.43 L161.53 165.3 L163.39 163.04 L165.08 160.68 L166.63 158.19 L168 155.63 L169.21 152.96 L170.24 150.22 L171.08 147.44 L171.75 144.59 L172.22 141.72 L172.51 138.81 L172.61 135.85 L172.61 53 L155.63 53 L155.63 135.89 L155.57 137.7 L155.4 139.5 L155.1 141.29 L154.69 143.05 L154.17 144.78 L153.53 146.47 L152.78 148.12 L151.93 149.71 L150.97 151.25 L149.92 152.72 L148.77 154.11 L147.54 155.43 L146.22 156.67 L144.82 157.82 L143.35 158.87 L141.82 159.82 L140.22 160.68 L138.57 161.42 L136.88 162.06 L135.15 162.58 L133.39 163 L131.61 163.29 L129.81 163.47 L128 163.53 L126.19 163.47 L124.39 163.29 L122.61 163 L120.85 162.58 L119.12 162.06 L117.43 161.42 L115.78 160.68 L114.18 159.82 L112.65 158.87 L111.18 157.82 L109.78 156.67 L108.46 155.43 L107.23 154.11 L106.08 152.72 L105.03 151.25 L104.07 149.71 L103.22 148.12 L102.47 146.47 L101.83 144.78 L101.31 143.05 L100.9 141.29 L100.6 139.5 L100.43 137.7 L100.37 135.89 L100.37 53 L83.39 53 L83.39 135.85 L83.49 138.81 L83.78 141.72 L84.25 144.59 L84.92 147.44 L85.76 150.22 L86.79 152.96 L88 155.63 L89.37 158.19 L90.92 160.68 L92.61 163.04 L94.47 165.3 L96.46 167.43 L98.59 169.43 L100.85 171.28 L103.21 172.98 L105.7 174.53 L108.27 175.9 L110.93 177.1 L113.67 178.13 L116.45 178.98 L119.3 179.64 L122.18 180.12 L125.08 180.4 L128 180.5 Z"/></g>
+      <g clip-path="url(#bclip)"><rect class="boot-gloss" x="20" y="50" width="70" height="160" fill="url(#bg)"/></g>
+      <path class="boot-line" pathLength="1" d="M80.63 53 L80.63 135.89 L80.73 138.99 L81.04 142.08 L81.54 145.14 L82.25 148.15 L83.15 151.12 L84.24 154.02 L85.52 156.85 L86.98 159.58 L88.61 162.21 L90.42 164.73 L92.39 167.13 L94.51 169.39 L96.77 171.51 L99.16 173.47 L101.68 175.28 L104.32 176.92 L107.05 178.38 L109.87 179.66 L112.77 180.75 L115.74 181.65 L118.76 182.35 L121.82 182.86 L124.9 183.16 L128 183.26 L131.1 183.16 L134.18 182.86 L137.24 182.35 L140.26 181.65 L143.23 180.75 L146.13 179.66 L148.95 178.38 L151.68 176.92 L154.32 175.28 L156.84 173.47 L159.23 171.51 L161.49 169.39 L163.61 167.13 L165.58 164.73 L167.39 162.21 L169.02 159.58 L170.48 156.85 L171.76 154.02 L172.85 151.12 L173.75 148.15 L174.46 145.14 L174.96 142.08 L175.27 138.99 L175.37 135.89 L175.37 53"/>
+    </g>
+  </svg>
+  <svg class="boot-word" viewBox="137.97 56 181.92 46" focusable="false">
+    <g class="bw bw-u"><path d="M157.37 99.96 L158.47 99.86 L159.55 99.68 L160.62 99.43 L161.67 99.11 L162.7 98.72 L163.7 98.27 L164.67 97.75 L165.61 97.17 L166.5 96.53 L167.35 95.83 L168.15 95.08 L168.9 94.28 L169.6 93.43 L170.24 92.53 L170.82 91.6 L171.34 90.63 L171.79 89.63 L172.18 88.6 L172.5 87.55 L172.75 86.48 L172.93 85.39 L173.04 84.3 L173.07 83.2 L173.07 58 L169.29 58 L169.29 83.21 L169.27 84.05 L169.18 84.9 L169.04 85.74 L168.85 86.57 L168.6 87.39 L168.3 88.18 L167.95 88.96 L167.55 89.71 L167.1 90.43 L166.6 91.13 L166.06 91.78 L165.48 92.41 L164.86 92.99 L164.2 93.53 L163.51 94.03 L162.78 94.48 L162.03 94.88 L161.26 95.23 L160.46 95.53 L159.64 95.78 L158.81 95.97 L157.97 96.11 L157.13 96.19 L156.27 96.22 L155.42 96.19 L154.57 96.11 L153.73 95.97 L152.9 95.78 L152.09 95.53 L151.29 95.23 L150.52 94.88 L149.76 94.48 L149.04 94.03 L148.35 93.53 L147.69 92.99 L147.07 92.41 L146.48 91.78 L145.94 91.13 L145.45 90.43 L145 89.71 L144.6 88.96 L144.24 88.18 L143.94 87.39 L143.7 86.57 L143.5 85.74 L143.36 84.9 L143.28 84.05 L143.25 83.21 L143.25 58 L139.47 58 L139.47 83.2 L139.51 84.3 L139.62 85.39 L139.8 86.48 L140.05 87.55 L140.37 88.6 L140.75 89.63 L141.21 90.63 L141.72 91.6 L142.31 92.53 L142.95 93.43 L143.64 94.28 L144.39 95.08 L145.2 95.83 L146.05 96.53 L146.94 97.17 L147.87 97.75 L148.84 98.27 L149.84 98.72 L150.87 99.11 L151.93 99.43 L153 99.68 L154.08 99.86 L155.17 99.96 L156.27 100 Z"/><path d="M157.02 94.52 L157.75 94.44 L158.48 94.32 L159.21 94.15 L159.92 93.94 L160.62 93.68 L161.29 93.37 L161.94 93.02 L162.58 92.63 L163.18 92.2 L163.75 91.73 L164.29 91.22 L164.8 90.68 L165.27 90.1 L165.7 89.5 L166.1 88.87 L166.44 88.21 L166.75 87.54 L167.01 86.85 L167.23 86.14 L167.4 85.41 L167.52 84.68 L167.59 83.94 L167.61 83.19 L167.61 58 L163.83 58 L163.83 83.2 L163.82 83.69 L163.77 84.19 L163.69 84.67 L163.58 85.16 L163.43 85.63 L163.26 86.09 L163.05 86.54 L162.82 86.98 L162.56 87.4 L162.27 87.8 L161.96 88.18 L161.62 88.55 L161.26 88.88 L160.88 89.2 L160.47 89.49 L160.05 89.75 L159.62 89.98 L159.17 90.18 L158.7 90.36 L158.23 90.5 L157.75 90.61 L157.26 90.7 L156.77 90.74 L156.27 90.76 L155.78 90.74 L155.29 90.7 L154.8 90.61 L154.32 90.5 L153.84 90.36 L153.38 90.18 L152.93 89.98 L152.49 89.75 L152.07 89.49 L151.67 89.2 L151.29 88.88 L150.93 88.55 L150.59 88.18 L150.28 87.8 L149.99 87.4 L149.73 86.98 L149.49 86.54 L149.29 86.09 L149.11 85.63 L148.97 85.16 L148.86 84.67 L148.78 84.19 L148.73 83.69 L148.71 83.2 L148.71 58 L144.93 58 L144.93 83.19 L144.96 83.94 L145.03 84.68 L145.15 85.41 L145.32 86.14 L145.54 86.85 L145.8 87.54 L146.1 88.21 L146.45 88.87 L146.85 89.5 L147.28 90.1 L147.75 90.68 L148.26 91.22 L148.8 91.73 L149.37 92.2 L149.97 92.63 L150.61 93.02 L151.26 93.37 L151.93 93.68 L152.63 93.94 L153.34 94.15 L154.06 94.32 L154.79 94.44 L155.53 94.52 L156.27 94.54 Z"/></g>
+    <g class="bw bw-z"><path d="M214.23 67.24 L214.23 58 L181.47 58 L181.47 67.24 L201.3 67.24 L181.47 90.76 L181.47 100 L214.23 100 L214.23 90.76 L194.41 90.76 Z"/></g>
+    <g class="bw bw-a"><path d="M240.69 58 L222.63 100 L234.31 100 L236.67 90.34 L236.85 90.34 L240.69 81.39 L244.54 90.34 L244.72 90.34 L247.08 100 L258.75 100 Z"/></g>
+    <g class="bw bw-i"><path d="M267.15 100 L276.39 100 L276.39 58 L267.15 58 Z"/></g>
+  </svg>
+</div>
+</body>
+</html>

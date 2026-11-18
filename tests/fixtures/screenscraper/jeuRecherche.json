@@ -1,0 +1,13 @@
+{
+	"header": { "APIversion": "2.0", "commandRequested": "jeuRecherche", "success": "true", "error": "" },
+	"response": {
+		"ssuser": { "requeststoday": "20000", "maxrequestsperday": "20000" },
+		"jeux": [
+			{ "id": "5100", "noms": [ { "region": "wor", "text": "Okami HD" } ], "systeme": { "id": "58" } },
+			{ "id": "3017", "noms": [ { "region": "eu", "text": "Okami" } ], "systeme": { "id": "58" } },
+			{ "id": "7000", "noms": [ { "region": "us", "text": "Okami" } ], "systeme": { "id": "59" } },
+			{ "id": "x;1", "noms": [ { "region": "eu", "text": "Okami" } ] },
+			{}
+		]
+	}
+}
