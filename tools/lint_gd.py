@@ -665,7 +665,9 @@ def main(argv):
                     fh.write(neu)
                 src = neu
         n_dateien += 1
-        f, w = pruefen(rel, src)
+        # Geprüft wird mit LF: Unter Windows checkt Git mit core.autocrlf (Standard, auch auf GitHubs Windows-Läufern)
+        # mit CRLF aus. Das \r am Zeilenende zählte sonst als Zeichen und brach die Ausnahmen für lange Zeilen.
+        f, w = pruefen(rel, src.replace("\r\n", "\n"))
         for nr, regel, text in f:
             print("%s:%d: %s: %s" % (rel, nr, regel, text))
         if zeige_warn:

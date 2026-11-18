@@ -305,14 +305,19 @@ def alles(wurzel, schreiben):
     fehler += f2
     ziele = {os.path.join(wurzel, "docs", "ZUSTAENDE.md"): markdown(maschinen),
              os.path.join(wurzel, "docs", "zustaende.json"): json_text(maschinen)}
+    # Die Übersichten (ZUSTAENDE.md, ZUSTAENDE_OFFEN.md) sind Arbeitsunterlagen und fehlen in der öffentlichen Kopie
+    # (.gitattributes export-ignore). Ohne sie prüft das Werkzeug nur Tabellen und Zuweisungen, nicht die Übersicht.
+    intern = os.path.exists(os.path.join(wurzel, "docs", "ZUSTAENDE.md"))
+    if not intern and not schreiben:
+        ziele.pop(os.path.join(wurzel, "docs", "ZUSTAENDE.md"))
     offen = os.path.join(wurzel, "docs", "ZUSTAENDE_OFFEN.md")
-    if not os.path.exists(offen):
+    if intern and not os.path.exists(offen):
         fehler.append(("docs/ZUSTAENDE_OFFEN.md", "uebersicht", "fehlt – die Übersicht verweist darauf (von Hand gepflegt)"))
     for pfad, text in ziele.items():
         alt = None
         if os.path.exists(pfad):
             with open(pfad, encoding="utf-8") as fh:
-                alt = fh.read()
+                alt = fh.read().replace("\r\n", "\n")
         if alt == text:
             continue
         if schreiben:
